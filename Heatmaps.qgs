@@ -1,0 +1,2090 @@
+<!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
+<qgis projectname="" version="3.2.0-Bonn">
+  <homePath path=""/>
+  <title></title>
+  <autotransaction active="0"/>
+  <evaluateDefaultValues active="0"/>
+  <trust active="0"/>
+  <projectCrs>
+    <spatialrefsys>
+      <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+      <srsid>3452</srsid>
+      <srid>4326</srid>
+      <authid>EPSG:4326</authid>
+      <description>WGS 84</description>
+      <projectionacronym>longlat</projectionacronym>
+      <ellipsoidacronym>WGS84</ellipsoidacronym>
+      <geographicflag>true</geographicflag>
+    </spatialrefsys>
+  </projectCrs>
+  <layer-tree-group>
+    <customproperties/>
+    <layer-tree-layer providerKey="ogr" id="All_data_bird_166_9eb277ce_feb4_4eaf_8c67_0d83299562a9" name="All data points" source="../../University/Visualisation/OysterCatcher/All data.gpkg|layername=All data" expanded="1" checked="Qt::Checked">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer providerKey="ogr" id="All_data_0e35be27_6c0d_449e_8d78_044fbf8dda21" name="All data bird 166" source="../../University/Visualisation/OysterCatcher/All data.gpkg|layername=All data|subset=&quot;birdID&quot;='166'" expanded="1" checked="Qt::Checked">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer providerKey="ogr" id="All_data_98568c72_a3e1_49c5_8386_b885824102de" name="All data bird 167" source="../../University/Visualisation/OysterCatcher/All data.gpkg|layername=All data|subset=&quot;birdID&quot;='167'" expanded="1" checked="Qt::Checked">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer providerKey="ogr" id="All_data_49090a5e_0a20_4515_988a_72c53c0533a7" name="All data bird 169" source="../../University/Visualisation/OysterCatcher/All data.gpkg|layername=All data|subset=&quot;birdID&quot; = '169'" expanded="1" checked="Qt::Checked">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer providerKey="wms" id="OSM_Standard_43fe4697_7ce1_4cf6_a461_4af4c75194df" name="OSM Standard" source="type=xyz&amp;zmin=0&amp;zmax=19&amp;url=http://tile.openstreetmap.org/{z}/{x}/{y}.png" expanded="1" checked="Qt::Checked">
+      <customproperties/>
+    </layer-tree-layer>
+    <custom-order enabled="0">
+      <item>All_data_0e35be27_6c0d_449e_8d78_044fbf8dda21</item>
+      <item>OSM_Standard_43fe4697_7ce1_4cf6_a461_4af4c75194df</item>
+      <item>All_data_49090a5e_0a20_4515_988a_72c53c0533a7</item>
+      <item>All_data_98568c72_a3e1_49c5_8386_b885824102de</item>
+      <item>All_data_bird_166_9eb277ce_feb4_4eaf_8c67_0d83299562a9</item>
+    </custom-order>
+  </layer-tree-group>
+  <snapping-settings enabled="0" unit="1" tolerance="12" intersection-snapping="0" mode="2" type="1">
+    <individual-layer-settings>
+      <layer-setting enabled="0" id="All_data_bird_166_9eb277ce_feb4_4eaf_8c67_0d83299562a9" tolerance="12" units="1" type="1"/>
+      <layer-setting enabled="0" id="All_data_0e35be27_6c0d_449e_8d78_044fbf8dda21" tolerance="12" units="1" type="1"/>
+      <layer-setting enabled="0" id="All_data_49090a5e_0a20_4515_988a_72c53c0533a7" tolerance="12" units="1" type="1"/>
+      <layer-setting enabled="0" id="All_data_98568c72_a3e1_49c5_8386_b885824102de" tolerance="12" units="1" type="1"/>
+    </individual-layer-settings>
+  </snapping-settings>
+  <relations/>
+  <mapcanvas annotationsVisible="1" name="theMapCanvas">
+    <units>degrees</units>
+    <extent>
+      <xmin>6.19867958750000003</xmin>
+      <ymin>53.4295940525000006</ymin>
+      <xmax>6.26714431250000015</xmax>
+      <ymax>53.48137364749999989</ymax>
+    </extent>
+    <rotation>0</rotation>
+    <destinationsrs>
+      <spatialrefsys>
+        <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+        <srsid>3452</srsid>
+        <srid>4326</srid>
+        <authid>EPSG:4326</authid>
+        <description>WGS 84</description>
+        <projectionacronym>longlat</projectionacronym>
+        <ellipsoidacronym>WGS84</ellipsoidacronym>
+        <geographicflag>true</geographicflag>
+      </spatialrefsys>
+    </destinationsrs>
+    <rendermaptile>0</rendermaptile>
+  </mapcanvas>
+  <legend updateDrawingOrder="true">
+    <legendlayer open="true" name="All data points" drawingOrder="-1" checked="Qt::Checked" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile visible="1" layerid="All_data_bird_166_9eb277ce_feb4_4eaf_8c67_0d83299562a9" isInOverview="0"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer open="true" name="All data bird 166" drawingOrder="-1" checked="Qt::Checked" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile visible="1" layerid="All_data_0e35be27_6c0d_449e_8d78_044fbf8dda21" isInOverview="0"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer open="true" name="All data bird 167" drawingOrder="-1" checked="Qt::Checked" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile visible="1" layerid="All_data_98568c72_a3e1_49c5_8386_b885824102de" isInOverview="0"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer open="true" name="All data bird 169" drawingOrder="-1" checked="Qt::Checked" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile visible="1" layerid="All_data_49090a5e_0a20_4515_988a_72c53c0533a7" isInOverview="0"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer open="true" name="OSM Standard" drawingOrder="-1" checked="Qt::Checked" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile visible="1" layerid="OSM_Standard_43fe4697_7ce1_4cf6_a461_4af4c75194df" isInOverview="0"/>
+      </filegroup>
+    </legendlayer>
+  </legend>
+  <mapViewDocks/>
+  <mapViewDocks3D/>
+  <mapcanvas annotationsVisible="1" name="mAreaCanvas">
+    <units>degrees</units>
+    <extent>
+      <xmin>0</xmin>
+      <ymin>0</ymin>
+      <xmax>0</xmax>
+      <ymax>0</ymax>
+    </extent>
+    <rotation>0</rotation>
+    <destinationsrs>
+      <spatialrefsys>
+        <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+        <srsid>3452</srsid>
+        <srid>4326</srid>
+        <authid>EPSG:4326</authid>
+        <description>WGS 84</description>
+        <projectionacronym>longlat</projectionacronym>
+        <ellipsoidacronym>WGS84</ellipsoidacronym>
+        <geographicflag>true</geographicflag>
+      </spatialrefsys>
+    </destinationsrs>
+    <rendermaptile>0</rendermaptile>
+  </mapcanvas>
+  <mapcanvas annotationsVisible="1" name="mAreaCanvas">
+    <units>degrees</units>
+    <extent>
+      <xmin>0</xmin>
+      <ymin>0</ymin>
+      <xmax>0</xmax>
+      <ymax>0</ymax>
+    </extent>
+    <rotation>0</rotation>
+    <destinationsrs>
+      <spatialrefsys>
+        <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+        <srsid>3452</srsid>
+        <srid>4326</srid>
+        <authid>EPSG:4326</authid>
+        <description>WGS 84</description>
+        <projectionacronym>longlat</projectionacronym>
+        <ellipsoidacronym>WGS84</ellipsoidacronym>
+        <geographicflag>true</geographicflag>
+      </spatialrefsys>
+    </destinationsrs>
+    <rendermaptile>0</rendermaptile>
+  </mapcanvas>
+  <mapcanvas annotationsVisible="1" name="mAreaCanvas">
+    <units>degrees</units>
+    <extent>
+      <xmin>0</xmin>
+      <ymin>0</ymin>
+      <xmax>0</xmax>
+      <ymax>0</ymax>
+    </extent>
+    <rotation>0</rotation>
+    <destinationsrs>
+      <spatialrefsys>
+        <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+        <srsid>3452</srsid>
+        <srid>4326</srid>
+        <authid>EPSG:4326</authid>
+        <description>WGS 84</description>
+        <projectionacronym>longlat</projectionacronym>
+        <ellipsoidacronym>WGS84</ellipsoidacronym>
+        <geographicflag>true</geographicflag>
+      </spatialrefsys>
+    </destinationsrs>
+    <rendermaptile>0</rendermaptile>
+  </mapcanvas>
+  <projectlayers>
+    <maplayer refreshOnNotifyEnabled="0" readOnly="0" autoRefreshEnabled="0" geometry="Point" simplifyDrawingHints="0" refreshOnNotifyMessage="" simplifyDrawingTol="1" simplifyLocal="1" simplifyAlgorithm="0" minScale="1e+8" hasScaleBasedVisibilityFlag="0" maxScale="0" autoRefreshTime="0" type="vector" simplifyMaxScale="1" labelsEnabled="0">
+      <extent>
+        <xmin>6.20030970000000003</xmin>
+        <ymin>53.43082689999999957</ymin>
+        <xmax>6.26551420000000014</xmax>
+        <ymax>53.48014080000000092</ymax>
+      </extent>
+      <id>All_data_0e35be27_6c0d_449e_8d78_044fbf8dda21</id>
+      <datasource>../../University/Visualisation/OysterCatcher/All data.gpkg|layername=All data|subset="birdID"='166'</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>All data bird 166</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+          <srsid>3452</srsid>
+          <srid>4326</srid>
+          <authid>EPSG:4326</authid>
+          <description>WGS 84</description>
+          <projectionacronym>longlat</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type></type>
+        <title></title>
+        <abstract></abstract>
+        <contact>
+          <name></name>
+          <organization></organization>
+          <position></position>
+          <voice></voice>
+          <fax></fax>
+          <email></email>
+          <role></role>
+        </contact>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent>
+          <spatial miny="0" maxy="0" dimensions="2" maxx="0" minx="0" maxz="0" minz="0" crs=""/>
+          <temporal>
+            <period>
+              <start></start>
+              <end></end>
+            </period>
+          </temporal>
+        </extent>
+      </resourceMetadata>
+      <provider encoding="UTF-8">ogr</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <legend type="default-vector"/>
+      <expressionfields>
+        <field subType="0" precision="3" comment="" length="0" name="date_time2" expression="CASE WHEN length(date_time) = 15&#xd;&#xa; THEN replace(date_time,' ',' 0')&#xd;&#xa; ELSE date_time&#xd;&#xa;END" typeName="datetime" type="16"/>
+      </expressionfields>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <renderer-v2 weight_expression="" max_value="100" radius_unit="0" enableorderby="0" radius="20" radius_map_unit_scale="3x:0,0,0,0,0,0" forceraster="0" quality="4" type="heatmapRenderer">
+        <colorramp name="[source]" type="gradient">
+          <prop v="247,252,245,0" k="color1"/>
+          <prop v="0,204,27,255" k="color2"/>
+          <prop v="0" k="discrete"/>
+          <prop v="gradient" k="rampType"/>
+        </colorramp>
+      </renderer-v2>
+      <customproperties>
+        <property key="dualview/previewExpressions">
+          <value>fid</value>
+        </property>
+        <property value="0" key="embeddedWidgets/count"/>
+        <property key="variableNames"/>
+        <property key="variableValues"/>
+      </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerOpacity>1</layerOpacity>
+      <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
+        <DiagramCategory height="15" enabled="0" penColor="#000000" penAlpha="255" lineSizeType="MM" scaleBasedVisibility="0" rotationOffset="270" diagramOrientation="Up" scaleDependency="Area" sizeScale="3x:0,0,0,0,0,0" sizeType="MM" opacity="1" width="15" barWidth="5" backgroundAlpha="255" backgroundColor="#ffffff" minScaleDenominator="0" maxScaleDenominator="1e+8" labelPlacementMethod="XHeight" lineSizeScale="3x:0,0,0,0,0,0" penWidth="0" minimumSize="0">
+          <fontProperties style="" description="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0"/>
+          <attribute label="" color="#000000" field=""/>
+        </DiagramCategory>
+      </SingleCategoryDiagramRenderer>
+      <DiagramLayerSettings showAll="1" priority="0" dist="0" obstacle="0" placement="0" linePlacementFlags="18" zIndex="0">
+        <properties>
+          <Option type="Map">
+            <Option value="" name="name" type="QString"/>
+            <Option name="properties"/>
+            <Option value="collection" name="type" type="QString"/>
+          </Option>
+        </properties>
+      </DiagramLayerSettings>
+      <fieldConfiguration>
+        <field name="fid">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="gps.obsID">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="birdID">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="date_time">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="latitude">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="longitude">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="speed">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="habitat.obsID">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="timelbl2">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="timelbl3">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="place">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="model_output.obsID">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="SA3">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="SA8">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="behaviour.obsID">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="OB3">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="OB8">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="OB16">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="date_time2">
+          <editWidget type="DateTime">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias index="0" name="" field="fid"/>
+        <alias index="1" name="" field="gps.obsID"/>
+        <alias index="2" name="" field="birdID"/>
+        <alias index="3" name="" field="date_time"/>
+        <alias index="4" name="" field="latitude"/>
+        <alias index="5" name="" field="longitude"/>
+        <alias index="6" name="" field="speed"/>
+        <alias index="7" name="" field="habitat.obsID"/>
+        <alias index="8" name="" field="timelbl2"/>
+        <alias index="9" name="" field="timelbl3"/>
+        <alias index="10" name="" field="place"/>
+        <alias index="11" name="" field="model_output.obsID"/>
+        <alias index="12" name="" field="SA3"/>
+        <alias index="13" name="" field="SA8"/>
+        <alias index="14" name="" field="behaviour.obsID"/>
+        <alias index="15" name="" field="OB3"/>
+        <alias index="16" name="" field="OB8"/>
+        <alias index="17" name="" field="OB16"/>
+        <alias index="18" name="" field="date_time2"/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <defaults>
+        <default expression="" field="fid" applyOnUpdate="0"/>
+        <default expression="" field="gps.obsID" applyOnUpdate="0"/>
+        <default expression="" field="birdID" applyOnUpdate="0"/>
+        <default expression="" field="date_time" applyOnUpdate="0"/>
+        <default expression="" field="latitude" applyOnUpdate="0"/>
+        <default expression="" field="longitude" applyOnUpdate="0"/>
+        <default expression="" field="speed" applyOnUpdate="0"/>
+        <default expression="" field="habitat.obsID" applyOnUpdate="0"/>
+        <default expression="" field="timelbl2" applyOnUpdate="0"/>
+        <default expression="" field="timelbl3" applyOnUpdate="0"/>
+        <default expression="" field="place" applyOnUpdate="0"/>
+        <default expression="" field="model_output.obsID" applyOnUpdate="0"/>
+        <default expression="" field="SA3" applyOnUpdate="0"/>
+        <default expression="" field="SA8" applyOnUpdate="0"/>
+        <default expression="" field="behaviour.obsID" applyOnUpdate="0"/>
+        <default expression="" field="OB3" applyOnUpdate="0"/>
+        <default expression="" field="OB8" applyOnUpdate="0"/>
+        <default expression="" field="OB16" applyOnUpdate="0"/>
+        <default expression="" field="date_time2" applyOnUpdate="0"/>
+      </defaults>
+      <constraints>
+        <constraint unique_strength="1" constraints="3" exp_strength="0" field="fid" notnull_strength="1"/>
+        <constraint unique_strength="0" constraints="0" exp_strength="0" field="gps.obsID" notnull_strength="0"/>
+        <constraint unique_strength="0" constraints="0" exp_strength="0" field="birdID" notnull_strength="0"/>
+        <constraint unique_strength="0" constraints="0" exp_strength="0" field="date_time" notnull_strength="0"/>
+        <constraint unique_strength="0" constraints="0" exp_strength="0" field="latitude" notnull_strength="0"/>
+        <constraint unique_strength="0" constraints="0" exp_strength="0" field="longitude" notnull_strength="0"/>
+        <constraint unique_strength="0" constraints="0" exp_strength="0" field="speed" notnull_strength="0"/>
+        <constraint unique_strength="0" constraints="0" exp_strength="0" field="habitat.obsID" notnull_strength="0"/>
+        <constraint unique_strength="0" constraints="0" exp_strength="0" field="timelbl2" notnull_strength="0"/>
+        <constraint unique_strength="0" constraints="0" exp_strength="0" field="timelbl3" notnull_strength="0"/>
+        <constraint unique_strength="0" constraints="0" exp_strength="0" field="place" notnull_strength="0"/>
+        <constraint unique_strength="0" constraints="0" exp_strength="0" field="model_output.obsID" notnull_strength="0"/>
+        <constraint unique_strength="0" constraints="0" exp_strength="0" field="SA3" notnull_strength="0"/>
+        <constraint unique_strength="0" constraints="0" exp_strength="0" field="SA8" notnull_strength="0"/>
+        <constraint unique_strength="0" constraints="0" exp_strength="0" field="behaviour.obsID" notnull_strength="0"/>
+        <constraint unique_strength="0" constraints="0" exp_strength="0" field="OB3" notnull_strength="0"/>
+        <constraint unique_strength="0" constraints="0" exp_strength="0" field="OB8" notnull_strength="0"/>
+        <constraint unique_strength="0" constraints="0" exp_strength="0" field="OB16" notnull_strength="0"/>
+        <constraint unique_strength="0" constraints="0" exp_strength="0" field="date_time2" notnull_strength="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint exp="" desc="" field="fid"/>
+        <constraint exp="" desc="" field="gps.obsID"/>
+        <constraint exp="" desc="" field="birdID"/>
+        <constraint exp="" desc="" field="date_time"/>
+        <constraint exp="" desc="" field="latitude"/>
+        <constraint exp="" desc="" field="longitude"/>
+        <constraint exp="" desc="" field="speed"/>
+        <constraint exp="" desc="" field="habitat.obsID"/>
+        <constraint exp="" desc="" field="timelbl2"/>
+        <constraint exp="" desc="" field="timelbl3"/>
+        <constraint exp="" desc="" field="place"/>
+        <constraint exp="" desc="" field="model_output.obsID"/>
+        <constraint exp="" desc="" field="SA3"/>
+        <constraint exp="" desc="" field="SA8"/>
+        <constraint exp="" desc="" field="behaviour.obsID"/>
+        <constraint exp="" desc="" field="OB3"/>
+        <constraint exp="" desc="" field="OB8"/>
+        <constraint exp="" desc="" field="OB16"/>
+        <constraint exp="" desc="" field="date_time2"/>
+      </constraintExpressions>
+      <attributeactions>
+        <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
+      </attributeactions>
+      <attributetableconfig sortOrder="0" actionWidgetStyle="dropDown" sortExpression="">
+        <columns>
+          <column name="fid" hidden="0" width="-1" type="field"/>
+          <column name="gps.obsID" hidden="0" width="-1" type="field"/>
+          <column name="birdID" hidden="0" width="-1" type="field"/>
+          <column name="date_time" hidden="0" width="-1" type="field"/>
+          <column name="latitude" hidden="0" width="-1" type="field"/>
+          <column name="longitude" hidden="0" width="-1" type="field"/>
+          <column name="speed" hidden="0" width="-1" type="field"/>
+          <column name="habitat.obsID" hidden="0" width="-1" type="field"/>
+          <column name="timelbl2" hidden="0" width="-1" type="field"/>
+          <column name="timelbl3" hidden="0" width="-1" type="field"/>
+          <column name="place" hidden="0" width="-1" type="field"/>
+          <column name="model_output.obsID" hidden="0" width="-1" type="field"/>
+          <column name="SA3" hidden="0" width="-1" type="field"/>
+          <column name="SA8" hidden="0" width="-1" type="field"/>
+          <column name="behaviour.obsID" hidden="0" width="-1" type="field"/>
+          <column name="OB3" hidden="0" width="-1" type="field"/>
+          <column name="OB8" hidden="0" width="-1" type="field"/>
+          <column name="OB16" hidden="0" width="-1" type="field"/>
+          <column name="date_time2" hidden="0" width="-1" type="field"/>
+          <column hidden="1" width="-1" type="actions"/>
+        </columns>
+      </attributetableconfig>
+      <editform></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+QGIS forms can have a Python function that is called when the form is
+opened.
+
+Use this function to add extra logic to your forms.
+
+Enter the name of the function in the "Python Init function"
+field.
+An example follows:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+	geom = feature.geometry()
+	control = dialog.findChild(QWidget, "MyLineEdit")
+]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable>
+        <field editable="1" name="OB16"/>
+        <field editable="1" name="OB3"/>
+        <field editable="1" name="OB8"/>
+        <field editable="1" name="SA3"/>
+        <field editable="1" name="SA8"/>
+        <field editable="1" name="behaviour.obsID"/>
+        <field editable="1" name="birdID"/>
+        <field editable="1" name="date_time"/>
+        <field editable="0" name="date_time2"/>
+        <field editable="1" name="fid"/>
+        <field editable="1" name="gps.obsID"/>
+        <field editable="1" name="habitat.obsID"/>
+        <field editable="1" name="latitude"/>
+        <field editable="1" name="longitude"/>
+        <field editable="1" name="model_output.obsID"/>
+        <field editable="1" name="place"/>
+        <field editable="1" name="speed"/>
+        <field editable="1" name="timelbl2"/>
+        <field editable="1" name="timelbl3"/>
+      </editable>
+      <labelOnTop>
+        <field name="OB16" labelOnTop="0"/>
+        <field name="OB3" labelOnTop="0"/>
+        <field name="OB8" labelOnTop="0"/>
+        <field name="SA3" labelOnTop="0"/>
+        <field name="SA8" labelOnTop="0"/>
+        <field name="behaviour.obsID" labelOnTop="0"/>
+        <field name="birdID" labelOnTop="0"/>
+        <field name="date_time" labelOnTop="0"/>
+        <field name="date_time2" labelOnTop="0"/>
+        <field name="fid" labelOnTop="0"/>
+        <field name="gps.obsID" labelOnTop="0"/>
+        <field name="habitat.obsID" labelOnTop="0"/>
+        <field name="latitude" labelOnTop="0"/>
+        <field name="longitude" labelOnTop="0"/>
+        <field name="model_output.obsID" labelOnTop="0"/>
+        <field name="place" labelOnTop="0"/>
+        <field name="speed" labelOnTop="0"/>
+        <field name="timelbl2" labelOnTop="0"/>
+        <field name="timelbl3" labelOnTop="0"/>
+      </labelOnTop>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <expressionfields>
+        <field subType="0" precision="3" comment="" length="0" name="date_time2" expression="CASE WHEN length(date_time) = 15&#xd;&#xa; THEN replace(date_time,' ',' 0')&#xd;&#xa; ELSE date_time&#xd;&#xa;END" typeName="datetime" type="16"/>
+      </expressionfields>
+      <previewExpression>fid</previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+    <maplayer refreshOnNotifyEnabled="0" readOnly="0" autoRefreshEnabled="0" geometry="Point" simplifyDrawingHints="0" refreshOnNotifyMessage="" simplifyDrawingTol="1" simplifyLocal="1" simplifyAlgorithm="0" minScale="1e+8" hasScaleBasedVisibilityFlag="0" maxScale="0" autoRefreshTime="0" type="vector" simplifyMaxScale="1" labelsEnabled="0">
+      <extent>
+        <xmin>6.20148220000000006</xmin>
+        <ymin>53.43809180000000225</ymin>
+        <xmax>6.26677149999999994</xmax>
+        <ymax>53.48051699999999897</ymax>
+      </extent>
+      <id>All_data_49090a5e_0a20_4515_988a_72c53c0533a7</id>
+      <datasource>../../University/Visualisation/OysterCatcher/All data.gpkg|layername=All data|subset="birdID" = '169'</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>All data bird 169</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+          <srsid>3452</srsid>
+          <srid>4326</srid>
+          <authid>EPSG:4326</authid>
+          <description>WGS 84</description>
+          <projectionacronym>longlat</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type></type>
+        <title></title>
+        <abstract></abstract>
+        <contact>
+          <name></name>
+          <organization></organization>
+          <position></position>
+          <voice></voice>
+          <fax></fax>
+          <email></email>
+          <role></role>
+        </contact>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent>
+          <spatial miny="0" maxy="0" dimensions="2" maxx="0" minx="0" maxz="0" minz="0" crs=""/>
+          <temporal>
+            <period>
+              <start></start>
+              <end></end>
+            </period>
+          </temporal>
+        </extent>
+      </resourceMetadata>
+      <provider encoding="UTF-8">ogr</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <legend type="default-vector"/>
+      <expressionfields>
+        <field subType="0" precision="3" comment="" length="0" name="date_time2" expression="CASE WHEN length(date_time) = 15&#xd;&#xa; THEN replace(date_time,' ',' 0')&#xd;&#xa; ELSE date_time&#xd;&#xa;END" typeName="datetime" type="16"/>
+      </expressionfields>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <renderer-v2 weight_expression="" max_value="100" radius_unit="0" enableorderby="0" radius="20" radius_map_unit_scale="3x:0,0,0,0,0,0" forceraster="0" quality="4" type="heatmapRenderer">
+        <colorramp name="[source]" type="gradient">
+          <prop v="247,252,245,0" k="color1"/>
+          <prop v="204,20,0,255" k="color2"/>
+          <prop v="0" k="discrete"/>
+          <prop v="gradient" k="rampType"/>
+        </colorramp>
+      </renderer-v2>
+      <customproperties>
+        <property key="dualview/previewExpressions">
+          <value>fid</value>
+        </property>
+        <property value="0" key="embeddedWidgets/count"/>
+        <property key="variableNames"/>
+        <property key="variableValues"/>
+      </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerOpacity>1</layerOpacity>
+      <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
+        <DiagramCategory height="15" enabled="0" penColor="#000000" penAlpha="255" lineSizeType="MM" scaleBasedVisibility="0" rotationOffset="270" diagramOrientation="Up" scaleDependency="Area" sizeScale="3x:0,0,0,0,0,0" sizeType="MM" opacity="1" width="15" barWidth="5" backgroundAlpha="255" backgroundColor="#ffffff" minScaleDenominator="0" maxScaleDenominator="1e+8" labelPlacementMethod="XHeight" lineSizeScale="3x:0,0,0,0,0,0" penWidth="0" minimumSize="0">
+          <fontProperties style="" description="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0"/>
+          <attribute label="" color="#000000" field=""/>
+        </DiagramCategory>
+      </SingleCategoryDiagramRenderer>
+      <DiagramLayerSettings showAll="1" priority="0" dist="0" obstacle="0" placement="0" linePlacementFlags="18" zIndex="0">
+        <properties>
+          <Option type="Map">
+            <Option value="" name="name" type="QString"/>
+            <Option name="properties"/>
+            <Option value="collection" name="type" type="QString"/>
+          </Option>
+        </properties>
+      </DiagramLayerSettings>
+      <fieldConfiguration>
+        <field name="fid">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="gps.obsID">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="birdID">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="date_time">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="latitude">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="longitude">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="speed">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="habitat.obsID">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="timelbl2">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="timelbl3">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="place">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="model_output.obsID">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="SA3">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="SA8">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="behaviour.obsID">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="OB3">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="OB8">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="OB16">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="date_time2">
+          <editWidget type="DateTime">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias index="0" name="" field="fid"/>
+        <alias index="1" name="" field="gps.obsID"/>
+        <alias index="2" name="" field="birdID"/>
+        <alias index="3" name="" field="date_time"/>
+        <alias index="4" name="" field="latitude"/>
+        <alias index="5" name="" field="longitude"/>
+        <alias index="6" name="" field="speed"/>
+        <alias index="7" name="" field="habitat.obsID"/>
+        <alias index="8" name="" field="timelbl2"/>
+        <alias index="9" name="" field="timelbl3"/>
+        <alias index="10" name="" field="place"/>
+        <alias index="11" name="" field="model_output.obsID"/>
+        <alias index="12" name="" field="SA3"/>
+        <alias index="13" name="" field="SA8"/>
+        <alias index="14" name="" field="behaviour.obsID"/>
+        <alias index="15" name="" field="OB3"/>
+        <alias index="16" name="" field="OB8"/>
+        <alias index="17" name="" field="OB16"/>
+        <alias index="18" name="" field="date_time2"/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <defaults>
+        <default expression="" field="fid" applyOnUpdate="0"/>
+        <default expression="" field="gps.obsID" applyOnUpdate="0"/>
+        <default expression="" field="birdID" applyOnUpdate="0"/>
+        <default expression="" field="date_time" applyOnUpdate="0"/>
+        <default expression="" field="latitude" applyOnUpdate="0"/>
+        <default expression="" field="longitude" applyOnUpdate="0"/>
+        <default expression="" field="speed" applyOnUpdate="0"/>
+        <default expression="" field="habitat.obsID" applyOnUpdate="0"/>
+        <default expression="" field="timelbl2" applyOnUpdate="0"/>
+        <default expression="" field="timelbl3" applyOnUpdate="0"/>
+        <default expression="" field="place" applyOnUpdate="0"/>
+        <default expression="" field="model_output.obsID" applyOnUpdate="0"/>
+        <default expression="" field="SA3" applyOnUpdate="0"/>
+        <default expression="" field="SA8" applyOnUpdate="0"/>
+        <default expression="" field="behaviour.obsID" applyOnUpdate="0"/>
+        <default expression="" field="OB3" applyOnUpdate="0"/>
+        <default expression="" field="OB8" applyOnUpdate="0"/>
+        <default expression="" field="OB16" applyOnUpdate="0"/>
+        <default expression="" field="date_time2" applyOnUpdate="0"/>
+      </defaults>
+      <constraints>
+        <constraint unique_strength="1" constraints="3" exp_strength="0" field="fid" notnull_strength="1"/>
+        <constraint unique_strength="0" constraints="0" exp_strength="0" field="gps.obsID" notnull_strength="0"/>
+        <constraint unique_strength="0" constraints="0" exp_strength="0" field="birdID" notnull_strength="0"/>
+        <constraint unique_strength="0" constraints="0" exp_strength="0" field="date_time" notnull_strength="0"/>
+        <constraint unique_strength="0" constraints="0" exp_strength="0" field="latitude" notnull_strength="0"/>
+        <constraint unique_strength="0" constraints="0" exp_strength="0" field="longitude" notnull_strength="0"/>
+        <constraint unique_strength="0" constraints="0" exp_strength="0" field="speed" notnull_strength="0"/>
+        <constraint unique_strength="0" constraints="0" exp_strength="0" field="habitat.obsID" notnull_strength="0"/>
+        <constraint unique_strength="0" constraints="0" exp_strength="0" field="timelbl2" notnull_strength="0"/>
+        <constraint unique_strength="0" constraints="0" exp_strength="0" field="timelbl3" notnull_strength="0"/>
+        <constraint unique_strength="0" constraints="0" exp_strength="0" field="place" notnull_strength="0"/>
+        <constraint unique_strength="0" constraints="0" exp_strength="0" field="model_output.obsID" notnull_strength="0"/>
+        <constraint unique_strength="0" constraints="0" exp_strength="0" field="SA3" notnull_strength="0"/>
+        <constraint unique_strength="0" constraints="0" exp_strength="0" field="SA8" notnull_strength="0"/>
+        <constraint unique_strength="0" constraints="0" exp_strength="0" field="behaviour.obsID" notnull_strength="0"/>
+        <constraint unique_strength="0" constraints="0" exp_strength="0" field="OB3" notnull_strength="0"/>
+        <constraint unique_strength="0" constraints="0" exp_strength="0" field="OB8" notnull_strength="0"/>
+        <constraint unique_strength="0" constraints="0" exp_strength="0" field="OB16" notnull_strength="0"/>
+        <constraint unique_strength="0" constraints="0" exp_strength="0" field="date_time2" notnull_strength="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint exp="" desc="" field="fid"/>
+        <constraint exp="" desc="" field="gps.obsID"/>
+        <constraint exp="" desc="" field="birdID"/>
+        <constraint exp="" desc="" field="date_time"/>
+        <constraint exp="" desc="" field="latitude"/>
+        <constraint exp="" desc="" field="longitude"/>
+        <constraint exp="" desc="" field="speed"/>
+        <constraint exp="" desc="" field="habitat.obsID"/>
+        <constraint exp="" desc="" field="timelbl2"/>
+        <constraint exp="" desc="" field="timelbl3"/>
+        <constraint exp="" desc="" field="place"/>
+        <constraint exp="" desc="" field="model_output.obsID"/>
+        <constraint exp="" desc="" field="SA3"/>
+        <constraint exp="" desc="" field="SA8"/>
+        <constraint exp="" desc="" field="behaviour.obsID"/>
+        <constraint exp="" desc="" field="OB3"/>
+        <constraint exp="" desc="" field="OB8"/>
+        <constraint exp="" desc="" field="OB16"/>
+        <constraint exp="" desc="" field="date_time2"/>
+      </constraintExpressions>
+      <attributeactions>
+        <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
+      </attributeactions>
+      <attributetableconfig sortOrder="0" actionWidgetStyle="dropDown" sortExpression="">
+        <columns>
+          <column name="fid" hidden="0" width="-1" type="field"/>
+          <column name="gps.obsID" hidden="0" width="-1" type="field"/>
+          <column name="birdID" hidden="0" width="-1" type="field"/>
+          <column name="date_time" hidden="0" width="-1" type="field"/>
+          <column name="latitude" hidden="0" width="-1" type="field"/>
+          <column name="longitude" hidden="0" width="-1" type="field"/>
+          <column name="speed" hidden="0" width="-1" type="field"/>
+          <column name="habitat.obsID" hidden="0" width="-1" type="field"/>
+          <column name="timelbl2" hidden="0" width="-1" type="field"/>
+          <column name="timelbl3" hidden="0" width="-1" type="field"/>
+          <column name="place" hidden="0" width="-1" type="field"/>
+          <column name="model_output.obsID" hidden="0" width="-1" type="field"/>
+          <column name="SA3" hidden="0" width="-1" type="field"/>
+          <column name="SA8" hidden="0" width="-1" type="field"/>
+          <column name="behaviour.obsID" hidden="0" width="-1" type="field"/>
+          <column name="OB3" hidden="0" width="-1" type="field"/>
+          <column name="OB8" hidden="0" width="-1" type="field"/>
+          <column name="OB16" hidden="0" width="-1" type="field"/>
+          <column name="date_time2" hidden="0" width="-1" type="field"/>
+          <column hidden="1" width="-1" type="actions"/>
+        </columns>
+      </attributetableconfig>
+      <editform></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+QGIS forms can have a Python function that is called when the form is
+opened.
+
+Use this function to add extra logic to your forms.
+
+Enter the name of the function in the "Python Init function"
+field.
+An example follows:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+	geom = feature.geometry()
+	control = dialog.findChild(QWidget, "MyLineEdit")
+]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable>
+        <field editable="1" name="OB16"/>
+        <field editable="1" name="OB3"/>
+        <field editable="1" name="OB8"/>
+        <field editable="1" name="SA3"/>
+        <field editable="1" name="SA8"/>
+        <field editable="1" name="behaviour.obsID"/>
+        <field editable="1" name="birdID"/>
+        <field editable="1" name="date_time"/>
+        <field editable="0" name="date_time2"/>
+        <field editable="1" name="fid"/>
+        <field editable="1" name="gps.obsID"/>
+        <field editable="1" name="habitat.obsID"/>
+        <field editable="1" name="latitude"/>
+        <field editable="1" name="longitude"/>
+        <field editable="1" name="model_output.obsID"/>
+        <field editable="1" name="place"/>
+        <field editable="1" name="speed"/>
+        <field editable="1" name="timelbl2"/>
+        <field editable="1" name="timelbl3"/>
+      </editable>
+      <labelOnTop>
+        <field name="OB16" labelOnTop="0"/>
+        <field name="OB3" labelOnTop="0"/>
+        <field name="OB8" labelOnTop="0"/>
+        <field name="SA3" labelOnTop="0"/>
+        <field name="SA8" labelOnTop="0"/>
+        <field name="behaviour.obsID" labelOnTop="0"/>
+        <field name="birdID" labelOnTop="0"/>
+        <field name="date_time" labelOnTop="0"/>
+        <field name="date_time2" labelOnTop="0"/>
+        <field name="fid" labelOnTop="0"/>
+        <field name="gps.obsID" labelOnTop="0"/>
+        <field name="habitat.obsID" labelOnTop="0"/>
+        <field name="latitude" labelOnTop="0"/>
+        <field name="longitude" labelOnTop="0"/>
+        <field name="model_output.obsID" labelOnTop="0"/>
+        <field name="place" labelOnTop="0"/>
+        <field name="speed" labelOnTop="0"/>
+        <field name="timelbl2" labelOnTop="0"/>
+        <field name="timelbl3" labelOnTop="0"/>
+      </labelOnTop>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <expressionfields>
+        <field subType="0" precision="3" comment="" length="0" name="date_time2" expression="CASE WHEN length(date_time) = 15&#xd;&#xa; THEN replace(date_time,' ',' 0')&#xd;&#xa; ELSE date_time&#xd;&#xa;END" typeName="datetime" type="16"/>
+      </expressionfields>
+      <previewExpression>fid</previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+    <maplayer refreshOnNotifyEnabled="0" readOnly="0" autoRefreshEnabled="0" geometry="Point" simplifyDrawingHints="0" refreshOnNotifyMessage="" simplifyDrawingTol="1" simplifyLocal="1" simplifyAlgorithm="0" minScale="1e+8" hasScaleBasedVisibilityFlag="0" maxScale="0" autoRefreshTime="0" type="vector" simplifyMaxScale="1" labelsEnabled="0">
+      <extent>
+        <xmin>6.20891730000000042</xmin>
+        <ymin>53.46780270000000002</ymin>
+        <xmax>6.26298530000000042</xmax>
+        <ymax>53.48011819999999972</ymax>
+      </extent>
+      <id>All_data_98568c72_a3e1_49c5_8386_b885824102de</id>
+      <datasource>../../University/Visualisation/OysterCatcher/All data.gpkg|layername=All data|subset="birdID"='167'</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>All data bird 167</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+          <srsid>3452</srsid>
+          <srid>4326</srid>
+          <authid>EPSG:4326</authid>
+          <description>WGS 84</description>
+          <projectionacronym>longlat</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type></type>
+        <title></title>
+        <abstract></abstract>
+        <contact>
+          <name></name>
+          <organization></organization>
+          <position></position>
+          <voice></voice>
+          <fax></fax>
+          <email></email>
+          <role></role>
+        </contact>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent>
+          <spatial miny="0" maxy="0" dimensions="2" maxx="0" minx="0" maxz="0" minz="0" crs=""/>
+          <temporal>
+            <period>
+              <start></start>
+              <end></end>
+            </period>
+          </temporal>
+        </extent>
+      </resourceMetadata>
+      <provider encoding="UTF-8">ogr</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <legend type="default-vector"/>
+      <expressionfields>
+        <field subType="0" precision="3" comment="" length="0" name="date_time2" expression="CASE WHEN length(date_time) = 15&#xd;&#xa; THEN replace(date_time,' ',' 0')&#xd;&#xa; ELSE date_time&#xd;&#xa;END" typeName="datetime" type="16"/>
+      </expressionfields>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <renderer-v2 weight_expression="" max_value="100" radius_unit="0" enableorderby="0" radius="20" radius_map_unit_scale="3x:0,0,0,0,0,0" forceraster="0" quality="4" type="heatmapRenderer">
+        <colorramp name="[source]" type="gradient">
+          <prop v="247,252,245,0" k="color1"/>
+          <prop v="27,0,204,255" k="color2"/>
+          <prop v="0" k="discrete"/>
+          <prop v="gradient" k="rampType"/>
+        </colorramp>
+      </renderer-v2>
+      <customproperties>
+        <property key="dualview/previewExpressions">
+          <value>fid</value>
+        </property>
+        <property value="0" key="embeddedWidgets/count"/>
+        <property key="variableNames"/>
+        <property key="variableValues"/>
+      </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerOpacity>1</layerOpacity>
+      <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
+        <DiagramCategory height="15" enabled="0" penColor="#000000" penAlpha="255" lineSizeType="MM" scaleBasedVisibility="0" rotationOffset="270" diagramOrientation="Up" scaleDependency="Area" sizeScale="3x:0,0,0,0,0,0" sizeType="MM" opacity="1" width="15" barWidth="5" backgroundAlpha="255" backgroundColor="#ffffff" minScaleDenominator="0" maxScaleDenominator="1e+8" labelPlacementMethod="XHeight" lineSizeScale="3x:0,0,0,0,0,0" penWidth="0" minimumSize="0">
+          <fontProperties style="" description="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0"/>
+          <attribute label="" color="#000000" field=""/>
+        </DiagramCategory>
+      </SingleCategoryDiagramRenderer>
+      <DiagramLayerSettings showAll="1" priority="0" dist="0" obstacle="0" placement="0" linePlacementFlags="18" zIndex="0">
+        <properties>
+          <Option type="Map">
+            <Option value="" name="name" type="QString"/>
+            <Option name="properties"/>
+            <Option value="collection" name="type" type="QString"/>
+          </Option>
+        </properties>
+      </DiagramLayerSettings>
+      <fieldConfiguration>
+        <field name="fid">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="gps.obsID">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="birdID">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="date_time">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="latitude">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="longitude">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="speed">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="habitat.obsID">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="timelbl2">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="timelbl3">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="place">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="model_output.obsID">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="SA3">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="SA8">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="behaviour.obsID">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="OB3">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="OB8">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="OB16">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="date_time2">
+          <editWidget type="DateTime">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias index="0" name="" field="fid"/>
+        <alias index="1" name="" field="gps.obsID"/>
+        <alias index="2" name="" field="birdID"/>
+        <alias index="3" name="" field="date_time"/>
+        <alias index="4" name="" field="latitude"/>
+        <alias index="5" name="" field="longitude"/>
+        <alias index="6" name="" field="speed"/>
+        <alias index="7" name="" field="habitat.obsID"/>
+        <alias index="8" name="" field="timelbl2"/>
+        <alias index="9" name="" field="timelbl3"/>
+        <alias index="10" name="" field="place"/>
+        <alias index="11" name="" field="model_output.obsID"/>
+        <alias index="12" name="" field="SA3"/>
+        <alias index="13" name="" field="SA8"/>
+        <alias index="14" name="" field="behaviour.obsID"/>
+        <alias index="15" name="" field="OB3"/>
+        <alias index="16" name="" field="OB8"/>
+        <alias index="17" name="" field="OB16"/>
+        <alias index="18" name="" field="date_time2"/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <defaults>
+        <default expression="" field="fid" applyOnUpdate="0"/>
+        <default expression="" field="gps.obsID" applyOnUpdate="0"/>
+        <default expression="" field="birdID" applyOnUpdate="0"/>
+        <default expression="" field="date_time" applyOnUpdate="0"/>
+        <default expression="" field="latitude" applyOnUpdate="0"/>
+        <default expression="" field="longitude" applyOnUpdate="0"/>
+        <default expression="" field="speed" applyOnUpdate="0"/>
+        <default expression="" field="habitat.obsID" applyOnUpdate="0"/>
+        <default expression="" field="timelbl2" applyOnUpdate="0"/>
+        <default expression="" field="timelbl3" applyOnUpdate="0"/>
+        <default expression="" field="place" applyOnUpdate="0"/>
+        <default expression="" field="model_output.obsID" applyOnUpdate="0"/>
+        <default expression="" field="SA3" applyOnUpdate="0"/>
+        <default expression="" field="SA8" applyOnUpdate="0"/>
+        <default expression="" field="behaviour.obsID" applyOnUpdate="0"/>
+        <default expression="" field="OB3" applyOnUpdate="0"/>
+        <default expression="" field="OB8" applyOnUpdate="0"/>
+        <default expression="" field="OB16" applyOnUpdate="0"/>
+        <default expression="" field="date_time2" applyOnUpdate="0"/>
+      </defaults>
+      <constraints>
+        <constraint unique_strength="1" constraints="3" exp_strength="0" field="fid" notnull_strength="1"/>
+        <constraint unique_strength="0" constraints="0" exp_strength="0" field="gps.obsID" notnull_strength="0"/>
+        <constraint unique_strength="0" constraints="0" exp_strength="0" field="birdID" notnull_strength="0"/>
+        <constraint unique_strength="0" constraints="0" exp_strength="0" field="date_time" notnull_strength="0"/>
+        <constraint unique_strength="0" constraints="0" exp_strength="0" field="latitude" notnull_strength="0"/>
+        <constraint unique_strength="0" constraints="0" exp_strength="0" field="longitude" notnull_strength="0"/>
+        <constraint unique_strength="0" constraints="0" exp_strength="0" field="speed" notnull_strength="0"/>
+        <constraint unique_strength="0" constraints="0" exp_strength="0" field="habitat.obsID" notnull_strength="0"/>
+        <constraint unique_strength="0" constraints="0" exp_strength="0" field="timelbl2" notnull_strength="0"/>
+        <constraint unique_strength="0" constraints="0" exp_strength="0" field="timelbl3" notnull_strength="0"/>
+        <constraint unique_strength="0" constraints="0" exp_strength="0" field="place" notnull_strength="0"/>
+        <constraint unique_strength="0" constraints="0" exp_strength="0" field="model_output.obsID" notnull_strength="0"/>
+        <constraint unique_strength="0" constraints="0" exp_strength="0" field="SA3" notnull_strength="0"/>
+        <constraint unique_strength="0" constraints="0" exp_strength="0" field="SA8" notnull_strength="0"/>
+        <constraint unique_strength="0" constraints="0" exp_strength="0" field="behaviour.obsID" notnull_strength="0"/>
+        <constraint unique_strength="0" constraints="0" exp_strength="0" field="OB3" notnull_strength="0"/>
+        <constraint unique_strength="0" constraints="0" exp_strength="0" field="OB8" notnull_strength="0"/>
+        <constraint unique_strength="0" constraints="0" exp_strength="0" field="OB16" notnull_strength="0"/>
+        <constraint unique_strength="0" constraints="0" exp_strength="0" field="date_time2" notnull_strength="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint exp="" desc="" field="fid"/>
+        <constraint exp="" desc="" field="gps.obsID"/>
+        <constraint exp="" desc="" field="birdID"/>
+        <constraint exp="" desc="" field="date_time"/>
+        <constraint exp="" desc="" field="latitude"/>
+        <constraint exp="" desc="" field="longitude"/>
+        <constraint exp="" desc="" field="speed"/>
+        <constraint exp="" desc="" field="habitat.obsID"/>
+        <constraint exp="" desc="" field="timelbl2"/>
+        <constraint exp="" desc="" field="timelbl3"/>
+        <constraint exp="" desc="" field="place"/>
+        <constraint exp="" desc="" field="model_output.obsID"/>
+        <constraint exp="" desc="" field="SA3"/>
+        <constraint exp="" desc="" field="SA8"/>
+        <constraint exp="" desc="" field="behaviour.obsID"/>
+        <constraint exp="" desc="" field="OB3"/>
+        <constraint exp="" desc="" field="OB8"/>
+        <constraint exp="" desc="" field="OB16"/>
+        <constraint exp="" desc="" field="date_time2"/>
+      </constraintExpressions>
+      <attributeactions>
+        <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
+      </attributeactions>
+      <attributetableconfig sortOrder="0" actionWidgetStyle="dropDown" sortExpression="">
+        <columns>
+          <column name="fid" hidden="0" width="-1" type="field"/>
+          <column name="gps.obsID" hidden="0" width="-1" type="field"/>
+          <column name="birdID" hidden="0" width="-1" type="field"/>
+          <column name="date_time" hidden="0" width="-1" type="field"/>
+          <column name="latitude" hidden="0" width="-1" type="field"/>
+          <column name="longitude" hidden="0" width="-1" type="field"/>
+          <column name="speed" hidden="0" width="-1" type="field"/>
+          <column name="habitat.obsID" hidden="0" width="-1" type="field"/>
+          <column name="timelbl2" hidden="0" width="-1" type="field"/>
+          <column name="timelbl3" hidden="0" width="-1" type="field"/>
+          <column name="place" hidden="0" width="-1" type="field"/>
+          <column name="model_output.obsID" hidden="0" width="-1" type="field"/>
+          <column name="SA3" hidden="0" width="-1" type="field"/>
+          <column name="SA8" hidden="0" width="-1" type="field"/>
+          <column name="behaviour.obsID" hidden="0" width="-1" type="field"/>
+          <column name="OB3" hidden="0" width="-1" type="field"/>
+          <column name="OB8" hidden="0" width="-1" type="field"/>
+          <column name="OB16" hidden="0" width="-1" type="field"/>
+          <column name="date_time2" hidden="0" width="-1" type="field"/>
+          <column hidden="1" width="-1" type="actions"/>
+        </columns>
+      </attributetableconfig>
+      <editform></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+QGIS forms can have a Python function that is called when the form is
+opened.
+
+Use this function to add extra logic to your forms.
+
+Enter the name of the function in the "Python Init function"
+field.
+An example follows:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+	geom = feature.geometry()
+	control = dialog.findChild(QWidget, "MyLineEdit")
+]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable>
+        <field editable="1" name="OB16"/>
+        <field editable="1" name="OB3"/>
+        <field editable="1" name="OB8"/>
+        <field editable="1" name="SA3"/>
+        <field editable="1" name="SA8"/>
+        <field editable="1" name="behaviour.obsID"/>
+        <field editable="1" name="birdID"/>
+        <field editable="1" name="date_time"/>
+        <field editable="0" name="date_time2"/>
+        <field editable="1" name="fid"/>
+        <field editable="1" name="gps.obsID"/>
+        <field editable="1" name="habitat.obsID"/>
+        <field editable="1" name="latitude"/>
+        <field editable="1" name="longitude"/>
+        <field editable="1" name="model_output.obsID"/>
+        <field editable="1" name="place"/>
+        <field editable="1" name="speed"/>
+        <field editable="1" name="timelbl2"/>
+        <field editable="1" name="timelbl3"/>
+      </editable>
+      <labelOnTop>
+        <field name="OB16" labelOnTop="0"/>
+        <field name="OB3" labelOnTop="0"/>
+        <field name="OB8" labelOnTop="0"/>
+        <field name="SA3" labelOnTop="0"/>
+        <field name="SA8" labelOnTop="0"/>
+        <field name="behaviour.obsID" labelOnTop="0"/>
+        <field name="birdID" labelOnTop="0"/>
+        <field name="date_time" labelOnTop="0"/>
+        <field name="date_time2" labelOnTop="0"/>
+        <field name="fid" labelOnTop="0"/>
+        <field name="gps.obsID" labelOnTop="0"/>
+        <field name="habitat.obsID" labelOnTop="0"/>
+        <field name="latitude" labelOnTop="0"/>
+        <field name="longitude" labelOnTop="0"/>
+        <field name="model_output.obsID" labelOnTop="0"/>
+        <field name="place" labelOnTop="0"/>
+        <field name="speed" labelOnTop="0"/>
+        <field name="timelbl2" labelOnTop="0"/>
+        <field name="timelbl3" labelOnTop="0"/>
+      </labelOnTop>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <expressionfields>
+        <field subType="0" precision="3" comment="" length="0" name="date_time2" expression="CASE WHEN length(date_time) = 15&#xd;&#xa; THEN replace(date_time,' ',' 0')&#xd;&#xa; ELSE date_time&#xd;&#xa;END" typeName="datetime" type="16"/>
+      </expressionfields>
+      <previewExpression>fid</previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+    <maplayer refreshOnNotifyEnabled="0" readOnly="0" autoRefreshEnabled="0" geometry="Point" simplifyDrawingHints="0" refreshOnNotifyMessage="" simplifyDrawingTol="1" simplifyLocal="1" simplifyAlgorithm="0" minScale="1e+8" hasScaleBasedVisibilityFlag="0" maxScale="0" autoRefreshTime="0" type="vector" simplifyMaxScale="1" labelsEnabled="0">
+      <extent>
+        <xmin>6.20030879974365234</xmin>
+        <ymin>53.43082046508789063</ymin>
+        <xmax>6.26677227020263583</xmax>
+        <ymax>53.48051834106445313</ymax>
+      </extent>
+      <id>All_data_bird_166_9eb277ce_feb4_4eaf_8c67_0d83299562a9</id>
+      <datasource>../../University/Visualisation/OysterCatcher/All data.gpkg|layername=All data</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>All data points</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+          <srsid>3452</srsid>
+          <srid>4326</srid>
+          <authid>EPSG:4326</authid>
+          <description>WGS 84</description>
+          <projectionacronym>longlat</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type></type>
+        <title></title>
+        <abstract></abstract>
+        <contact>
+          <name></name>
+          <organization></organization>
+          <position></position>
+          <voice></voice>
+          <fax></fax>
+          <email></email>
+          <role></role>
+        </contact>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent>
+          <spatial miny="0" maxy="0" dimensions="2" maxx="0" minx="0" maxz="0" minz="0" crs=""/>
+          <temporal>
+            <period>
+              <start></start>
+              <end></end>
+            </period>
+          </temporal>
+        </extent>
+      </resourceMetadata>
+      <provider encoding="UTF-8">ogr</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <legend type="default-vector"/>
+      <expressionfields>
+        <field subType="0" precision="3" comment="" length="0" name="date_time2" expression="CASE WHEN length(date_time) = 15&#xd;&#xa; THEN replace(date_time,' ',' 0')&#xd;&#xa; ELSE date_time&#xd;&#xa;END" typeName="datetime" type="16"/>
+      </expressionfields>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <renderer-v2 enableorderby="0" forceraster="0" symbollevels="0" type="singleSymbol">
+        <symbols>
+          <symbol alpha="1" name="0" clip_to_extent="1" type="marker">
+            <layer locked="0" enabled="1" class="SimpleMarker" pass="0">
+              <prop v="0" k="angle"/>
+              <prop v="0,0,0,255" k="color"/>
+              <prop v="1" k="horizontal_anchor_point"/>
+              <prop v="bevel" k="joinstyle"/>
+              <prop v="circle" k="name"/>
+              <prop v="0,0" k="offset"/>
+              <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+              <prop v="MM" k="offset_unit"/>
+              <prop v="35,35,35,255" k="outline_color"/>
+              <prop v="solid" k="outline_style"/>
+              <prop v="0" k="outline_width"/>
+              <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+              <prop v="MM" k="outline_width_unit"/>
+              <prop v="diameter" k="scale_method"/>
+              <prop v="0.4" k="size"/>
+              <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+              <prop v="MM" k="size_unit"/>
+              <prop v="1" k="vertical_anchor_point"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option value="" name="name" type="QString"/>
+                  <Option name="properties"/>
+                  <Option value="collection" name="type" type="QString"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale/>
+      </renderer-v2>
+      <customproperties>
+        <property key="dualview/previewExpressions">
+          <value>fid</value>
+        </property>
+        <property value="0" key="embeddedWidgets/count"/>
+        <property key="variableNames"/>
+        <property key="variableValues"/>
+      </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerOpacity>1</layerOpacity>
+      <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Histogram">
+        <DiagramCategory height="15" enabled="0" penColor="#000000" penAlpha="255" lineSizeType="MM" scaleBasedVisibility="0" rotationOffset="270" diagramOrientation="Up" scaleDependency="Area" sizeScale="3x:0,0,0,0,0,0" sizeType="MM" opacity="1" width="15" barWidth="5" backgroundAlpha="255" backgroundColor="#ffffff" minScaleDenominator="0" maxScaleDenominator="1e+8" labelPlacementMethod="XHeight" lineSizeScale="3x:0,0,0,0,0,0" penWidth="0" minimumSize="0">
+          <fontProperties style="" description="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0"/>
+          <attribute label="" color="#000000" field=""/>
+        </DiagramCategory>
+      </SingleCategoryDiagramRenderer>
+      <DiagramLayerSettings showAll="1" priority="0" dist="0" obstacle="0" placement="0" linePlacementFlags="18" zIndex="0">
+        <properties>
+          <Option type="Map">
+            <Option value="" name="name" type="QString"/>
+            <Option name="properties"/>
+            <Option value="collection" name="type" type="QString"/>
+          </Option>
+        </properties>
+      </DiagramLayerSettings>
+      <fieldConfiguration>
+        <field name="fid">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="gps.obsID">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="birdID">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="date_time">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="latitude">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="longitude">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="speed">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="habitat.obsID">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="timelbl2">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="timelbl3">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="place">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="model_output.obsID">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="SA3">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="SA8">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="behaviour.obsID">
+          <editWidget type="Range">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="OB3">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="OB8">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="OB16">
+          <editWidget type="TextEdit">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="date_time2">
+          <editWidget type="DateTime">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias index="0" name="" field="fid"/>
+        <alias index="1" name="" field="gps.obsID"/>
+        <alias index="2" name="" field="birdID"/>
+        <alias index="3" name="" field="date_time"/>
+        <alias index="4" name="" field="latitude"/>
+        <alias index="5" name="" field="longitude"/>
+        <alias index="6" name="" field="speed"/>
+        <alias index="7" name="" field="habitat.obsID"/>
+        <alias index="8" name="" field="timelbl2"/>
+        <alias index="9" name="" field="timelbl3"/>
+        <alias index="10" name="" field="place"/>
+        <alias index="11" name="" field="model_output.obsID"/>
+        <alias index="12" name="" field="SA3"/>
+        <alias index="13" name="" field="SA8"/>
+        <alias index="14" name="" field="behaviour.obsID"/>
+        <alias index="15" name="" field="OB3"/>
+        <alias index="16" name="" field="OB8"/>
+        <alias index="17" name="" field="OB16"/>
+        <alias index="18" name="" field="date_time2"/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <defaults>
+        <default expression="" field="fid" applyOnUpdate="0"/>
+        <default expression="" field="gps.obsID" applyOnUpdate="0"/>
+        <default expression="" field="birdID" applyOnUpdate="0"/>
+        <default expression="" field="date_time" applyOnUpdate="0"/>
+        <default expression="" field="latitude" applyOnUpdate="0"/>
+        <default expression="" field="longitude" applyOnUpdate="0"/>
+        <default expression="" field="speed" applyOnUpdate="0"/>
+        <default expression="" field="habitat.obsID" applyOnUpdate="0"/>
+        <default expression="" field="timelbl2" applyOnUpdate="0"/>
+        <default expression="" field="timelbl3" applyOnUpdate="0"/>
+        <default expression="" field="place" applyOnUpdate="0"/>
+        <default expression="" field="model_output.obsID" applyOnUpdate="0"/>
+        <default expression="" field="SA3" applyOnUpdate="0"/>
+        <default expression="" field="SA8" applyOnUpdate="0"/>
+        <default expression="" field="behaviour.obsID" applyOnUpdate="0"/>
+        <default expression="" field="OB3" applyOnUpdate="0"/>
+        <default expression="" field="OB8" applyOnUpdate="0"/>
+        <default expression="" field="OB16" applyOnUpdate="0"/>
+        <default expression="" field="date_time2" applyOnUpdate="0"/>
+      </defaults>
+      <constraints>
+        <constraint unique_strength="1" constraints="3" exp_strength="0" field="fid" notnull_strength="1"/>
+        <constraint unique_strength="0" constraints="0" exp_strength="0" field="gps.obsID" notnull_strength="0"/>
+        <constraint unique_strength="0" constraints="0" exp_strength="0" field="birdID" notnull_strength="0"/>
+        <constraint unique_strength="0" constraints="0" exp_strength="0" field="date_time" notnull_strength="0"/>
+        <constraint unique_strength="0" constraints="0" exp_strength="0" field="latitude" notnull_strength="0"/>
+        <constraint unique_strength="0" constraints="0" exp_strength="0" field="longitude" notnull_strength="0"/>
+        <constraint unique_strength="0" constraints="0" exp_strength="0" field="speed" notnull_strength="0"/>
+        <constraint unique_strength="0" constraints="0" exp_strength="0" field="habitat.obsID" notnull_strength="0"/>
+        <constraint unique_strength="0" constraints="0" exp_strength="0" field="timelbl2" notnull_strength="0"/>
+        <constraint unique_strength="0" constraints="0" exp_strength="0" field="timelbl3" notnull_strength="0"/>
+        <constraint unique_strength="0" constraints="0" exp_strength="0" field="place" notnull_strength="0"/>
+        <constraint unique_strength="0" constraints="0" exp_strength="0" field="model_output.obsID" notnull_strength="0"/>
+        <constraint unique_strength="0" constraints="0" exp_strength="0" field="SA3" notnull_strength="0"/>
+        <constraint unique_strength="0" constraints="0" exp_strength="0" field="SA8" notnull_strength="0"/>
+        <constraint unique_strength="0" constraints="0" exp_strength="0" field="behaviour.obsID" notnull_strength="0"/>
+        <constraint unique_strength="0" constraints="0" exp_strength="0" field="OB3" notnull_strength="0"/>
+        <constraint unique_strength="0" constraints="0" exp_strength="0" field="OB8" notnull_strength="0"/>
+        <constraint unique_strength="0" constraints="0" exp_strength="0" field="OB16" notnull_strength="0"/>
+        <constraint unique_strength="0" constraints="0" exp_strength="0" field="date_time2" notnull_strength="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint exp="" desc="" field="fid"/>
+        <constraint exp="" desc="" field="gps.obsID"/>
+        <constraint exp="" desc="" field="birdID"/>
+        <constraint exp="" desc="" field="date_time"/>
+        <constraint exp="" desc="" field="latitude"/>
+        <constraint exp="" desc="" field="longitude"/>
+        <constraint exp="" desc="" field="speed"/>
+        <constraint exp="" desc="" field="habitat.obsID"/>
+        <constraint exp="" desc="" field="timelbl2"/>
+        <constraint exp="" desc="" field="timelbl3"/>
+        <constraint exp="" desc="" field="place"/>
+        <constraint exp="" desc="" field="model_output.obsID"/>
+        <constraint exp="" desc="" field="SA3"/>
+        <constraint exp="" desc="" field="SA8"/>
+        <constraint exp="" desc="" field="behaviour.obsID"/>
+        <constraint exp="" desc="" field="OB3"/>
+        <constraint exp="" desc="" field="OB8"/>
+        <constraint exp="" desc="" field="OB16"/>
+        <constraint exp="" desc="" field="date_time2"/>
+      </constraintExpressions>
+      <attributeactions>
+        <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
+      </attributeactions>
+      <attributetableconfig sortOrder="0" actionWidgetStyle="dropDown" sortExpression="">
+        <columns>
+          <column name="fid" hidden="0" width="-1" type="field"/>
+          <column name="gps.obsID" hidden="0" width="-1" type="field"/>
+          <column name="birdID" hidden="0" width="-1" type="field"/>
+          <column name="date_time" hidden="0" width="-1" type="field"/>
+          <column name="latitude" hidden="0" width="-1" type="field"/>
+          <column name="longitude" hidden="0" width="-1" type="field"/>
+          <column name="speed" hidden="0" width="-1" type="field"/>
+          <column name="habitat.obsID" hidden="0" width="-1" type="field"/>
+          <column name="timelbl2" hidden="0" width="-1" type="field"/>
+          <column name="timelbl3" hidden="0" width="-1" type="field"/>
+          <column name="place" hidden="0" width="-1" type="field"/>
+          <column name="model_output.obsID" hidden="0" width="-1" type="field"/>
+          <column name="SA3" hidden="0" width="-1" type="field"/>
+          <column name="SA8" hidden="0" width="-1" type="field"/>
+          <column name="behaviour.obsID" hidden="0" width="-1" type="field"/>
+          <column name="OB3" hidden="0" width="-1" type="field"/>
+          <column name="OB8" hidden="0" width="-1" type="field"/>
+          <column name="OB16" hidden="0" width="-1" type="field"/>
+          <column name="date_time2" hidden="0" width="-1" type="field"/>
+          <column hidden="1" width="-1" type="actions"/>
+        </columns>
+      </attributetableconfig>
+      <editform></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+QGIS forms can have a Python function that is called when the form is
+opened.
+
+Use this function to add extra logic to your forms.
+
+Enter the name of the function in the "Python Init function"
+field.
+An example follows:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+	geom = feature.geometry()
+	control = dialog.findChild(QWidget, "MyLineEdit")
+]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable>
+        <field editable="1" name="OB16"/>
+        <field editable="1" name="OB3"/>
+        <field editable="1" name="OB8"/>
+        <field editable="1" name="SA3"/>
+        <field editable="1" name="SA8"/>
+        <field editable="1" name="behaviour.obsID"/>
+        <field editable="1" name="birdID"/>
+        <field editable="1" name="date_time"/>
+        <field editable="0" name="date_time2"/>
+        <field editable="1" name="fid"/>
+        <field editable="1" name="gps.obsID"/>
+        <field editable="1" name="habitat.obsID"/>
+        <field editable="1" name="latitude"/>
+        <field editable="1" name="longitude"/>
+        <field editable="1" name="model_output.obsID"/>
+        <field editable="1" name="place"/>
+        <field editable="1" name="speed"/>
+        <field editable="1" name="timelbl2"/>
+        <field editable="1" name="timelbl3"/>
+      </editable>
+      <labelOnTop>
+        <field name="OB16" labelOnTop="0"/>
+        <field name="OB3" labelOnTop="0"/>
+        <field name="OB8" labelOnTop="0"/>
+        <field name="SA3" labelOnTop="0"/>
+        <field name="SA8" labelOnTop="0"/>
+        <field name="behaviour.obsID" labelOnTop="0"/>
+        <field name="birdID" labelOnTop="0"/>
+        <field name="date_time" labelOnTop="0"/>
+        <field name="date_time2" labelOnTop="0"/>
+        <field name="fid" labelOnTop="0"/>
+        <field name="gps.obsID" labelOnTop="0"/>
+        <field name="habitat.obsID" labelOnTop="0"/>
+        <field name="latitude" labelOnTop="0"/>
+        <field name="longitude" labelOnTop="0"/>
+        <field name="model_output.obsID" labelOnTop="0"/>
+        <field name="place" labelOnTop="0"/>
+        <field name="speed" labelOnTop="0"/>
+        <field name="timelbl2" labelOnTop="0"/>
+        <field name="timelbl3" labelOnTop="0"/>
+      </labelOnTop>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <expressionfields>
+        <field subType="0" precision="3" comment="" length="0" name="date_time2" expression="CASE WHEN length(date_time) = 15&#xd;&#xa; THEN replace(date_time,' ',' 0')&#xd;&#xa; ELSE date_time&#xd;&#xa;END" typeName="datetime" type="16"/>
+      </expressionfields>
+      <previewExpression>fid</previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
+    <maplayer refreshOnNotifyEnabled="0" autoRefreshEnabled="0" refreshOnNotifyMessage="" minScale="1e+8" hasScaleBasedVisibilityFlag="0" maxScale="0" autoRefreshTime="0" type="raster">
+      <extent>
+        <xmin>-20037508.34278924390673637</xmin>
+        <ymin>-20037508.34278925508260727</ymin>
+        <xmax>20037508.34278924390673637</xmax>
+        <ymax>20037508.34278924390673637</ymax>
+      </extent>
+      <id>OSM_Standard_43fe4697_7ce1_4cf6_a461_4af4c75194df</id>
+      <datasource>type=xyz&amp;zmin=0&amp;zmax=19&amp;url=http://tile.openstreetmap.org/{z}/{x}/{y}.png</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <attribution href="https://www.openstreetmap.org/copyright">© OpenStreetMap contributors, CC-BY-SA</attribution>
+      <layername>OSM Standard</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs</proj4>
+          <srsid>3857</srsid>
+          <srid>3857</srid>
+          <authid>EPSG:3857</authid>
+          <description>WGS 84 / Pseudo-Mercator</description>
+          <projectionacronym>merc</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type></type>
+        <title></title>
+        <abstract></abstract>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent/>
+      </resourceMetadata>
+      <customproperties>
+        <property value="Undefined" key="identify/format"/>
+      </customproperties>
+      <provider>wms</provider>
+      <noData>
+        <noDataList bandNo="1" useSrcNoData="0"/>
+      </noData>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <pipe>
+        <rasterrenderer band="1" type="singlebandcolordata" opacity="1" alphaBand="-1">
+          <rasterTransparency/>
+          <minMaxOrigin>
+            <limits>None</limits>
+            <extent>WholeRaster</extent>
+            <statAccuracy>Estimated</statAccuracy>
+            <cumulativeCutLower>0.02</cumulativeCutLower>
+            <cumulativeCutUpper>0.98</cumulativeCutUpper>
+            <stdDevFactor>2</stdDevFactor>
+          </minMaxOrigin>
+        </rasterrenderer>
+        <brightnesscontrast brightness="0" contrast="0"/>
+        <huesaturation colorizeStrength="100" colorizeBlue="128" colorizeOn="0" colorizeGreen="128" saturation="0" colorizeRed="255" grayscaleMode="0"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>0</blendMode>
+    </maplayer>
+  </projectlayers>
+  <layerorder>
+    <layer id="All_data_0e35be27_6c0d_449e_8d78_044fbf8dda21"/>
+    <layer id="OSM_Standard_43fe4697_7ce1_4cf6_a461_4af4c75194df"/>
+    <layer id="All_data_49090a5e_0a20_4515_988a_72c53c0533a7"/>
+    <layer id="All_data_98568c72_a3e1_49c5_8386_b885824102de"/>
+    <layer id="All_data_bird_166_9eb277ce_feb4_4eaf_8c67_0d83299562a9"/>
+  </layerorder>
+  <properties>
+    <Measure>
+      <Ellipsoid type="QString">WGS84</Ellipsoid>
+    </Measure>
+    <PAL>
+      <ShowingCandidates type="bool">false</ShowingCandidates>
+      <DrawRectOnly type="bool">false</DrawRectOnly>
+      <ShowingPartialsLabels type="bool">true</ShowingPartialsLabels>
+      <CandidatesLine type="int">50</CandidatesLine>
+      <ShowingAllLabels type="bool">false</ShowingAllLabels>
+      <CandidatesPoint type="int">16</CandidatesPoint>
+      <DrawOutlineLabels type="bool">true</DrawOutlineLabels>
+      <CandidatesPolygon type="int">30</CandidatesPolygon>
+      <SearchMethod type="int">0</SearchMethod>
+    </PAL>
+    <SpatialRefSys>
+      <ProjectionsEnabled type="int">1</ProjectionsEnabled>
+    </SpatialRefSys>
+    <Paths>
+      <Absolute type="bool">false</Absolute>
+    </Paths>
+    <Measurement>
+      <AreaUnits type="QString">m2</AreaUnits>
+      <DistanceUnits type="QString">meters</DistanceUnits>
+    </Measurement>
+    <Legend>
+      <filterByMap type="bool">false</filterByMap>
+    </Legend>
+    <Gui>
+      <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
+      <SelectionColorRedPart type="int">255</SelectionColorRedPart>
+      <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
+      <CanvasColorBluePart type="int">255</CanvasColorBluePart>
+      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
+      <CanvasColorRedPart type="int">255</CanvasColorRedPart>
+      <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
+    </Gui>
+    <PositionPrecision>
+      <Automatic type="bool">true</Automatic>
+      <DecimalPlaces type="int">2</DecimalPlaces>
+    </PositionPrecision>
+  </properties>
+  <visibility-presets/>
+  <transformContext/>
+  <projectMetadata>
+    <identifier></identifier>
+    <parentidentifier></parentidentifier>
+    <language></language>
+    <type></type>
+    <title></title>
+    <abstract></abstract>
+    <links/>
+    <author>Alan Thomas</author>
+    <creation>2018-09-18T10:24:25</creation>
+  </projectMetadata>
+  <Annotations/>
+  <Layouts/>
+</qgis>
