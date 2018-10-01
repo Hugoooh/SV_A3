@@ -13,7 +13,7 @@ Observation[] observations;
 int[] birdIDs = { 166, 167, 169 };
 
 // UI elements
-Button button1, button2;
+Button button1, button2, button3;
 
 // Inset map dimensions
 double[] insetExtents = { 6.2213, 53.475, 6.2263, 53.478 };
@@ -25,7 +25,7 @@ float[] insetBasemapExtents;
 
 // Available modes
 enum Mode {
-  OBSERVATIONS, PATHS
+  OBSERVATIONS, PATHS, TRAILS
 };
 
 // Current mode
@@ -61,11 +61,14 @@ void setup() {
   // Set up the UI
   Interactive.make(this);
 
-  button1 = new Button("Observations", width - 180, height - 36, 80, 26);
+  button1 = new Button("Observations", width - 270, height - 36, 80, 26);
   Interactive.on(button1, "click", this, "buttonClicked");
 
-  button2 = new Button("Paths", width - 90, height - 36, 80, 26);
+  button2 = new Button("Paths", width - 180, height - 36, 80, 26);
   Interactive.on(button2, "click", this, "buttonClicked");
+
+  button3 = new Button("Trails", width - 90, height - 36, 80, 26);
+  Interactive.on(button3, "click", this, "buttonClicked");
 
   // Set up an inset to magnify the nesting area
   insetWidth = 300;
@@ -86,9 +89,6 @@ void setup() {
   // basemap top
   insetBasemapExtents[1] = insetTop +
     (latToWindowY(basemapExtents[3]) - latToWindowY(insetExtents[3])) * insetMagnification;
-
-  // Low frame rate
-  frameRate(5);
 }
 
 void settings() {
@@ -109,6 +109,9 @@ void draw() {
     break;
   case PATHS: 
     drawPaths(); 
+    break;
+  case TRAILS:
+    drawTrails();
     break;
   }
 }
@@ -201,8 +204,9 @@ void drawPaths() {
   stroke(0);
   strokeWeight(3);
 
+  // Print the current time in the corner of the window
   textAlign(RIGHT, TOP);
-  text(now.format(DateTimeFormatter.ISO_LOCAL_DATE_TIME), width - 190, height - 30);
+  text(now.format(DateTimeFormatter.ISO_LOCAL_DATE_TIME), width - 280, height - 30);
 
   // Move forward in time
   now = now.plusMinutes(30);
@@ -262,8 +266,103 @@ void drawPaths() {
     }
   }
 
-  // Make sure the drawing loop is running
+  // Make sure the drawing loop is running, at a slow frame rate
   loop();
+  frameRate(5);
+}
+
+int[] birdCurrentIndexForTrails = new int[birdIDs.length];
+int[] birdNextIndexForTrails = new int[birdIDs.length];
+int trailLength = 5;
+double[][] birdTrailPointsLon = new double[birdIDs.length][trailLength];
+double[][] birdTrailPointsLat = new double[birdIDs.length][trailLength];
+
+void drawTrails() {
+  stroke(0);
+  strokeWeight(5);
+
+  // Print the current time in the corner of the window
+  textAlign(RIGHT, TOP);
+  text(now.format(DateTimeFormatter.ISO_LOCAL_DATE_TIME), width - 280, height - 30);
+
+  // Move forward in time
+  now = now.plusMinutes(2);
+  for (int i = 0; i < birdIDs.length; i++) {
+    // Set the stroke to this bird's colour
+    int r, g, b;
+    switch (birdIDs[i]) {
+      case 166: r = 255; g = 0; b = 0; break;
+      case 167: r = 0; g = 0; b = 0; break;
+      default: r = 0; g = 0; b = 255; break;
+    }
+
+    // Plot the bird's previous positions in a trail, and shift the trail
+    // array contents back
+    for (int j = 0; j < trailLength; j++) {
+      stroke(r, g, b, (j + 1) * (j + 1) * 255 / (trailLength + 1) / (trailLength + 1));
+      
+      mappoint(birdTrailPointsLon[i][j], birdTrailPointsLat[i][j]);
+      if (j > 0) {
+        birdTrailPointsLon[i][j - 1] = birdTrailPointsLon[i][j];
+        birdTrailPointsLat[i][j - 1] = birdTrailPointsLat[i][j];
+      }
+    }
+    
+    fill(r, g, b);
+    stroke(r, g, b);
+
+    long startTime = observations[birdCurrentIndexForTrails[i]].date_time.toEpochSecond(ZoneOffset.UTC);
+    double startLon = observations[birdCurrentIndexForTrails[i]].longitude;
+    double startLat = observations[birdCurrentIndexForTrails[i]].latitude;
+    long endTime = observations[birdNextIndexForTrails[i]].date_time.toEpochSecond(ZoneOffset.UTC);
+    double endLon = observations[birdNextIndexForTrails[i]].longitude;
+    double endLat = observations[birdNextIndexForTrails[i]].latitude;
+    
+    // How far between the current and next point are we? (factor between 0 and 1)
+    double lambda;
+    if (endTime == startTime) {
+      lambda = 0;
+    } else {
+      lambda = (double)(now.toEpochSecond(ZoneOffset.UTC) - startTime) / (endTime - startTime);
+    }
+    double thisLon = startLon + (endLon - startLon) * lambda;
+    double thisLat = startLat + (endLat - startLat) * lambda;
+    
+    // Plot the bird's current position
+    mappoint(thisLon, thisLat);
+    if (observations[birdCurrentIndexForTrails[i]].SA8 != null) {
+      maptext(observations[birdCurrentIndexForTrails[i]].SA8, thisLon, thisLat);
+    }
+    
+    // Store this point for the next point's trail
+    birdTrailPointsLon[i][trailLength - 1] = thisLon;
+    birdTrailPointsLat[i][trailLength - 1] = thisLat;
+
+    // Is this observation still after the new value of "now"?
+    if (observations[birdCurrentIndexForTrails[i]].date_time.isAfter(now)) {
+      continue;
+    }
+    
+    // Next point becomes current point
+    System.arraycopy(birdNextIndexForTrails, 0, birdCurrentIndexForTrails, 0, birdIDs.length);
+
+    // Look for the next observation for this bird
+    do {
+      birdNextIndexForTrails[i]++;
+    } while (observations[birdNextIndexForTrails[i]].birdID != birdIDs[i]);
+
+    // Look for an observation in the future that is after "now"
+    // TODO this throws an exception when the end of array is reached
+    while (!observations[birdNextIndexForTrails[i]].date_time.isAfter(now)) {
+      do {
+        birdNextIndexForTrails[i]++;
+      } while (observations[birdNextIndexForTrails[i]].birdID != birdIDs[i]);
+    }
+  }
+
+  // Make sure the drawing loop is running, with a high frame rate
+  loop();
+  frameRate(20);
 }
 
 // Called when a UI button is clicked.
@@ -272,6 +371,8 @@ void buttonClicked(Button b) {
     currentMode = Mode.OBSERVATIONS;
   } else if (b == button2) {
     currentMode = Mode.PATHS;
+  } else if (b == button3) {
+    currentMode = Mode.TRAILS;
   }
 
   draw();
