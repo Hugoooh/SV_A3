@@ -2,18 +2,30 @@ import java.time.*;
 import java.time.format.*;
 import de.bezier.guido.*;
 
-// SVG basemap
-PShape basemap;
-// The geographic extents of the SVG basemap
-float[] basemapExtents = { 6.190, 53.427, 6.280, 53.490 };
+class Observation {
+  int birdID;
+  LocalDateTime date_time;
+  double latitude;
+  double longitude;
+  // lots of other fields go here...
+  String SA8;
+}
 
 // Bird observations
 Observation[] observations;
 // The three birds in the dataset (hard-coded to save effort)
 int[] birdIDs = { 166, 167, 169 };
 
+// SVG basemap
+PShape basemap;
+// The geographic extents of the SVG basemap
+float[] basemapExtents = { 6.190, 53.427, 6.280, 53.490 };
+
 // UI elements
 Button button1, button2, button3;
+CheckBox[] chkBirds;
+CheckBox chkStateBodyCare, chkStateFly, chkStateForage,
+  chkStateSit, chkStateStand, chkStateUnknown;
 
 // Inset map dimensions
 double[] insetExtents = { 6.2213, 53.475, 6.2263, 53.478 };
@@ -33,7 +45,7 @@ Mode currentMode = Mode.OBSERVATIONS;
 
 // Converts geographic coordinates to a window position in pixels.
 // It is converting a double to a float, so the transformation may
-// not be reversible.
+// not be exactly reversible.
 float lonToWindowX(double lon) {
   return (float)((lon - basemapExtents[0]) * width / (basemapExtents[2] - basemapExtents[0]));
 }
@@ -51,12 +63,27 @@ float latToInsetY(double lat) {
   return insetBasemapExtents[1] + insetMagnification * latToWindowY(lat);
 }
 
+// And back the other way, from window position to lat/long.
+double windowXToLon(float x) {
+  return (basemapExtents[2] - basemapExtents[0]) * (double)x / width + basemapExtents[0];
+}
+double windowYToLat(float y) {
+  return (basemapExtents[3] - basemapExtents[1]) * ((double)(height - 1) - (double)y) /
+    height + basemapExtents[1];
+}
+
 void setup() {
   // Load the basemap
   basemap = loadShape("basemap.svg");
 
   // Load the point data
   observations = loadObservationData("All data.txt");
+
+  // Set up the dimensions of an inset to magnify the nesting area
+  insetWidth = 300;
+  insetHeight = 270;
+  insetLeft = 20;
+  insetTop = height - insetHeight - 20;
 
   // Set up the UI
   Interactive.make(this);
@@ -70,14 +97,35 @@ void setup() {
   button3 = new Button("Trails", width - 90, height - 36, 80, 26);
   Interactive.on(button3, "click", this, "buttonClicked");
 
-  // Set up an inset to magnify the nesting area
-  insetWidth = 300;
-  insetHeight = 270;
-  insetLeft = 20;
-  insetTop = height - insetHeight - 20;
+  chkBirds = new CheckBox[3];
+  chkBirds[0] = new CheckBox("Bird 166", insetWidth + 40, height - 20 - CheckBox.size);
+  chkBirds[0].highlightColor = birdColor(166);
+  chkBirds[0].checked = true;
+
+  chkBirds[1] = new CheckBox("Bird 167", insetWidth + 140, height - 20 - CheckBox.size);
+  chkBirds[1].highlightColor = birdColor(167);
+  chkBirds[1].checked = true;
+
+  chkBirds[2] = new CheckBox("Bird 169", insetWidth + 240, height - 20 - CheckBox.size);
+  chkBirds[2].highlightColor = birdColor(169);
+  chkBirds[2].checked = true;
+  
+  chkStateBodyCare = new CheckBox("Body care", insetWidth + 40, height - 45 - CheckBox.size);
+  chkStateBodyCare.checked = true;
+  chkStateFly = new CheckBox("Fly", insetWidth + 135, height - 45 - CheckBox.size);
+  chkStateFly.checked = true;
+  chkStateForage = new CheckBox("Forage", insetWidth + 190, height - 45 - CheckBox.size);
+  chkStateForage.checked = true;
+  chkStateSit = new CheckBox("Sit", insetWidth + 265, height - 45 - CheckBox.size);
+  chkStateSit.checked = true;
+  chkStateStand = new CheckBox("Stand", insetWidth + 320, height - 45 - CheckBox.size);
+  chkStateStand.checked = true;
+  chkStateUnknown = new CheckBox("Unknown", insetWidth + 395, height - 45 - CheckBox.size);
+  chkStateUnknown.checked = true;
+  
+  // Calculate the magnification level and basemap extents of the inset
   insetMagnification = min(insetWidth / (lonToWindowX(insetExtents[2]) - lonToWindowX(insetExtents[0])), 
     insetHeight / (latToWindowY(insetExtents[1]) - latToWindowY(insetExtents[3])));
-  
   insetBasemapExtents = new float[4];
   // basemap width
   insetBasemapExtents[2] = insetMagnification * width;
@@ -89,6 +137,8 @@ void setup() {
   // basemap top
   insetBasemapExtents[1] = insetTop +
     (latToWindowY(basemapExtents[3]) - latToWindowY(insetExtents[3])) * insetMagnification;
+
+  setupObservationsMode();
 }
 
 void settings() {
@@ -134,6 +184,70 @@ void drawInsetMap() {
   noClip();
 }
 
+// Used to reject mouse events that lie inside a UI element.
+boolean isInsideUIElement() {
+  return
+   (button1.isInside(mouseX, mouseY) ||
+    button2.isInside(mouseX, mouseY) ||
+    button3.isInside(mouseX, mouseY));    
+}
+
+// Glue logic for various UI events.
+void mousePressed() {
+  // Skip the event if we're inside any of the UI elements.
+  if (isInsideUIElement()) {
+    return;
+  }
+
+  switch (currentMode) {
+  case OBSERVATIONS: 
+    observationsMousePressed(); 
+    break;
+  default:
+    break;
+  }
+}
+
+void mouseReleased() {
+  switch (currentMode) {
+  case OBSERVATIONS: 
+    observationsMouseReleased(); 
+    break;
+  default:
+    break;
+  }
+}
+
+// Called when a UI button is clicked.
+void buttonClicked(Button b) { 
+  if (b == button1) {
+    currentMode = Mode.OBSERVATIONS;
+    enterObservationsMode();
+  } else if (b == button2) {
+    currentMode = Mode.PATHS;
+  } else if (b == button3) {
+    currentMode = Mode.TRAILS;
+  }
+  
+  // Show/hide observation mode checkboxes
+  chkStateBodyCare.visible = chkStateFly.visible = chkStateForage.visible =
+    chkStateSit.visible = chkStateStand.visible = chkStateUnknown.visible =
+    currentMode == Mode.OBSERVATIONS;
+
+  draw();
+}
+
+color birdColor(int birdID) {
+  switch (birdID) {
+    case 166: 
+      return color(255, 0, 0); 
+    case 167: 
+      return color(0, 0, 0); 
+    default: 
+      return color(0, 0, 255); 
+  }
+}
+
 // Draw primitive helpers that draw in both the inset and the main map
 void mappoint(double lon, double lat) {
   point(lonToWindowX(lon), latToWindowY(lat));
@@ -172,211 +286,7 @@ void mapline(double lon1, double lat1, double lon2, double lat2) {
   noClip();
 }
 
-void drawObservations() {
-  stroke(0);
-  strokeWeight(3);
-
-  // Draw the features as simple points
-  for (Observation obs : observations) {
-    switch (obs.birdID) {
-    case 166: 
-      stroke(255, 0, 0); 
-      break;
-    case 167: 
-      stroke(0, 0, 0); 
-      break;
-    default: 
-      stroke(0, 0, 255); 
-      break;
-    }
-
-    mappoint(obs.longitude, obs.latitude);
-  }
-
-  // Only draw once, no interactivity for this mode
-  noLoop();
-}
-
 LocalDateTime now = LocalDateTime.of(2009, Month.JUNE, 29, 12, 00);
-int[] birdCurrentIndex = new int[birdIDs.length];
-
-void drawPaths() {
-  stroke(0);
-  strokeWeight(3);
-
-  // Print the current time in the corner of the window
-  textAlign(RIGHT, TOP);
-  text(now.format(DateTimeFormatter.ISO_LOCAL_DATE_TIME), width - 280, height - 30);
-
-  // Move forward in time
-  now = now.plusMinutes(30);
-  for (int i = 0; i < birdIDs.length; i++) {
-    // Set the stroke to this bird's colour
-    switch (birdIDs[i]) {
-    case 166: 
-      fill(255, 0, 0); 
-      stroke(255, 0, 0); 
-      break;
-    case 167: 
-      fill(0, 0, 0); 
-      stroke(0, 0, 0); 
-      break;
-    default: 
-      fill(0, 0, 255); 
-      stroke(0, 0, 255); 
-      break;
-    }
-
-    // Start a line at the current point
-    double startLon = observations[birdCurrentIndex[i]].longitude;
-    double startLat = observations[birdCurrentIndex[i]].latitude;
-    mappoint(startLon, startLat);
-    if (observations[birdCurrentIndex[i]].SA8 != null) {
-      maptext(observations[birdCurrentIndex[i]].SA8, startLon, startLat);
-    }
-
-    // Is this observation still after the new value of "now"?
-    if (observations[birdCurrentIndex[i]].date_time.isAfter(now)) {
-      continue;
-    }
-
-    do {
-      birdCurrentIndex[i]++;
-    } while (observations[birdCurrentIndex[i]].birdID != birdIDs[i]);
-
-    // Look for an observation in the future that is before "now", and draw
-    // a line to it
-    // TODO this throws an exception when the end of array is reached
-    while (birdCurrentIndex[i] < observations.length) {
-      mapline(startLon, startLat, 
-        observations[birdCurrentIndex[i]].longitude, 
-        observations[birdCurrentIndex[i]].latitude);
-      startLon = observations[birdCurrentIndex[i]].longitude;
-      startLat = observations[birdCurrentIndex[i]].latitude;
-
-      if (observations[birdCurrentIndex[i]].SA8 != null) {
-        maptext(observations[birdCurrentIndex[i]].SA8, startLon, startLat);
-      }
-
-      if (observations[birdCurrentIndex[i]].date_time.isAfter(now)) break;
-
-      do {
-        birdCurrentIndex[i]++;
-      } while (observations[birdCurrentIndex[i]].birdID != birdIDs[i]);
-    }
-  }
-
-  // Make sure the drawing loop is running, at a slow frame rate
-  loop();
-  frameRate(5);
-}
-
-int[] birdCurrentIndexForTrails = new int[birdIDs.length];
-int[] birdNextIndexForTrails = new int[birdIDs.length];
-int trailLength = 5;
-double[][] birdTrailPointsLon = new double[birdIDs.length][trailLength];
-double[][] birdTrailPointsLat = new double[birdIDs.length][trailLength];
-
-void drawTrails() {
-  stroke(0);
-  strokeWeight(5);
-
-  // Print the current time in the corner of the window
-  textAlign(RIGHT, TOP);
-  text(now.format(DateTimeFormatter.ISO_LOCAL_DATE_TIME), width - 280, height - 30);
-
-  // Move forward in time
-  now = now.plusMinutes(2);
-  for (int i = 0; i < birdIDs.length; i++) {
-    // Set the stroke to this bird's colour
-    int r, g, b;
-    switch (birdIDs[i]) {
-      case 166: r = 255; g = 0; b = 0; break;
-      case 167: r = 0; g = 0; b = 0; break;
-      default: r = 0; g = 0; b = 255; break;
-    }
-
-    // Plot the bird's previous positions in a trail, and shift the trail
-    // array contents back
-    for (int j = 0; j < trailLength; j++) {
-      stroke(r, g, b, (j + 1) * (j + 1) * 255 / (trailLength + 1) / (trailLength + 1));
-      
-      mappoint(birdTrailPointsLon[i][j], birdTrailPointsLat[i][j]);
-      if (j > 0) {
-        birdTrailPointsLon[i][j - 1] = birdTrailPointsLon[i][j];
-        birdTrailPointsLat[i][j - 1] = birdTrailPointsLat[i][j];
-      }
-    }
-    
-    fill(r, g, b);
-    stroke(r, g, b);
-
-    long startTime = observations[birdCurrentIndexForTrails[i]].date_time.toEpochSecond(ZoneOffset.UTC);
-    double startLon = observations[birdCurrentIndexForTrails[i]].longitude;
-    double startLat = observations[birdCurrentIndexForTrails[i]].latitude;
-    long endTime = observations[birdNextIndexForTrails[i]].date_time.toEpochSecond(ZoneOffset.UTC);
-    double endLon = observations[birdNextIndexForTrails[i]].longitude;
-    double endLat = observations[birdNextIndexForTrails[i]].latitude;
-    
-    // How far between the current and next point are we? (factor between 0 and 1)
-    double lambda;
-    if (endTime == startTime) {
-      lambda = 0;
-    } else {
-      lambda = (double)(now.toEpochSecond(ZoneOffset.UTC) - startTime) / (endTime - startTime);
-    }
-    double thisLon = startLon + (endLon - startLon) * lambda;
-    double thisLat = startLat + (endLat - startLat) * lambda;
-    
-    // Plot the bird's current position
-    mappoint(thisLon, thisLat);
-    if (observations[birdCurrentIndexForTrails[i]].SA8 != null) {
-      maptext(observations[birdCurrentIndexForTrails[i]].SA8, thisLon, thisLat);
-    }
-    
-    // Store this point for the next point's trail
-    birdTrailPointsLon[i][trailLength - 1] = thisLon;
-    birdTrailPointsLat[i][trailLength - 1] = thisLat;
-
-    // Is this observation still after the new value of "now"?
-    if (observations[birdCurrentIndexForTrails[i]].date_time.isAfter(now)) {
-      continue;
-    }
-    
-    // Next point becomes current point
-    System.arraycopy(birdNextIndexForTrails, 0, birdCurrentIndexForTrails, 0, birdIDs.length);
-
-    // Look for the next observation for this bird
-    do {
-      birdNextIndexForTrails[i]++;
-    } while (observations[birdNextIndexForTrails[i]].birdID != birdIDs[i]);
-
-    // Look for an observation in the future that is after "now"
-    // TODO this throws an exception when the end of array is reached
-    while (!observations[birdNextIndexForTrails[i]].date_time.isAfter(now)) {
-      do {
-        birdNextIndexForTrails[i]++;
-      } while (observations[birdNextIndexForTrails[i]].birdID != birdIDs[i]);
-    }
-  }
-
-  // Make sure the drawing loop is running, with a high frame rate
-  loop();
-  frameRate(20);
-}
-
-// Called when a UI button is clicked.
-void buttonClicked(Button b) {
-  if (b == button1) {
-    currentMode = Mode.OBSERVATIONS;
-  } else if (b == button2) {
-    currentMode = Mode.PATHS;
-  } else if (b == button3) {
-    currentMode = Mode.TRAILS;
-  }
-
-  draw();
-}
 
 // Reads data from the given tab-separated text file and stores it in an attribute map.
 Observation[] loadObservationData(String fileName) {
@@ -424,13 +334,4 @@ Observation[] loadObservationData(String fileName) {
   }
 
   return observationsList.toArray(new Observation[0]);
-}
-
-class Observation {
-  int birdID;
-  LocalDateTime date_time;
-  double latitude;
-  double longitude;
-  // lots of other fields go here...
-  String SA8;
 }
