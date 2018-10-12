@@ -19,31 +19,31 @@
   </projectCrs>
   <layer-tree-group>
     <customproperties/>
-    <layer-tree-layer source="./data/All data.gpkg" providerKey="ogr" checked="Qt::Unchecked" expanded="1" name="All data" id="All_data_4c6951fc_0f40_4c99_9b39_14c6c6c4700a">
+    <layer-tree-layer checked="Qt::Unchecked" name="All data" expanded="1" id="All_data_4c6951fc_0f40_4c99_9b39_14c6c6c4700a" source="./data/All data.gpkg" providerKey="ogr">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer source="./data/All data.gpkg" providerKey="ogr" checked="Qt::Unchecked" expanded="1" name="All data copy" id="All_data_fe5c6c09_738c_4ad1_b7a0_b87bad0e5160">
+    <layer-tree-layer checked="Qt::Unchecked" name="All data copy" expanded="1" id="All_data_fe5c6c09_738c_4ad1_b7a0_b87bad0e5160" source="./data/All data.gpkg" providerKey="ogr">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer source="./data/OSM2.gpkg|layername=water" providerKey="ogr" checked="Qt::Checked" expanded="1" name="OSM2 water" id="OSM2_water_7a86aa6b_0667_4f3a_8240_fb0d7e7ddc44">
+    <layer-tree-layer checked="Qt::Checked" name="OSM2 water" expanded="1" id="OSM2_water_7a86aa6b_0667_4f3a_8240_fb0d7e7ddc44" source="./data/OSM2.gpkg|layername=water" providerKey="ogr">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer source="./data/OSM2.gpkg|layername=wetland" providerKey="ogr" checked="Qt::Checked" expanded="1" name="OSM2 wetland" id="OSM2_wetland_c171f38d_f0ac_4015_a7ce_9839291cde08">
+    <layer-tree-layer checked="Qt::Checked" name="OSM2 wetland" expanded="1" id="OSM2_wetland_c171f38d_f0ac_4015_a7ce_9839291cde08" source="./data/OSM2.gpkg|layername=wetland" providerKey="ogr">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer source="./data/OSM2.gpkg|layername=grass" providerKey="ogr" checked="Qt::Unchecked" expanded="1" name="OSM2 grass" id="OSM2_grass_47f639c1_c658_4f81_a026_e7e23c3137f9">
+    <layer-tree-layer checked="Qt::Unchecked" name="OSM2 grass" expanded="1" id="OSM2_grass_47f639c1_c658_4f81_a026_e7e23c3137f9" source="./data/OSM2.gpkg|layername=grass" providerKey="ogr">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer source="./data/OSM2.gpkg|layername=scrub" providerKey="ogr" checked="Qt::Unchecked" expanded="1" name="OSM2 scrub" id="OSM2_scrub_33a3b9f0_1223_47a8_8615_11331a130151">
+    <layer-tree-layer checked="Qt::Unchecked" name="OSM2 scrub" expanded="1" id="OSM2_scrub_33a3b9f0_1223_47a8_8615_11331a130151" source="./data/OSM2.gpkg|layername=scrub" providerKey="ogr">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer source="./data/OSM2.gpkg|layername=beach" providerKey="ogr" checked="Qt::Checked" expanded="1" name="OSM2 beach" id="OSM2_beach_bfd04da5_8565_4616_a9d2_21fcfece6ece">
+    <layer-tree-layer checked="Qt::Checked" name="OSM2 beach" expanded="1" id="OSM2_beach_bfd04da5_8565_4616_a9d2_21fcfece6ece" source="./data/OSM2.gpkg|layername=beach" providerKey="ogr">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer source="./data/OSM2.gpkg|layername=islands" providerKey="ogr" checked="Qt::Checked" expanded="1" name="OSM2 islands" id="OSM2_islands_1b3f45f0_54e0_4d23_ac0c_1ddea92e4a01">
+    <layer-tree-layer checked="Qt::Checked" name="OSM2 islands" expanded="1" id="OSM2_islands_1b3f45f0_54e0_4d23_ac0c_1ddea92e4a01" source="./data/OSM2.gpkg|layername=islands" providerKey="ogr">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer source="./data/OSM2.gpkg|layername=tidalflat" providerKey="ogr" checked="Qt::Checked" expanded="1" name="OSM2 tidalflat" id="OSM2_tidalflat_8d6e2b29_4676_4b5a_8636_9bdd15bef8d1">
+    <layer-tree-layer checked="Qt::Checked" name="OSM2 tidalflat" expanded="1" id="OSM2_tidalflat_8d6e2b29_4676_4b5a_8636_9bdd15bef8d1" source="./data/OSM2.gpkg|layername=tidalflat" providerKey="ogr">
       <customproperties/>
     </layer-tree-layer>
     <custom-order enabled="0">
@@ -58,17 +58,17 @@
       <item>OSM2_wetland_c171f38d_f0ac_4015_a7ce_9839291cde08</item>
     </custom-order>
   </layer-tree-group>
-  <snapping-settings tolerance="12" type="1" mode="2" enabled="0" unit="1" intersection-snapping="0">
+  <snapping-settings type="1" intersection-snapping="0" unit="1" enabled="0" tolerance="12" mode="2">
     <individual-layer-settings>
-      <layer-setting tolerance="12" type="1" units="1" enabled="0" id="OSM2_beach_bfd04da5_8565_4616_a9d2_21fcfece6ece"/>
-      <layer-setting tolerance="12" type="1" units="1" enabled="0" id="OSM2_wetland_c171f38d_f0ac_4015_a7ce_9839291cde08"/>
-      <layer-setting tolerance="12" type="1" units="1" enabled="0" id="All_data_fe5c6c09_738c_4ad1_b7a0_b87bad0e5160"/>
-      <layer-setting tolerance="12" type="1" units="1" enabled="0" id="OSM2_islands_1b3f45f0_54e0_4d23_ac0c_1ddea92e4a01"/>
-      <layer-setting tolerance="12" type="1" units="1" enabled="0" id="OSM2_scrub_33a3b9f0_1223_47a8_8615_11331a130151"/>
-      <layer-setting tolerance="12" type="1" units="1" enabled="0" id="OSM2_grass_47f639c1_c658_4f81_a026_e7e23c3137f9"/>
-      <layer-setting tolerance="12" type="1" units="1" enabled="0" id="OSM2_water_7a86aa6b_0667_4f3a_8240_fb0d7e7ddc44"/>
-      <layer-setting tolerance="12" type="1" units="1" enabled="0" id="All_data_4c6951fc_0f40_4c99_9b39_14c6c6c4700a"/>
-      <layer-setting tolerance="12" type="1" units="1" enabled="0" id="OSM2_tidalflat_8d6e2b29_4676_4b5a_8636_9bdd15bef8d1"/>
+      <layer-setting type="1" units="1" enabled="0" id="OSM2_grass_47f639c1_c658_4f81_a026_e7e23c3137f9" tolerance="12"/>
+      <layer-setting type="1" units="1" enabled="0" id="OSM2_water_7a86aa6b_0667_4f3a_8240_fb0d7e7ddc44" tolerance="12"/>
+      <layer-setting type="1" units="1" enabled="0" id="OSM2_wetland_c171f38d_f0ac_4015_a7ce_9839291cde08" tolerance="12"/>
+      <layer-setting type="1" units="1" enabled="0" id="OSM2_islands_1b3f45f0_54e0_4d23_ac0c_1ddea92e4a01" tolerance="12"/>
+      <layer-setting type="1" units="1" enabled="0" id="OSM2_beach_bfd04da5_8565_4616_a9d2_21fcfece6ece" tolerance="12"/>
+      <layer-setting type="1" units="1" enabled="0" id="OSM2_scrub_33a3b9f0_1223_47a8_8615_11331a130151" tolerance="12"/>
+      <layer-setting type="1" units="1" enabled="0" id="All_data_fe5c6c09_738c_4ad1_b7a0_b87bad0e5160" tolerance="12"/>
+      <layer-setting type="1" units="1" enabled="0" id="All_data_4c6951fc_0f40_4c99_9b39_14c6c6c4700a" tolerance="12"/>
+      <layer-setting type="1" units="1" enabled="0" id="OSM2_tidalflat_8d6e2b29_4676_4b5a_8636_9bdd15bef8d1" tolerance="12"/>
     </individual-layer-settings>
   </snapping-settings>
   <relations/>
@@ -96,56 +96,56 @@
     <rendermaptile>0</rendermaptile>
   </mapcanvas>
   <legend updateDrawingOrder="true">
-    <legendlayer drawingOrder="-1" checked="Qt::Unchecked" showFeatureCount="0" open="true" name="All data">
+    <legendlayer open="true" showFeatureCount="0" drawingOrder="-1" checked="Qt::Unchecked" name="All data">
       <filegroup open="true" hidden="false">
-        <legendlayerfile visible="0" isInOverview="0" layerid="All_data_4c6951fc_0f40_4c99_9b39_14c6c6c4700a"/>
+        <legendlayerfile layerid="All_data_4c6951fc_0f40_4c99_9b39_14c6c6c4700a" visible="0" isInOverview="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" checked="Qt::Unchecked" showFeatureCount="0" open="true" name="All data copy">
+    <legendlayer open="true" showFeatureCount="0" drawingOrder="-1" checked="Qt::Unchecked" name="All data copy">
       <filegroup open="true" hidden="false">
-        <legendlayerfile visible="0" isInOverview="0" layerid="All_data_fe5c6c09_738c_4ad1_b7a0_b87bad0e5160"/>
+        <legendlayerfile layerid="All_data_fe5c6c09_738c_4ad1_b7a0_b87bad0e5160" visible="0" isInOverview="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" checked="Qt::Checked" showFeatureCount="0" open="true" name="OSM2 water">
+    <legendlayer open="true" showFeatureCount="0" drawingOrder="-1" checked="Qt::Checked" name="OSM2 water">
       <filegroup open="true" hidden="false">
-        <legendlayerfile visible="1" isInOverview="0" layerid="OSM2_water_7a86aa6b_0667_4f3a_8240_fb0d7e7ddc44"/>
+        <legendlayerfile layerid="OSM2_water_7a86aa6b_0667_4f3a_8240_fb0d7e7ddc44" visible="1" isInOverview="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" checked="Qt::Checked" showFeatureCount="0" open="true" name="OSM2 wetland">
+    <legendlayer open="true" showFeatureCount="0" drawingOrder="-1" checked="Qt::Checked" name="OSM2 wetland">
       <filegroup open="true" hidden="false">
-        <legendlayerfile visible="1" isInOverview="0" layerid="OSM2_wetland_c171f38d_f0ac_4015_a7ce_9839291cde08"/>
+        <legendlayerfile layerid="OSM2_wetland_c171f38d_f0ac_4015_a7ce_9839291cde08" visible="1" isInOverview="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" checked="Qt::Unchecked" showFeatureCount="0" open="true" name="OSM2 grass">
+    <legendlayer open="true" showFeatureCount="0" drawingOrder="-1" checked="Qt::Unchecked" name="OSM2 grass">
       <filegroup open="true" hidden="false">
-        <legendlayerfile visible="0" isInOverview="0" layerid="OSM2_grass_47f639c1_c658_4f81_a026_e7e23c3137f9"/>
+        <legendlayerfile layerid="OSM2_grass_47f639c1_c658_4f81_a026_e7e23c3137f9" visible="0" isInOverview="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" checked="Qt::Unchecked" showFeatureCount="0" open="true" name="OSM2 scrub">
+    <legendlayer open="true" showFeatureCount="0" drawingOrder="-1" checked="Qt::Unchecked" name="OSM2 scrub">
       <filegroup open="true" hidden="false">
-        <legendlayerfile visible="0" isInOverview="0" layerid="OSM2_scrub_33a3b9f0_1223_47a8_8615_11331a130151"/>
+        <legendlayerfile layerid="OSM2_scrub_33a3b9f0_1223_47a8_8615_11331a130151" visible="0" isInOverview="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" checked="Qt::Checked" showFeatureCount="0" open="true" name="OSM2 beach">
+    <legendlayer open="true" showFeatureCount="0" drawingOrder="-1" checked="Qt::Checked" name="OSM2 beach">
       <filegroup open="true" hidden="false">
-        <legendlayerfile visible="1" isInOverview="0" layerid="OSM2_beach_bfd04da5_8565_4616_a9d2_21fcfece6ece"/>
+        <legendlayerfile layerid="OSM2_beach_bfd04da5_8565_4616_a9d2_21fcfece6ece" visible="1" isInOverview="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" checked="Qt::Checked" showFeatureCount="0" open="true" name="OSM2 islands">
+    <legendlayer open="true" showFeatureCount="0" drawingOrder="-1" checked="Qt::Checked" name="OSM2 islands">
       <filegroup open="true" hidden="false">
-        <legendlayerfile visible="1" isInOverview="0" layerid="OSM2_islands_1b3f45f0_54e0_4d23_ac0c_1ddea92e4a01"/>
+        <legendlayerfile layerid="OSM2_islands_1b3f45f0_54e0_4d23_ac0c_1ddea92e4a01" visible="1" isInOverview="0"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" checked="Qt::Checked" showFeatureCount="0" open="true" name="OSM2 tidalflat">
+    <legendlayer open="true" showFeatureCount="0" drawingOrder="-1" checked="Qt::Checked" name="OSM2 tidalflat">
       <filegroup open="true" hidden="false">
-        <legendlayerfile visible="1" isInOverview="0" layerid="OSM2_tidalflat_8d6e2b29_4676_4b5a_8636_9bdd15bef8d1"/>
+        <legendlayerfile layerid="OSM2_tidalflat_8d6e2b29_4676_4b5a_8636_9bdd15bef8d1" visible="1" isInOverview="0"/>
       </filegroup>
     </legendlayer>
   </legend>
   <mapViewDocks/>
   <mapViewDocks3D/>
   <projectlayers>
-    <maplayer autoRefreshEnabled="0" geometry="Point" refreshOnNotifyEnabled="0" type="vector" simplifyDrawingHints="0" simplifyAlgorithm="0" simplifyDrawingTol="1" hasScaleBasedVisibilityFlag="0" minScale="1e+8" refreshOnNotifyMessage="" labelsEnabled="0" simplifyLocal="1" autoRefreshTime="0" simplifyMaxScale="1" maxScale="0" readOnly="0">
+    <maplayer type="vector" simplifyDrawingTol="1" simplifyMaxScale="1" minScale="1e+8" autoRefreshTime="0" simplifyLocal="1" geometry="Point" maxScale="0" autoRefreshEnabled="0" refreshOnNotifyMessage="" labelsEnabled="0" simplifyAlgorithm="0" simplifyDrawingHints="0" hasScaleBasedVisibilityFlag="0" readOnly="0" refreshOnNotifyEnabled="0">
       <extent>
         <xmin>6.20030879974365234</xmin>
         <ymin>53.43082046508789063</ymin>
@@ -189,7 +189,7 @@
             <description></description>
             <projectionacronym></projectionacronym>
             <ellipsoidacronym></ellipsoidacronym>
-            <geographicflag>true</geographicflag>
+            <geographicflag>false</geographicflag>
           </spatialrefsys>
         </crs>
         <extent/>
@@ -200,40 +200,40 @@
       <dataDependencies/>
       <legend type="default-vector"/>
       <expressionfields>
-        <field comment="" type="16" typeName="datetime" precision="3" subType="0" expression="CASE WHEN length(date_time) = 15&#xd;&#xa; THEN replace(date_time,' ',' 0')&#xd;&#xa; ELSE date_time&#xd;&#xa;END" length="0" name="date_time2"/>
+        <field type="16" subType="0" typeName="datetime" comment="" length="0" name="date_time2" expression="CASE WHEN length(date_time) = 15&#xd;&#xa; THEN replace(date_time,' ',' 0')&#xd;&#xa; ELSE date_time&#xd;&#xa;END" precision="3"/>
       </expressionfields>
       <map-layer-style-manager current="default">
         <map-layer-style name="default"/>
       </map-layer-style-manager>
       <auxiliaryLayer/>
-      <renderer-v2 type="categorizedSymbol" enableorderby="0" forceraster="0" attr="SA3" symbollevels="0">
+      <renderer-v2 type="categorizedSymbol" enableorderby="0" symbollevels="0" forceraster="0" attr="SA3">
         <categories>
-          <category value="fly" symbol="0" label="fly" render="true"/>
-          <category value="no locomotion" symbol="1" label="no locomotion" render="true"/>
-          <category value="ter. locomotion" symbol="2" label="ter. locomotion" render="true"/>
-          <category value="" symbol="3" label="" render="true"/>
+          <category symbol="0" render="true" value="fly" label="fly"/>
+          <category symbol="1" render="true" value="no locomotion" label="no locomotion"/>
+          <category symbol="2" render="true" value="ter. locomotion" label="ter. locomotion"/>
+          <category symbol="3" render="true" value="" label=""/>
         </categories>
         <symbols>
-          <symbol clip_to_extent="1" type="marker" alpha="1" name="0">
-            <layer pass="0" class="SimpleMarker" locked="0" enabled="1">
-              <prop k="angle" v="0"/>
-              <prop k="color" v="207,70,72,255"/>
-              <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="name" v="circle"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="35,35,35,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0"/>
-              <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="scale_method" v="diameter"/>
-              <prop k="size" v="1"/>
-              <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="size_unit" v="MM"/>
-              <prop k="vertical_anchor_point" v="1"/>
+          <symbol type="marker" alpha="1" name="0" clip_to_extent="1">
+            <layer class="SimpleMarker" pass="0" enabled="1" locked="0">
+              <prop v="0" k="angle"/>
+              <prop v="207,70,72,255" k="color"/>
+              <prop v="1" k="horizontal_anchor_point"/>
+              <prop v="bevel" k="joinstyle"/>
+              <prop v="circle" k="name"/>
+              <prop v="0,0" k="offset"/>
+              <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+              <prop v="MM" k="offset_unit"/>
+              <prop v="35,35,35,255" k="outline_color"/>
+              <prop v="solid" k="outline_style"/>
+              <prop v="0" k="outline_width"/>
+              <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+              <prop v="MM" k="outline_width_unit"/>
+              <prop v="diameter" k="scale_method"/>
+              <prop v="1" k="size"/>
+              <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+              <prop v="MM" k="size_unit"/>
+              <prop v="1" k="vertical_anchor_point"/>
               <data_defined_properties>
                 <Option type="Map">
                   <Option type="QString" value="" name="name"/>
@@ -243,26 +243,26 @@
               </data_defined_properties>
             </layer>
           </symbol>
-          <symbol clip_to_extent="1" type="marker" alpha="1" name="1">
-            <layer pass="0" class="SimpleMarker" locked="0" enabled="1">
-              <prop k="angle" v="0"/>
-              <prop k="color" v="169,110,232,255"/>
-              <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="name" v="circle"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="35,35,35,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0"/>
-              <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="scale_method" v="diameter"/>
-              <prop k="size" v="1"/>
-              <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="size_unit" v="MM"/>
-              <prop k="vertical_anchor_point" v="1"/>
+          <symbol type="marker" alpha="1" name="1" clip_to_extent="1">
+            <layer class="SimpleMarker" pass="0" enabled="1" locked="0">
+              <prop v="0" k="angle"/>
+              <prop v="169,110,232,255" k="color"/>
+              <prop v="1" k="horizontal_anchor_point"/>
+              <prop v="bevel" k="joinstyle"/>
+              <prop v="circle" k="name"/>
+              <prop v="0,0" k="offset"/>
+              <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+              <prop v="MM" k="offset_unit"/>
+              <prop v="35,35,35,255" k="outline_color"/>
+              <prop v="solid" k="outline_style"/>
+              <prop v="0" k="outline_width"/>
+              <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+              <prop v="MM" k="outline_width_unit"/>
+              <prop v="diameter" k="scale_method"/>
+              <prop v="1" k="size"/>
+              <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+              <prop v="MM" k="size_unit"/>
+              <prop v="1" k="vertical_anchor_point"/>
               <data_defined_properties>
                 <Option type="Map">
                   <Option type="QString" value="" name="name"/>
@@ -272,26 +272,26 @@
               </data_defined_properties>
             </layer>
           </symbol>
-          <symbol clip_to_extent="1" type="marker" alpha="1" name="2">
-            <layer pass="0" class="SimpleMarker" locked="0" enabled="1">
-              <prop k="angle" v="0"/>
-              <prop k="color" v="131,236,18,255"/>
-              <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="name" v="circle"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="35,35,35,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0"/>
-              <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="scale_method" v="diameter"/>
-              <prop k="size" v="1"/>
-              <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="size_unit" v="MM"/>
-              <prop k="vertical_anchor_point" v="1"/>
+          <symbol type="marker" alpha="1" name="2" clip_to_extent="1">
+            <layer class="SimpleMarker" pass="0" enabled="1" locked="0">
+              <prop v="0" k="angle"/>
+              <prop v="131,236,18,255" k="color"/>
+              <prop v="1" k="horizontal_anchor_point"/>
+              <prop v="bevel" k="joinstyle"/>
+              <prop v="circle" k="name"/>
+              <prop v="0,0" k="offset"/>
+              <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+              <prop v="MM" k="offset_unit"/>
+              <prop v="35,35,35,255" k="outline_color"/>
+              <prop v="solid" k="outline_style"/>
+              <prop v="0" k="outline_width"/>
+              <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+              <prop v="MM" k="outline_width_unit"/>
+              <prop v="diameter" k="scale_method"/>
+              <prop v="1" k="size"/>
+              <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+              <prop v="MM" k="size_unit"/>
+              <prop v="1" k="vertical_anchor_point"/>
               <data_defined_properties>
                 <Option type="Map">
                   <Option type="QString" value="" name="name"/>
@@ -301,26 +301,26 @@
               </data_defined_properties>
             </layer>
           </symbol>
-          <symbol clip_to_extent="1" type="marker" alpha="1" name="3">
-            <layer pass="0" class="SimpleMarker" locked="0" enabled="1">
-              <prop k="angle" v="0"/>
-              <prop k="color" v="0,0,0,255"/>
-              <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="name" v="circle"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="35,35,35,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0"/>
-              <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="scale_method" v="diameter"/>
-              <prop k="size" v="1"/>
-              <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="size_unit" v="MM"/>
-              <prop k="vertical_anchor_point" v="1"/>
+          <symbol type="marker" alpha="1" name="3" clip_to_extent="1">
+            <layer class="SimpleMarker" pass="0" enabled="1" locked="0">
+              <prop v="0" k="angle"/>
+              <prop v="0,0,0,255" k="color"/>
+              <prop v="1" k="horizontal_anchor_point"/>
+              <prop v="bevel" k="joinstyle"/>
+              <prop v="circle" k="name"/>
+              <prop v="0,0" k="offset"/>
+              <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+              <prop v="MM" k="offset_unit"/>
+              <prop v="35,35,35,255" k="outline_color"/>
+              <prop v="solid" k="outline_style"/>
+              <prop v="0" k="outline_width"/>
+              <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+              <prop v="MM" k="outline_width_unit"/>
+              <prop v="diameter" k="scale_method"/>
+              <prop v="1" k="size"/>
+              <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+              <prop v="MM" k="size_unit"/>
+              <prop v="1" k="vertical_anchor_point"/>
               <data_defined_properties>
                 <Option type="Map">
                   <Option type="QString" value="" name="name"/>
@@ -332,26 +332,26 @@
           </symbol>
         </symbols>
         <source-symbol>
-          <symbol clip_to_extent="1" type="marker" alpha="1" name="0">
-            <layer pass="0" class="SimpleMarker" locked="0" enabled="1">
-              <prop k="angle" v="0"/>
-              <prop k="color" v="0,0,0,255"/>
-              <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="name" v="circle"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="35,35,35,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0"/>
-              <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="scale_method" v="diameter"/>
-              <prop k="size" v="1"/>
-              <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="size_unit" v="MM"/>
-              <prop k="vertical_anchor_point" v="1"/>
+          <symbol type="marker" alpha="1" name="0" clip_to_extent="1">
+            <layer class="SimpleMarker" pass="0" enabled="1" locked="0">
+              <prop v="0" k="angle"/>
+              <prop v="0,0,0,255" k="color"/>
+              <prop v="1" k="horizontal_anchor_point"/>
+              <prop v="bevel" k="joinstyle"/>
+              <prop v="circle" k="name"/>
+              <prop v="0,0" k="offset"/>
+              <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+              <prop v="MM" k="offset_unit"/>
+              <prop v="35,35,35,255" k="outline_color"/>
+              <prop v="solid" k="outline_style"/>
+              <prop v="0" k="outline_width"/>
+              <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+              <prop v="MM" k="outline_width_unit"/>
+              <prop v="diameter" k="scale_method"/>
+              <prop v="1" k="size"/>
+              <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+              <prop v="MM" k="size_unit"/>
+              <prop v="1" k="vertical_anchor_point"/>
               <data_defined_properties>
                 <Option type="Map">
                   <Option type="QString" value="" name="name"/>
@@ -373,12 +373,12 @@
       <featureBlendMode>0</featureBlendMode>
       <layerOpacity>1</layerOpacity>
       <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
-        <DiagramCategory diagramOrientation="Up" backgroundColor="#ffffff" minScaleDenominator="0" minimumSize="0" width="15" opacity="1" labelPlacementMethod="XHeight" lineSizeScale="3x:0,0,0,0,0,0" backgroundAlpha="255" barWidth="5" maxScaleDenominator="1e+8" penWidth="0" enabled="0" height="15" sizeScale="3x:0,0,0,0,0,0" penAlpha="255" sizeType="MM" scaleDependency="Area" rotationOffset="270" penColor="#000000" lineSizeType="MM" scaleBasedVisibility="0">
+        <DiagramCategory sizeType="MM" maxScaleDenominator="1e+8" penColor="#000000" penWidth="0" labelPlacementMethod="XHeight" backgroundColor="#ffffff" lineSizeType="MM" rotationOffset="270" diagramOrientation="Up" minimumSize="0" enabled="0" width="15" penAlpha="255" opacity="1" scaleBasedVisibility="0" sizeScale="3x:0,0,0,0,0,0" scaleDependency="Area" backgroundAlpha="255" height="15" lineSizeScale="3x:0,0,0,0,0,0" barWidth="5" minScaleDenominator="0">
           <fontProperties style="" description="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0"/>
-          <attribute color="#000000" label="" field=""/>
+          <attribute color="#000000" field="" label=""/>
         </DiagramCategory>
       </SingleCategoryDiagramRenderer>
-      <DiagramLayerSettings priority="0" linePlacementFlags="18" zIndex="0" obstacle="0" dist="0" showAll="1" placement="0">
+      <DiagramLayerSettings zIndex="0" priority="0" dist="0" linePlacementFlags="18" placement="0" showAll="1" obstacle="0">
         <properties>
           <Option type="Map">
             <Option type="QString" value="" name="name"/>
@@ -546,46 +546,46 @@
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <defaults>
-        <default expression="" applyOnUpdate="0" field="fid"/>
-        <default expression="" applyOnUpdate="0" field="gps.obsID"/>
-        <default expression="" applyOnUpdate="0" field="birdID"/>
-        <default expression="" applyOnUpdate="0" field="date_time"/>
-        <default expression="" applyOnUpdate="0" field="latitude"/>
-        <default expression="" applyOnUpdate="0" field="longitude"/>
-        <default expression="" applyOnUpdate="0" field="speed"/>
-        <default expression="" applyOnUpdate="0" field="habitat.obsID"/>
-        <default expression="" applyOnUpdate="0" field="timelbl2"/>
-        <default expression="" applyOnUpdate="0" field="timelbl3"/>
-        <default expression="" applyOnUpdate="0" field="place"/>
-        <default expression="" applyOnUpdate="0" field="model_output.obsID"/>
-        <default expression="" applyOnUpdate="0" field="SA3"/>
-        <default expression="" applyOnUpdate="0" field="SA8"/>
-        <default expression="" applyOnUpdate="0" field="behaviour.obsID"/>
-        <default expression="" applyOnUpdate="0" field="OB3"/>
-        <default expression="" applyOnUpdate="0" field="OB8"/>
-        <default expression="" applyOnUpdate="0" field="OB16"/>
-        <default expression="" applyOnUpdate="0" field="date_time2"/>
+        <default field="fid" expression="" applyOnUpdate="0"/>
+        <default field="gps.obsID" expression="" applyOnUpdate="0"/>
+        <default field="birdID" expression="" applyOnUpdate="0"/>
+        <default field="date_time" expression="" applyOnUpdate="0"/>
+        <default field="latitude" expression="" applyOnUpdate="0"/>
+        <default field="longitude" expression="" applyOnUpdate="0"/>
+        <default field="speed" expression="" applyOnUpdate="0"/>
+        <default field="habitat.obsID" expression="" applyOnUpdate="0"/>
+        <default field="timelbl2" expression="" applyOnUpdate="0"/>
+        <default field="timelbl3" expression="" applyOnUpdate="0"/>
+        <default field="place" expression="" applyOnUpdate="0"/>
+        <default field="model_output.obsID" expression="" applyOnUpdate="0"/>
+        <default field="SA3" expression="" applyOnUpdate="0"/>
+        <default field="SA8" expression="" applyOnUpdate="0"/>
+        <default field="behaviour.obsID" expression="" applyOnUpdate="0"/>
+        <default field="OB3" expression="" applyOnUpdate="0"/>
+        <default field="OB8" expression="" applyOnUpdate="0"/>
+        <default field="OB16" expression="" applyOnUpdate="0"/>
+        <default field="date_time2" expression="" applyOnUpdate="0"/>
       </defaults>
       <constraints>
-        <constraint unique_strength="1" exp_strength="0" constraints="3" notnull_strength="1" field="fid"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="gps.obsID"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="birdID"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="date_time"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="latitude"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="longitude"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="speed"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="habitat.obsID"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="timelbl2"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="timelbl3"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="place"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="model_output.obsID"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="SA3"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="SA8"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="behaviour.obsID"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="OB3"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="OB8"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="OB16"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="date_time2"/>
+        <constraint constraints="3" notnull_strength="1" exp_strength="0" unique_strength="1" field="fid"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="gps.obsID"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="birdID"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="date_time"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="latitude"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="longitude"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="speed"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="habitat.obsID"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="timelbl2"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="timelbl3"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="place"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="model_output.obsID"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="SA3"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="SA8"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="behaviour.obsID"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="OB3"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="OB8"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="OB16"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="date_time2"/>
       </constraints>
       <constraintExpressions>
         <constraint exp="" desc="" field="fid"/>
@@ -611,28 +611,28 @@
       <attributeactions>
         <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
       </attributeactions>
-      <attributetableconfig sortOrder="0" sortExpression="" actionWidgetStyle="dropDown">
+      <attributetableconfig sortOrder="0" actionWidgetStyle="dropDown" sortExpression="">
         <columns>
-          <column width="-1" type="field" hidden="0" name="fid"/>
-          <column width="-1" type="field" hidden="0" name="gps.obsID"/>
-          <column width="-1" type="field" hidden="0" name="birdID"/>
-          <column width="-1" type="field" hidden="0" name="date_time"/>
-          <column width="-1" type="field" hidden="0" name="latitude"/>
-          <column width="-1" type="field" hidden="0" name="longitude"/>
-          <column width="-1" type="field" hidden="0" name="speed"/>
-          <column width="-1" type="field" hidden="0" name="habitat.obsID"/>
-          <column width="-1" type="field" hidden="0" name="timelbl2"/>
-          <column width="-1" type="field" hidden="0" name="timelbl3"/>
-          <column width="-1" type="field" hidden="0" name="place"/>
-          <column width="-1" type="field" hidden="0" name="model_output.obsID"/>
-          <column width="-1" type="field" hidden="0" name="SA3"/>
-          <column width="-1" type="field" hidden="0" name="SA8"/>
-          <column width="-1" type="field" hidden="0" name="behaviour.obsID"/>
-          <column width="-1" type="field" hidden="0" name="OB3"/>
-          <column width="-1" type="field" hidden="0" name="OB8"/>
-          <column width="-1" type="field" hidden="0" name="OB16"/>
-          <column width="-1" type="field" hidden="0" name="date_time2"/>
-          <column width="-1" type="actions" hidden="1"/>
+          <column type="field" hidden="0" name="fid" width="-1"/>
+          <column type="field" hidden="0" name="gps.obsID" width="-1"/>
+          <column type="field" hidden="0" name="birdID" width="-1"/>
+          <column type="field" hidden="0" name="date_time" width="-1"/>
+          <column type="field" hidden="0" name="latitude" width="-1"/>
+          <column type="field" hidden="0" name="longitude" width="-1"/>
+          <column type="field" hidden="0" name="speed" width="-1"/>
+          <column type="field" hidden="0" name="habitat.obsID" width="-1"/>
+          <column type="field" hidden="0" name="timelbl2" width="-1"/>
+          <column type="field" hidden="0" name="timelbl3" width="-1"/>
+          <column type="field" hidden="0" name="place" width="-1"/>
+          <column type="field" hidden="0" name="model_output.obsID" width="-1"/>
+          <column type="field" hidden="0" name="SA3" width="-1"/>
+          <column type="field" hidden="0" name="SA8" width="-1"/>
+          <column type="field" hidden="0" name="behaviour.obsID" width="-1"/>
+          <column type="field" hidden="0" name="OB3" width="-1"/>
+          <column type="field" hidden="0" name="OB8" width="-1"/>
+          <column type="field" hidden="0" name="OB16" width="-1"/>
+          <column type="field" hidden="0" name="date_time2" width="-1"/>
+          <column type="actions" hidden="1" width="-1"/>
         </columns>
       </attributetableconfig>
       <editform>.</editform>
@@ -706,12 +706,12 @@ def my_form_open(dialog, layer, feature):
         <fieldstyles/>
       </conditionalstyles>
       <expressionfields>
-        <field comment="" type="16" typeName="datetime" precision="3" subType="0" expression="CASE WHEN length(date_time) = 15&#xd;&#xa; THEN replace(date_time,' ',' 0')&#xd;&#xa; ELSE date_time&#xd;&#xa;END" length="0" name="date_time2"/>
+        <field type="16" subType="0" typeName="datetime" comment="" length="0" name="date_time2" expression="CASE WHEN length(date_time) = 15&#xd;&#xa; THEN replace(date_time,' ',' 0')&#xd;&#xa; ELSE date_time&#xd;&#xa;END" precision="3"/>
       </expressionfields>
       <previewExpression>fid</previewExpression>
       <mapTip></mapTip>
     </maplayer>
-    <maplayer autoRefreshEnabled="0" geometry="Point" refreshOnNotifyEnabled="0" type="vector" simplifyDrawingHints="0" simplifyAlgorithm="0" simplifyDrawingTol="1" hasScaleBasedVisibilityFlag="0" minScale="1e+8" refreshOnNotifyMessage="" labelsEnabled="0" simplifyLocal="1" autoRefreshTime="0" simplifyMaxScale="1" maxScale="0" readOnly="0">
+    <maplayer type="vector" simplifyDrawingTol="1" simplifyMaxScale="1" minScale="1e+8" autoRefreshTime="0" simplifyLocal="1" geometry="Point" maxScale="0" autoRefreshEnabled="0" refreshOnNotifyMessage="" labelsEnabled="0" simplifyAlgorithm="0" simplifyDrawingHints="0" hasScaleBasedVisibilityFlag="0" readOnly="0" refreshOnNotifyEnabled="0">
       <extent>
         <xmin>6.20030879974365234</xmin>
         <ymin>53.43082046508789063</ymin>
@@ -766,18 +766,18 @@ def my_form_open(dialog, layer, feature):
       <dataDependencies/>
       <legend type="default-vector"/>
       <expressionfields>
-        <field comment="" type="16" typeName="datetime" precision="3" subType="0" expression="CASE WHEN length(date_time) = 15&#xd;&#xa; THEN replace(date_time,' ',' 0')&#xd;&#xa; ELSE date_time&#xd;&#xa;END" length="0" name="date_time2"/>
+        <field type="16" subType="0" typeName="datetime" comment="" length="0" name="date_time2" expression="CASE WHEN length(date_time) = 15&#xd;&#xa; THEN replace(date_time,' ',' 0')&#xd;&#xa; ELSE date_time&#xd;&#xa;END" precision="3"/>
       </expressionfields>
       <map-layer-style-manager current="default">
         <map-layer-style name="default"/>
       </map-layer-style-manager>
       <auxiliaryLayer/>
-      <renderer-v2 radius="25" radius_unit="0" type="heatmapRenderer" enableorderby="0" quality="3" max_value="15000" forceraster="0" radius_map_unit_scale="3x:0,0,0,0,0,0" weight_expression="">
+      <renderer-v2 type="heatmapRenderer" radius_unit="0" quality="3" radius="25" weight_expression="" enableorderby="0" forceraster="0" max_value="15000" radius_map_unit_scale="3x:0,0,0,0,0,0">
         <colorramp type="gradient" name="[source]">
-          <prop k="color1" v="255,255,255,0"/>
-          <prop k="color2" v="0,0,0,255"/>
-          <prop k="discrete" v="0"/>
-          <prop k="rampType" v="gradient"/>
+          <prop v="255,255,255,0" k="color1"/>
+          <prop v="0,0,0,255" k="color2"/>
+          <prop v="0" k="discrete"/>
+          <prop v="gradient" k="rampType"/>
         </colorramp>
       </renderer-v2>
       <customproperties>
@@ -788,12 +788,12 @@ def my_form_open(dialog, layer, feature):
       <featureBlendMode>0</featureBlendMode>
       <layerOpacity>0.301</layerOpacity>
       <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
-        <DiagramCategory diagramOrientation="Up" backgroundColor="#ffffff" minScaleDenominator="0" minimumSize="0" width="15" opacity="1" labelPlacementMethod="XHeight" lineSizeScale="3x:0,0,0,0,0,0" backgroundAlpha="255" barWidth="5" maxScaleDenominator="1e+8" penWidth="0" enabled="0" height="15" sizeScale="3x:0,0,0,0,0,0" penAlpha="255" sizeType="MM" scaleDependency="Area" rotationOffset="270" penColor="#000000" lineSizeType="MM" scaleBasedVisibility="0">
+        <DiagramCategory sizeType="MM" maxScaleDenominator="1e+8" penColor="#000000" penWidth="0" labelPlacementMethod="XHeight" backgroundColor="#ffffff" lineSizeType="MM" rotationOffset="270" diagramOrientation="Up" minimumSize="0" enabled="0" width="15" penAlpha="255" opacity="1" scaleBasedVisibility="0" sizeScale="3x:0,0,0,0,0,0" scaleDependency="Area" backgroundAlpha="255" height="15" lineSizeScale="3x:0,0,0,0,0,0" barWidth="5" minScaleDenominator="0">
           <fontProperties style="" description="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0"/>
-          <attribute color="#000000" label="" field=""/>
+          <attribute color="#000000" field="" label=""/>
         </DiagramCategory>
       </SingleCategoryDiagramRenderer>
-      <DiagramLayerSettings priority="0" linePlacementFlags="18" zIndex="0" obstacle="0" dist="0" showAll="1" placement="0">
+      <DiagramLayerSettings zIndex="0" priority="0" dist="0" linePlacementFlags="18" placement="0" showAll="1" obstacle="0">
         <properties>
           <Option type="Map">
             <Option type="QString" value="" name="name"/>
@@ -961,46 +961,46 @@ def my_form_open(dialog, layer, feature):
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <defaults>
-        <default expression="" applyOnUpdate="0" field="fid"/>
-        <default expression="" applyOnUpdate="0" field="gps.obsID"/>
-        <default expression="" applyOnUpdate="0" field="birdID"/>
-        <default expression="" applyOnUpdate="0" field="date_time"/>
-        <default expression="" applyOnUpdate="0" field="latitude"/>
-        <default expression="" applyOnUpdate="0" field="longitude"/>
-        <default expression="" applyOnUpdate="0" field="speed"/>
-        <default expression="" applyOnUpdate="0" field="habitat.obsID"/>
-        <default expression="" applyOnUpdate="0" field="timelbl2"/>
-        <default expression="" applyOnUpdate="0" field="timelbl3"/>
-        <default expression="" applyOnUpdate="0" field="place"/>
-        <default expression="" applyOnUpdate="0" field="model_output.obsID"/>
-        <default expression="" applyOnUpdate="0" field="SA3"/>
-        <default expression="" applyOnUpdate="0" field="SA8"/>
-        <default expression="" applyOnUpdate="0" field="behaviour.obsID"/>
-        <default expression="" applyOnUpdate="0" field="OB3"/>
-        <default expression="" applyOnUpdate="0" field="OB8"/>
-        <default expression="" applyOnUpdate="0" field="OB16"/>
-        <default expression="" applyOnUpdate="0" field="date_time2"/>
+        <default field="fid" expression="" applyOnUpdate="0"/>
+        <default field="gps.obsID" expression="" applyOnUpdate="0"/>
+        <default field="birdID" expression="" applyOnUpdate="0"/>
+        <default field="date_time" expression="" applyOnUpdate="0"/>
+        <default field="latitude" expression="" applyOnUpdate="0"/>
+        <default field="longitude" expression="" applyOnUpdate="0"/>
+        <default field="speed" expression="" applyOnUpdate="0"/>
+        <default field="habitat.obsID" expression="" applyOnUpdate="0"/>
+        <default field="timelbl2" expression="" applyOnUpdate="0"/>
+        <default field="timelbl3" expression="" applyOnUpdate="0"/>
+        <default field="place" expression="" applyOnUpdate="0"/>
+        <default field="model_output.obsID" expression="" applyOnUpdate="0"/>
+        <default field="SA3" expression="" applyOnUpdate="0"/>
+        <default field="SA8" expression="" applyOnUpdate="0"/>
+        <default field="behaviour.obsID" expression="" applyOnUpdate="0"/>
+        <default field="OB3" expression="" applyOnUpdate="0"/>
+        <default field="OB8" expression="" applyOnUpdate="0"/>
+        <default field="OB16" expression="" applyOnUpdate="0"/>
+        <default field="date_time2" expression="" applyOnUpdate="0"/>
       </defaults>
       <constraints>
-        <constraint unique_strength="1" exp_strength="0" constraints="3" notnull_strength="1" field="fid"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="gps.obsID"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="birdID"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="date_time"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="latitude"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="longitude"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="speed"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="habitat.obsID"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="timelbl2"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="timelbl3"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="place"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="model_output.obsID"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="SA3"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="SA8"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="behaviour.obsID"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="OB3"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="OB8"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="OB16"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="date_time2"/>
+        <constraint constraints="3" notnull_strength="1" exp_strength="0" unique_strength="1" field="fid"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="gps.obsID"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="birdID"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="date_time"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="latitude"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="longitude"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="speed"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="habitat.obsID"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="timelbl2"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="timelbl3"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="place"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="model_output.obsID"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="SA3"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="SA8"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="behaviour.obsID"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="OB3"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="OB8"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="OB16"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="date_time2"/>
       </constraints>
       <constraintExpressions>
         <constraint exp="" desc="" field="fid"/>
@@ -1026,28 +1026,28 @@ def my_form_open(dialog, layer, feature):
       <attributeactions>
         <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
       </attributeactions>
-      <attributetableconfig sortOrder="0" sortExpression="" actionWidgetStyle="dropDown">
+      <attributetableconfig sortOrder="0" actionWidgetStyle="dropDown" sortExpression="">
         <columns>
-          <column width="-1" type="field" hidden="0" name="fid"/>
-          <column width="-1" type="field" hidden="0" name="gps.obsID"/>
-          <column width="-1" type="field" hidden="0" name="birdID"/>
-          <column width="-1" type="field" hidden="0" name="date_time"/>
-          <column width="-1" type="field" hidden="0" name="latitude"/>
-          <column width="-1" type="field" hidden="0" name="longitude"/>
-          <column width="-1" type="field" hidden="0" name="speed"/>
-          <column width="-1" type="field" hidden="0" name="habitat.obsID"/>
-          <column width="-1" type="field" hidden="0" name="timelbl2"/>
-          <column width="-1" type="field" hidden="0" name="timelbl3"/>
-          <column width="-1" type="field" hidden="0" name="place"/>
-          <column width="-1" type="field" hidden="0" name="model_output.obsID"/>
-          <column width="-1" type="field" hidden="0" name="SA3"/>
-          <column width="-1" type="field" hidden="0" name="SA8"/>
-          <column width="-1" type="field" hidden="0" name="behaviour.obsID"/>
-          <column width="-1" type="field" hidden="0" name="OB3"/>
-          <column width="-1" type="field" hidden="0" name="OB8"/>
-          <column width="-1" type="field" hidden="0" name="OB16"/>
-          <column width="-1" type="field" hidden="0" name="date_time2"/>
-          <column width="-1" type="actions" hidden="1"/>
+          <column type="field" hidden="0" name="fid" width="-1"/>
+          <column type="field" hidden="0" name="gps.obsID" width="-1"/>
+          <column type="field" hidden="0" name="birdID" width="-1"/>
+          <column type="field" hidden="0" name="date_time" width="-1"/>
+          <column type="field" hidden="0" name="latitude" width="-1"/>
+          <column type="field" hidden="0" name="longitude" width="-1"/>
+          <column type="field" hidden="0" name="speed" width="-1"/>
+          <column type="field" hidden="0" name="habitat.obsID" width="-1"/>
+          <column type="field" hidden="0" name="timelbl2" width="-1"/>
+          <column type="field" hidden="0" name="timelbl3" width="-1"/>
+          <column type="field" hidden="0" name="place" width="-1"/>
+          <column type="field" hidden="0" name="model_output.obsID" width="-1"/>
+          <column type="field" hidden="0" name="SA3" width="-1"/>
+          <column type="field" hidden="0" name="SA8" width="-1"/>
+          <column type="field" hidden="0" name="behaviour.obsID" width="-1"/>
+          <column type="field" hidden="0" name="OB3" width="-1"/>
+          <column type="field" hidden="0" name="OB8" width="-1"/>
+          <column type="field" hidden="0" name="OB16" width="-1"/>
+          <column type="field" hidden="0" name="date_time2" width="-1"/>
+          <column type="actions" hidden="1" width="-1"/>
         </columns>
       </attributetableconfig>
       <editform>.</editform>
@@ -1121,12 +1121,12 @@ def my_form_open(dialog, layer, feature):
         <fieldstyles/>
       </conditionalstyles>
       <expressionfields>
-        <field comment="" type="16" typeName="datetime" precision="3" subType="0" expression="CASE WHEN length(date_time) = 15&#xd;&#xa; THEN replace(date_time,' ',' 0')&#xd;&#xa; ELSE date_time&#xd;&#xa;END" length="0" name="date_time2"/>
+        <field type="16" subType="0" typeName="datetime" comment="" length="0" name="date_time2" expression="CASE WHEN length(date_time) = 15&#xd;&#xa; THEN replace(date_time,' ',' 0')&#xd;&#xa; ELSE date_time&#xd;&#xa;END" precision="3"/>
       </expressionfields>
       <previewExpression>fid</previewExpression>
       <mapTip></mapTip>
     </maplayer>
-    <maplayer autoRefreshEnabled="0" geometry="Polygon" refreshOnNotifyEnabled="0" type="vector" simplifyDrawingHints="1" simplifyAlgorithm="0" simplifyDrawingTol="1" hasScaleBasedVisibilityFlag="0" minScale="1e+8" refreshOnNotifyMessage="" labelsEnabled="0" simplifyLocal="1" autoRefreshTime="0" simplifyMaxScale="1" maxScale="0" readOnly="0">
+    <maplayer type="vector" simplifyDrawingTol="1" simplifyMaxScale="1" minScale="1e+8" autoRefreshTime="0" simplifyLocal="1" geometry="Polygon" maxScale="0" autoRefreshEnabled="0" refreshOnNotifyMessage="" labelsEnabled="0" simplifyAlgorithm="0" simplifyDrawingHints="1" hasScaleBasedVisibilityFlag="0" readOnly="0" refreshOnNotifyEnabled="0">
       <extent>
         <xmin>6.11311626434326261</xmin>
         <ymin>53.39307785034179688</ymin>
@@ -1185,21 +1185,21 @@ def my_form_open(dialog, layer, feature):
         <map-layer-style name="default"/>
       </map-layer-style-manager>
       <auxiliaryLayer/>
-      <renderer-v2 type="singleSymbol" enableorderby="0" forceraster="0" symbollevels="0">
+      <renderer-v2 type="singleSymbol" enableorderby="0" symbollevels="0" forceraster="0">
         <symbols>
-          <symbol clip_to_extent="1" type="fill" alpha="1" name="0">
-            <layer pass="0" class="SimpleFill" locked="0" enabled="1">
-              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="color" v="255,241,186,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="35,35,35,255"/>
-              <prop k="outline_style" v="no"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
+          <symbol type="fill" alpha="1" name="0" clip_to_extent="1">
+            <layer class="SimpleFill" pass="0" enabled="1" locked="0">
+              <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+              <prop v="255,241,186,255" k="color"/>
+              <prop v="bevel" k="joinstyle"/>
+              <prop v="0,0" k="offset"/>
+              <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+              <prop v="MM" k="offset_unit"/>
+              <prop v="35,35,35,255" k="outline_color"/>
+              <prop v="no" k="outline_style"/>
+              <prop v="0.26" k="outline_width"/>
+              <prop v="MM" k="outline_width_unit"/>
+              <prop v="solid" k="style"/>
               <data_defined_properties>
                 <Option type="Map">
                   <Option type="QString" value="" name="name"/>
@@ -1432,60 +1432,60 @@ def my_form_open(dialog, layer, feature):
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <defaults>
-        <default expression="" applyOnUpdate="0" field="fid"/>
-        <default expression="" applyOnUpdate="0" field="osm_id"/>
-        <default expression="" applyOnUpdate="0" field="osm_way_id"/>
-        <default expression="" applyOnUpdate="0" field="name"/>
-        <default expression="" applyOnUpdate="0" field="type"/>
-        <default expression="" applyOnUpdate="0" field="aeroway"/>
-        <default expression="" applyOnUpdate="0" field="amenity"/>
-        <default expression="" applyOnUpdate="0" field="admin_level"/>
-        <default expression="" applyOnUpdate="0" field="barrier"/>
-        <default expression="" applyOnUpdate="0" field="boundary"/>
-        <default expression="" applyOnUpdate="0" field="building"/>
-        <default expression="" applyOnUpdate="0" field="craft"/>
-        <default expression="" applyOnUpdate="0" field="geological"/>
-        <default expression="" applyOnUpdate="0" field="historic"/>
-        <default expression="" applyOnUpdate="0" field="land_area"/>
-        <default expression="" applyOnUpdate="0" field="landuse"/>
-        <default expression="" applyOnUpdate="0" field="leisure"/>
-        <default expression="" applyOnUpdate="0" field="man_made"/>
-        <default expression="" applyOnUpdate="0" field="military"/>
-        <default expression="" applyOnUpdate="0" field="natural"/>
-        <default expression="" applyOnUpdate="0" field="office"/>
-        <default expression="" applyOnUpdate="0" field="place"/>
-        <default expression="" applyOnUpdate="0" field="shop"/>
-        <default expression="" applyOnUpdate="0" field="sport"/>
-        <default expression="" applyOnUpdate="0" field="tourism"/>
-        <default expression="" applyOnUpdate="0" field="other_tags"/>
+        <default field="fid" expression="" applyOnUpdate="0"/>
+        <default field="osm_id" expression="" applyOnUpdate="0"/>
+        <default field="osm_way_id" expression="" applyOnUpdate="0"/>
+        <default field="name" expression="" applyOnUpdate="0"/>
+        <default field="type" expression="" applyOnUpdate="0"/>
+        <default field="aeroway" expression="" applyOnUpdate="0"/>
+        <default field="amenity" expression="" applyOnUpdate="0"/>
+        <default field="admin_level" expression="" applyOnUpdate="0"/>
+        <default field="barrier" expression="" applyOnUpdate="0"/>
+        <default field="boundary" expression="" applyOnUpdate="0"/>
+        <default field="building" expression="" applyOnUpdate="0"/>
+        <default field="craft" expression="" applyOnUpdate="0"/>
+        <default field="geological" expression="" applyOnUpdate="0"/>
+        <default field="historic" expression="" applyOnUpdate="0"/>
+        <default field="land_area" expression="" applyOnUpdate="0"/>
+        <default field="landuse" expression="" applyOnUpdate="0"/>
+        <default field="leisure" expression="" applyOnUpdate="0"/>
+        <default field="man_made" expression="" applyOnUpdate="0"/>
+        <default field="military" expression="" applyOnUpdate="0"/>
+        <default field="natural" expression="" applyOnUpdate="0"/>
+        <default field="office" expression="" applyOnUpdate="0"/>
+        <default field="place" expression="" applyOnUpdate="0"/>
+        <default field="shop" expression="" applyOnUpdate="0"/>
+        <default field="sport" expression="" applyOnUpdate="0"/>
+        <default field="tourism" expression="" applyOnUpdate="0"/>
+        <default field="other_tags" expression="" applyOnUpdate="0"/>
       </defaults>
       <constraints>
-        <constraint unique_strength="1" exp_strength="0" constraints="3" notnull_strength="1" field="fid"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="osm_id"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="osm_way_id"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="name"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="type"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="aeroway"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="amenity"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="admin_level"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="barrier"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="boundary"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="building"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="craft"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="geological"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="historic"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="land_area"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="landuse"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="leisure"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="man_made"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="military"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="natural"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="office"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="place"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="shop"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="sport"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="tourism"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="other_tags"/>
+        <constraint constraints="3" notnull_strength="1" exp_strength="0" unique_strength="1" field="fid"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="osm_id"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="osm_way_id"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="name"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="type"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="aeroway"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="amenity"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="admin_level"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="barrier"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="boundary"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="building"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="craft"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="geological"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="historic"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="land_area"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="landuse"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="leisure"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="man_made"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="military"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="natural"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="office"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="place"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="shop"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="sport"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="tourism"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="other_tags"/>
       </constraints>
       <constraintExpressions>
         <constraint exp="" desc="" field="fid"/>
@@ -1518,7 +1518,7 @@ def my_form_open(dialog, layer, feature):
       <attributeactions>
         <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
       </attributeactions>
-      <attributetableconfig sortOrder="0" sortExpression="" actionWidgetStyle="dropDown">
+      <attributetableconfig sortOrder="0" actionWidgetStyle="dropDown" sortExpression="">
         <columns/>
       </attributetableconfig>
       <editform>.</editform>
@@ -1539,7 +1539,7 @@ def my_form_open(dialog, layer, feature):
       <previewExpression></previewExpression>
       <mapTip></mapTip>
     </maplayer>
-    <maplayer autoRefreshEnabled="0" geometry="Polygon" refreshOnNotifyEnabled="0" type="vector" simplifyDrawingHints="1" simplifyAlgorithm="0" simplifyDrawingTol="1" hasScaleBasedVisibilityFlag="0" minScale="1e+8" refreshOnNotifyMessage="" labelsEnabled="0" simplifyLocal="1" autoRefreshTime="0" simplifyMaxScale="1" maxScale="0" readOnly="0">
+    <maplayer type="vector" simplifyDrawingTol="1" simplifyMaxScale="1" minScale="1e+8" autoRefreshTime="0" simplifyLocal="1" geometry="Polygon" maxScale="0" autoRefreshEnabled="0" refreshOnNotifyMessage="" labelsEnabled="0" simplifyAlgorithm="0" simplifyDrawingHints="1" hasScaleBasedVisibilityFlag="0" readOnly="0" refreshOnNotifyEnabled="0">
       <extent>
         <xmin>6.10543537139892667</xmin>
         <ymin>53.3590850830078125</ymin>
@@ -1598,21 +1598,21 @@ def my_form_open(dialog, layer, feature):
         <map-layer-style name="default"/>
       </map-layer-style-manager>
       <auxiliaryLayer/>
-      <renderer-v2 type="singleSymbol" enableorderby="0" forceraster="0" symbollevels="0">
+      <renderer-v2 type="singleSymbol" enableorderby="0" symbollevels="0" forceraster="0">
         <symbols>
-          <symbol clip_to_extent="1" type="fill" alpha="1" name="0">
-            <layer pass="0" class="SimpleFill" locked="0" enabled="1">
-              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="color" v="205,235,176,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="35,35,35,255"/>
-              <prop k="outline_style" v="no"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
+          <symbol type="fill" alpha="1" name="0" clip_to_extent="1">
+            <layer class="SimpleFill" pass="0" enabled="1" locked="0">
+              <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+              <prop v="205,235,176,255" k="color"/>
+              <prop v="bevel" k="joinstyle"/>
+              <prop v="0,0" k="offset"/>
+              <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+              <prop v="MM" k="offset_unit"/>
+              <prop v="35,35,35,255" k="outline_color"/>
+              <prop v="no" k="outline_style"/>
+              <prop v="0.26" k="outline_width"/>
+              <prop v="MM" k="outline_width_unit"/>
+              <prop v="solid" k="style"/>
               <data_defined_properties>
                 <Option type="Map">
                   <Option type="QString" value="" name="name"/>
@@ -1845,60 +1845,60 @@ def my_form_open(dialog, layer, feature):
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <defaults>
-        <default expression="" applyOnUpdate="0" field="fid"/>
-        <default expression="" applyOnUpdate="0" field="osm_id"/>
-        <default expression="" applyOnUpdate="0" field="osm_way_id"/>
-        <default expression="" applyOnUpdate="0" field="name"/>
-        <default expression="" applyOnUpdate="0" field="type"/>
-        <default expression="" applyOnUpdate="0" field="aeroway"/>
-        <default expression="" applyOnUpdate="0" field="amenity"/>
-        <default expression="" applyOnUpdate="0" field="admin_level"/>
-        <default expression="" applyOnUpdate="0" field="barrier"/>
-        <default expression="" applyOnUpdate="0" field="boundary"/>
-        <default expression="" applyOnUpdate="0" field="building"/>
-        <default expression="" applyOnUpdate="0" field="craft"/>
-        <default expression="" applyOnUpdate="0" field="geological"/>
-        <default expression="" applyOnUpdate="0" field="historic"/>
-        <default expression="" applyOnUpdate="0" field="land_area"/>
-        <default expression="" applyOnUpdate="0" field="landuse"/>
-        <default expression="" applyOnUpdate="0" field="leisure"/>
-        <default expression="" applyOnUpdate="0" field="man_made"/>
-        <default expression="" applyOnUpdate="0" field="military"/>
-        <default expression="" applyOnUpdate="0" field="natural"/>
-        <default expression="" applyOnUpdate="0" field="office"/>
-        <default expression="" applyOnUpdate="0" field="place"/>
-        <default expression="" applyOnUpdate="0" field="shop"/>
-        <default expression="" applyOnUpdate="0" field="sport"/>
-        <default expression="" applyOnUpdate="0" field="tourism"/>
-        <default expression="" applyOnUpdate="0" field="other_tags"/>
+        <default field="fid" expression="" applyOnUpdate="0"/>
+        <default field="osm_id" expression="" applyOnUpdate="0"/>
+        <default field="osm_way_id" expression="" applyOnUpdate="0"/>
+        <default field="name" expression="" applyOnUpdate="0"/>
+        <default field="type" expression="" applyOnUpdate="0"/>
+        <default field="aeroway" expression="" applyOnUpdate="0"/>
+        <default field="amenity" expression="" applyOnUpdate="0"/>
+        <default field="admin_level" expression="" applyOnUpdate="0"/>
+        <default field="barrier" expression="" applyOnUpdate="0"/>
+        <default field="boundary" expression="" applyOnUpdate="0"/>
+        <default field="building" expression="" applyOnUpdate="0"/>
+        <default field="craft" expression="" applyOnUpdate="0"/>
+        <default field="geological" expression="" applyOnUpdate="0"/>
+        <default field="historic" expression="" applyOnUpdate="0"/>
+        <default field="land_area" expression="" applyOnUpdate="0"/>
+        <default field="landuse" expression="" applyOnUpdate="0"/>
+        <default field="leisure" expression="" applyOnUpdate="0"/>
+        <default field="man_made" expression="" applyOnUpdate="0"/>
+        <default field="military" expression="" applyOnUpdate="0"/>
+        <default field="natural" expression="" applyOnUpdate="0"/>
+        <default field="office" expression="" applyOnUpdate="0"/>
+        <default field="place" expression="" applyOnUpdate="0"/>
+        <default field="shop" expression="" applyOnUpdate="0"/>
+        <default field="sport" expression="" applyOnUpdate="0"/>
+        <default field="tourism" expression="" applyOnUpdate="0"/>
+        <default field="other_tags" expression="" applyOnUpdate="0"/>
       </defaults>
       <constraints>
-        <constraint unique_strength="1" exp_strength="0" constraints="3" notnull_strength="1" field="fid"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="osm_id"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="osm_way_id"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="name"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="type"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="aeroway"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="amenity"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="admin_level"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="barrier"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="boundary"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="building"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="craft"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="geological"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="historic"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="land_area"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="landuse"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="leisure"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="man_made"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="military"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="natural"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="office"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="place"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="shop"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="sport"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="tourism"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="other_tags"/>
+        <constraint constraints="3" notnull_strength="1" exp_strength="0" unique_strength="1" field="fid"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="osm_id"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="osm_way_id"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="name"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="type"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="aeroway"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="amenity"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="admin_level"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="barrier"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="boundary"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="building"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="craft"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="geological"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="historic"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="land_area"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="landuse"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="leisure"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="man_made"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="military"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="natural"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="office"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="place"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="shop"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="sport"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="tourism"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="other_tags"/>
       </constraints>
       <constraintExpressions>
         <constraint exp="" desc="" field="fid"/>
@@ -1931,7 +1931,7 @@ def my_form_open(dialog, layer, feature):
       <attributeactions>
         <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
       </attributeactions>
-      <attributetableconfig sortOrder="0" sortExpression="" actionWidgetStyle="dropDown">
+      <attributetableconfig sortOrder="0" actionWidgetStyle="dropDown" sortExpression="">
         <columns/>
       </attributetableconfig>
       <editform>.</editform>
@@ -1952,7 +1952,7 @@ def my_form_open(dialog, layer, feature):
       <previewExpression></previewExpression>
       <mapTip></mapTip>
     </maplayer>
-    <maplayer autoRefreshEnabled="0" geometry="Polygon" refreshOnNotifyEnabled="0" type="vector" simplifyDrawingHints="1" simplifyAlgorithm="0" simplifyDrawingTol="1" hasScaleBasedVisibilityFlag="0" minScale="1e+8" refreshOnNotifyMessage="" labelsEnabled="0" simplifyLocal="1" autoRefreshTime="0" simplifyMaxScale="1" maxScale="0" readOnly="0">
+    <maplayer type="vector" simplifyDrawingTol="1" simplifyMaxScale="1" minScale="1e+8" autoRefreshTime="0" simplifyLocal="1" geometry="Polygon" maxScale="0" autoRefreshEnabled="0" refreshOnNotifyMessage="" labelsEnabled="0" simplifyAlgorithm="0" simplifyDrawingHints="1" hasScaleBasedVisibilityFlag="0" readOnly="0" refreshOnNotifyEnabled="0">
       <extent>
         <xmin>4.70636987686157315</xmin>
         <ymin>52.9833221435546875</ymin>
@@ -2011,21 +2011,21 @@ def my_form_open(dialog, layer, feature):
         <map-layer-style name="default"/>
       </map-layer-style-manager>
       <auxiliaryLayer/>
-      <renderer-v2 type="singleSymbol" enableorderby="0" forceraster="0" symbollevels="0">
+      <renderer-v2 type="singleSymbol" enableorderby="0" symbollevels="0" forceraster="0">
         <symbols>
-          <symbol clip_to_extent="1" type="fill" alpha="1" name="0">
-            <layer pass="0" class="SimpleFill" locked="0" enabled="1">
-              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="color" v="205,235,176,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="35,35,35,255"/>
-              <prop k="outline_style" v="no"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
+          <symbol type="fill" alpha="1" name="0" clip_to_extent="1">
+            <layer class="SimpleFill" pass="0" enabled="1" locked="0">
+              <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+              <prop v="205,235,176,255" k="color"/>
+              <prop v="bevel" k="joinstyle"/>
+              <prop v="0,0" k="offset"/>
+              <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+              <prop v="MM" k="offset_unit"/>
+              <prop v="35,35,35,255" k="outline_color"/>
+              <prop v="no" k="outline_style"/>
+              <prop v="0.26" k="outline_width"/>
+              <prop v="MM" k="outline_width_unit"/>
+              <prop v="solid" k="style"/>
               <data_defined_properties>
                 <Option type="Map">
                   <Option type="QString" value="" name="name"/>
@@ -2258,60 +2258,60 @@ def my_form_open(dialog, layer, feature):
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <defaults>
-        <default expression="" applyOnUpdate="0" field="fid"/>
-        <default expression="" applyOnUpdate="0" field="osm_id"/>
-        <default expression="" applyOnUpdate="0" field="osm_way_id"/>
-        <default expression="" applyOnUpdate="0" field="name"/>
-        <default expression="" applyOnUpdate="0" field="type"/>
-        <default expression="" applyOnUpdate="0" field="aeroway"/>
-        <default expression="" applyOnUpdate="0" field="amenity"/>
-        <default expression="" applyOnUpdate="0" field="admin_level"/>
-        <default expression="" applyOnUpdate="0" field="barrier"/>
-        <default expression="" applyOnUpdate="0" field="boundary"/>
-        <default expression="" applyOnUpdate="0" field="building"/>
-        <default expression="" applyOnUpdate="0" field="craft"/>
-        <default expression="" applyOnUpdate="0" field="geological"/>
-        <default expression="" applyOnUpdate="0" field="historic"/>
-        <default expression="" applyOnUpdate="0" field="land_area"/>
-        <default expression="" applyOnUpdate="0" field="landuse"/>
-        <default expression="" applyOnUpdate="0" field="leisure"/>
-        <default expression="" applyOnUpdate="0" field="man_made"/>
-        <default expression="" applyOnUpdate="0" field="military"/>
-        <default expression="" applyOnUpdate="0" field="natural"/>
-        <default expression="" applyOnUpdate="0" field="office"/>
-        <default expression="" applyOnUpdate="0" field="place"/>
-        <default expression="" applyOnUpdate="0" field="shop"/>
-        <default expression="" applyOnUpdate="0" field="sport"/>
-        <default expression="" applyOnUpdate="0" field="tourism"/>
-        <default expression="" applyOnUpdate="0" field="other_tags"/>
+        <default field="fid" expression="" applyOnUpdate="0"/>
+        <default field="osm_id" expression="" applyOnUpdate="0"/>
+        <default field="osm_way_id" expression="" applyOnUpdate="0"/>
+        <default field="name" expression="" applyOnUpdate="0"/>
+        <default field="type" expression="" applyOnUpdate="0"/>
+        <default field="aeroway" expression="" applyOnUpdate="0"/>
+        <default field="amenity" expression="" applyOnUpdate="0"/>
+        <default field="admin_level" expression="" applyOnUpdate="0"/>
+        <default field="barrier" expression="" applyOnUpdate="0"/>
+        <default field="boundary" expression="" applyOnUpdate="0"/>
+        <default field="building" expression="" applyOnUpdate="0"/>
+        <default field="craft" expression="" applyOnUpdate="0"/>
+        <default field="geological" expression="" applyOnUpdate="0"/>
+        <default field="historic" expression="" applyOnUpdate="0"/>
+        <default field="land_area" expression="" applyOnUpdate="0"/>
+        <default field="landuse" expression="" applyOnUpdate="0"/>
+        <default field="leisure" expression="" applyOnUpdate="0"/>
+        <default field="man_made" expression="" applyOnUpdate="0"/>
+        <default field="military" expression="" applyOnUpdate="0"/>
+        <default field="natural" expression="" applyOnUpdate="0"/>
+        <default field="office" expression="" applyOnUpdate="0"/>
+        <default field="place" expression="" applyOnUpdate="0"/>
+        <default field="shop" expression="" applyOnUpdate="0"/>
+        <default field="sport" expression="" applyOnUpdate="0"/>
+        <default field="tourism" expression="" applyOnUpdate="0"/>
+        <default field="other_tags" expression="" applyOnUpdate="0"/>
       </defaults>
       <constraints>
-        <constraint unique_strength="1" exp_strength="0" constraints="3" notnull_strength="1" field="fid"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="osm_id"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="osm_way_id"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="name"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="type"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="aeroway"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="amenity"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="admin_level"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="barrier"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="boundary"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="building"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="craft"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="geological"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="historic"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="land_area"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="landuse"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="leisure"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="man_made"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="military"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="natural"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="office"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="place"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="shop"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="sport"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="tourism"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="other_tags"/>
+        <constraint constraints="3" notnull_strength="1" exp_strength="0" unique_strength="1" field="fid"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="osm_id"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="osm_way_id"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="name"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="type"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="aeroway"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="amenity"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="admin_level"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="barrier"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="boundary"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="building"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="craft"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="geological"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="historic"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="land_area"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="landuse"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="leisure"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="man_made"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="military"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="natural"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="office"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="place"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="shop"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="sport"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="tourism"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="other_tags"/>
       </constraints>
       <constraintExpressions>
         <constraint exp="" desc="" field="fid"/>
@@ -2344,7 +2344,7 @@ def my_form_open(dialog, layer, feature):
       <attributeactions>
         <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
       </attributeactions>
-      <attributetableconfig sortOrder="0" sortExpression="" actionWidgetStyle="dropDown">
+      <attributetableconfig sortOrder="0" actionWidgetStyle="dropDown" sortExpression="">
         <columns/>
       </attributetableconfig>
       <editform>.</editform>
@@ -2365,7 +2365,7 @@ def my_form_open(dialog, layer, feature):
       <previewExpression></previewExpression>
       <mapTip></mapTip>
     </maplayer>
-    <maplayer autoRefreshEnabled="0" geometry="Polygon" refreshOnNotifyEnabled="0" type="vector" simplifyDrawingHints="1" simplifyAlgorithm="0" simplifyDrawingTol="1" hasScaleBasedVisibilityFlag="0" minScale="1e+8" refreshOnNotifyMessage="" labelsEnabled="0" simplifyLocal="1" autoRefreshTime="0" simplifyMaxScale="1" maxScale="0" readOnly="0">
+    <maplayer type="vector" simplifyDrawingTol="1" simplifyMaxScale="1" minScale="1e+8" autoRefreshTime="0" simplifyLocal="1" geometry="Polygon" maxScale="0" autoRefreshEnabled="0" refreshOnNotifyMessage="" labelsEnabled="0" simplifyAlgorithm="0" simplifyDrawingHints="1" hasScaleBasedVisibilityFlag="0" readOnly="0" refreshOnNotifyEnabled="0">
       <extent>
         <xmin>6.13140296936035245</xmin>
         <ymin>53.46683883666992188</ymin>
@@ -2424,21 +2424,21 @@ def my_form_open(dialog, layer, feature):
         <map-layer-style name="default"/>
       </map-layer-style-manager>
       <auxiliaryLayer/>
-      <renderer-v2 type="singleSymbol" enableorderby="0" forceraster="0" symbollevels="0">
+      <renderer-v2 type="singleSymbol" enableorderby="0" symbollevels="0" forceraster="0">
         <symbols>
-          <symbol clip_to_extent="1" type="fill" alpha="1" name="0">
-            <layer pass="0" class="SimpleFill" locked="0" enabled="1">
-              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="color" v="181,227,181,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="35,35,35,255"/>
-              <prop k="outline_style" v="no"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
+          <symbol type="fill" alpha="1" name="0" clip_to_extent="1">
+            <layer class="SimpleFill" pass="0" enabled="1" locked="0">
+              <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+              <prop v="181,227,181,255" k="color"/>
+              <prop v="bevel" k="joinstyle"/>
+              <prop v="0,0" k="offset"/>
+              <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+              <prop v="MM" k="offset_unit"/>
+              <prop v="35,35,35,255" k="outline_color"/>
+              <prop v="no" k="outline_style"/>
+              <prop v="0.26" k="outline_width"/>
+              <prop v="MM" k="outline_width_unit"/>
+              <prop v="solid" k="style"/>
               <data_defined_properties>
                 <Option type="Map">
                   <Option type="QString" value="" name="name"/>
@@ -2671,60 +2671,60 @@ def my_form_open(dialog, layer, feature):
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <defaults>
-        <default expression="" applyOnUpdate="0" field="fid"/>
-        <default expression="" applyOnUpdate="0" field="osm_id"/>
-        <default expression="" applyOnUpdate="0" field="osm_way_id"/>
-        <default expression="" applyOnUpdate="0" field="name"/>
-        <default expression="" applyOnUpdate="0" field="type"/>
-        <default expression="" applyOnUpdate="0" field="aeroway"/>
-        <default expression="" applyOnUpdate="0" field="amenity"/>
-        <default expression="" applyOnUpdate="0" field="admin_level"/>
-        <default expression="" applyOnUpdate="0" field="barrier"/>
-        <default expression="" applyOnUpdate="0" field="boundary"/>
-        <default expression="" applyOnUpdate="0" field="building"/>
-        <default expression="" applyOnUpdate="0" field="craft"/>
-        <default expression="" applyOnUpdate="0" field="geological"/>
-        <default expression="" applyOnUpdate="0" field="historic"/>
-        <default expression="" applyOnUpdate="0" field="land_area"/>
-        <default expression="" applyOnUpdate="0" field="landuse"/>
-        <default expression="" applyOnUpdate="0" field="leisure"/>
-        <default expression="" applyOnUpdate="0" field="man_made"/>
-        <default expression="" applyOnUpdate="0" field="military"/>
-        <default expression="" applyOnUpdate="0" field="natural"/>
-        <default expression="" applyOnUpdate="0" field="office"/>
-        <default expression="" applyOnUpdate="0" field="place"/>
-        <default expression="" applyOnUpdate="0" field="shop"/>
-        <default expression="" applyOnUpdate="0" field="sport"/>
-        <default expression="" applyOnUpdate="0" field="tourism"/>
-        <default expression="" applyOnUpdate="0" field="other_tags"/>
+        <default field="fid" expression="" applyOnUpdate="0"/>
+        <default field="osm_id" expression="" applyOnUpdate="0"/>
+        <default field="osm_way_id" expression="" applyOnUpdate="0"/>
+        <default field="name" expression="" applyOnUpdate="0"/>
+        <default field="type" expression="" applyOnUpdate="0"/>
+        <default field="aeroway" expression="" applyOnUpdate="0"/>
+        <default field="amenity" expression="" applyOnUpdate="0"/>
+        <default field="admin_level" expression="" applyOnUpdate="0"/>
+        <default field="barrier" expression="" applyOnUpdate="0"/>
+        <default field="boundary" expression="" applyOnUpdate="0"/>
+        <default field="building" expression="" applyOnUpdate="0"/>
+        <default field="craft" expression="" applyOnUpdate="0"/>
+        <default field="geological" expression="" applyOnUpdate="0"/>
+        <default field="historic" expression="" applyOnUpdate="0"/>
+        <default field="land_area" expression="" applyOnUpdate="0"/>
+        <default field="landuse" expression="" applyOnUpdate="0"/>
+        <default field="leisure" expression="" applyOnUpdate="0"/>
+        <default field="man_made" expression="" applyOnUpdate="0"/>
+        <default field="military" expression="" applyOnUpdate="0"/>
+        <default field="natural" expression="" applyOnUpdate="0"/>
+        <default field="office" expression="" applyOnUpdate="0"/>
+        <default field="place" expression="" applyOnUpdate="0"/>
+        <default field="shop" expression="" applyOnUpdate="0"/>
+        <default field="sport" expression="" applyOnUpdate="0"/>
+        <default field="tourism" expression="" applyOnUpdate="0"/>
+        <default field="other_tags" expression="" applyOnUpdate="0"/>
       </defaults>
       <constraints>
-        <constraint unique_strength="1" exp_strength="0" constraints="3" notnull_strength="1" field="fid"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="osm_id"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="osm_way_id"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="name"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="type"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="aeroway"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="amenity"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="admin_level"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="barrier"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="boundary"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="building"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="craft"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="geological"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="historic"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="land_area"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="landuse"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="leisure"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="man_made"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="military"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="natural"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="office"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="place"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="shop"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="sport"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="tourism"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="other_tags"/>
+        <constraint constraints="3" notnull_strength="1" exp_strength="0" unique_strength="1" field="fid"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="osm_id"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="osm_way_id"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="name"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="type"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="aeroway"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="amenity"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="admin_level"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="barrier"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="boundary"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="building"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="craft"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="geological"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="historic"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="land_area"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="landuse"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="leisure"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="man_made"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="military"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="natural"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="office"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="place"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="shop"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="sport"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="tourism"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="other_tags"/>
       </constraints>
       <constraintExpressions>
         <constraint exp="" desc="" field="fid"/>
@@ -2757,7 +2757,7 @@ def my_form_open(dialog, layer, feature):
       <attributeactions>
         <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
       </attributeactions>
-      <attributetableconfig sortOrder="0" sortExpression="" actionWidgetStyle="dropDown">
+      <attributetableconfig sortOrder="0" actionWidgetStyle="dropDown" sortExpression="">
         <columns/>
       </attributetableconfig>
       <editform>.</editform>
@@ -2778,7 +2778,7 @@ def my_form_open(dialog, layer, feature):
       <previewExpression></previewExpression>
       <mapTip></mapTip>
     </maplayer>
-    <maplayer autoRefreshEnabled="0" geometry="Polygon" refreshOnNotifyEnabled="0" type="vector" simplifyDrawingHints="1" simplifyAlgorithm="0" simplifyDrawingTol="1" hasScaleBasedVisibilityFlag="0" minScale="1e+8" refreshOnNotifyMessage="" labelsEnabled="0" simplifyLocal="1" autoRefreshTime="0" simplifyMaxScale="1" maxScale="0" readOnly="0">
+    <maplayer type="vector" simplifyDrawingTol="1" simplifyMaxScale="1" minScale="1e+8" autoRefreshTime="0" simplifyLocal="1" geometry="Polygon" maxScale="0" autoRefreshEnabled="0" refreshOnNotifyMessage="" labelsEnabled="0" simplifyAlgorithm="0" simplifyDrawingHints="1" hasScaleBasedVisibilityFlag="0" readOnly="0" refreshOnNotifyEnabled="0">
       <extent>
         <xmin>5.81018018722534269</xmin>
         <ymin>53.388031005859375</ymin>
@@ -2837,21 +2837,21 @@ def my_form_open(dialog, layer, feature):
         <map-layer-style name="default"/>
       </map-layer-style-manager>
       <auxiliaryLayer/>
-      <renderer-v2 type="singleSymbol" enableorderby="0" forceraster="0" symbollevels="0">
+      <renderer-v2 type="singleSymbol" enableorderby="0" symbollevels="0" forceraster="0">
         <symbols>
-          <symbol clip_to_extent="1" type="fill" alpha="1" name="0">
-            <layer pass="0" class="SimpleFill" locked="0" enabled="1">
-              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="color" v="180,200,203,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="35,35,35,255"/>
-              <prop k="outline_style" v="no"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
+          <symbol type="fill" alpha="1" name="0" clip_to_extent="1">
+            <layer class="SimpleFill" pass="0" enabled="1" locked="0">
+              <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+              <prop v="180,200,203,255" k="color"/>
+              <prop v="bevel" k="joinstyle"/>
+              <prop v="0,0" k="offset"/>
+              <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+              <prop v="MM" k="offset_unit"/>
+              <prop v="35,35,35,255" k="outline_color"/>
+              <prop v="no" k="outline_style"/>
+              <prop v="0.26" k="outline_width"/>
+              <prop v="MM" k="outline_width_unit"/>
+              <prop v="solid" k="style"/>
               <data_defined_properties>
                 <Option type="Map">
                   <Option type="QString" value="" name="name"/>
@@ -2860,21 +2860,21 @@ def my_form_open(dialog, layer, feature):
                 </Option>
               </data_defined_properties>
             </layer>
-            <layer pass="0" class="PointPatternFill" locked="0" enabled="0">
-              <prop k="displacement_x" v="5.2"/>
-              <prop k="displacement_x_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="displacement_x_unit" v="MM"/>
-              <prop k="displacement_y" v="0.8"/>
-              <prop k="displacement_y_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="displacement_y_unit" v="MM"/>
-              <prop k="distance_x" v="5.8"/>
-              <prop k="distance_x_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="distance_x_unit" v="MM"/>
-              <prop k="distance_y" v="3.6"/>
-              <prop k="distance_y_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="distance_y_unit" v="MM"/>
-              <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="outline_width_unit" v="MM"/>
+            <layer class="PointPatternFill" pass="0" enabled="0" locked="0">
+              <prop v="5.2" k="displacement_x"/>
+              <prop v="3x:0,0,0,0,0,0" k="displacement_x_map_unit_scale"/>
+              <prop v="MM" k="displacement_x_unit"/>
+              <prop v="0.8" k="displacement_y"/>
+              <prop v="3x:0,0,0,0,0,0" k="displacement_y_map_unit_scale"/>
+              <prop v="MM" k="displacement_y_unit"/>
+              <prop v="5.8" k="distance_x"/>
+              <prop v="3x:0,0,0,0,0,0" k="distance_x_map_unit_scale"/>
+              <prop v="MM" k="distance_x_unit"/>
+              <prop v="3.6" k="distance_y"/>
+              <prop v="3x:0,0,0,0,0,0" k="distance_y_map_unit_scale"/>
+              <prop v="MM" k="distance_y_unit"/>
+              <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+              <prop v="MM" k="outline_width_unit"/>
               <data_defined_properties>
                 <Option type="Map">
                   <Option type="QString" value="" name="name"/>
@@ -2882,26 +2882,26 @@ def my_form_open(dialog, layer, feature):
                   <Option type="QString" value="collection" name="type"/>
                 </Option>
               </data_defined_properties>
-              <symbol clip_to_extent="1" type="marker" alpha="1" name="@0@1">
-                <layer pass="0" class="SimpleMarker" locked="0" enabled="1">
-                  <prop k="angle" v="90"/>
-                  <prop k="color" v="255,0,0,255"/>
-                  <prop k="horizontal_anchor_point" v="1"/>
-                  <prop k="joinstyle" v="bevel"/>
-                  <prop k="name" v="line"/>
-                  <prop k="offset" v="0.50526315789473653,0.88421052631578911"/>
-                  <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-                  <prop k="offset_unit" v="MM"/>
-                  <prop k="outline_color" v="111,155,204,255"/>
-                  <prop k="outline_style" v="solid"/>
-                  <prop k="outline_width" v="0.2"/>
-                  <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-                  <prop k="outline_width_unit" v="MM"/>
-                  <prop k="scale_method" v="diameter"/>
-                  <prop k="size" v="1.38947"/>
-                  <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-                  <prop k="size_unit" v="MM"/>
-                  <prop k="vertical_anchor_point" v="1"/>
+              <symbol type="marker" alpha="1" name="@0@1" clip_to_extent="1">
+                <layer class="SimpleMarker" pass="0" enabled="1" locked="0">
+                  <prop v="90" k="angle"/>
+                  <prop v="255,0,0,255" k="color"/>
+                  <prop v="1" k="horizontal_anchor_point"/>
+                  <prop v="bevel" k="joinstyle"/>
+                  <prop v="line" k="name"/>
+                  <prop v="0.50526315789473653,0.88421052631578911" k="offset"/>
+                  <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+                  <prop v="MM" k="offset_unit"/>
+                  <prop v="111,155,204,255" k="outline_color"/>
+                  <prop v="solid" k="outline_style"/>
+                  <prop v="0.2" k="outline_width"/>
+                  <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+                  <prop v="MM" k="outline_width_unit"/>
+                  <prop v="diameter" k="scale_method"/>
+                  <prop v="1.38947" k="size"/>
+                  <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+                  <prop v="MM" k="size_unit"/>
+                  <prop v="1" k="vertical_anchor_point"/>
                   <data_defined_properties>
                     <Option type="Map">
                       <Option type="QString" value="" name="name"/>
@@ -2910,25 +2910,25 @@ def my_form_open(dialog, layer, feature):
                     </Option>
                   </data_defined_properties>
                 </layer>
-                <layer pass="0" class="SimpleMarker" locked="0" enabled="1">
-                  <prop k="angle" v="90"/>
-                  <prop k="color" v="255,0,0,255"/>
-                  <prop k="horizontal_anchor_point" v="1"/>
-                  <prop k="joinstyle" v="bevel"/>
-                  <prop k="name" v="line"/>
-                  <prop k="offset" v="0,0"/>
-                  <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-                  <prop k="offset_unit" v="MM"/>
-                  <prop k="outline_color" v="111,155,204,255"/>
-                  <prop k="outline_style" v="solid"/>
-                  <prop k="outline_width" v="0.2"/>
-                  <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-                  <prop k="outline_width_unit" v="MM"/>
-                  <prop k="scale_method" v="diameter"/>
-                  <prop k="size" v="2.4"/>
-                  <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-                  <prop k="size_unit" v="MM"/>
-                  <prop k="vertical_anchor_point" v="1"/>
+                <layer class="SimpleMarker" pass="0" enabled="1" locked="0">
+                  <prop v="90" k="angle"/>
+                  <prop v="255,0,0,255" k="color"/>
+                  <prop v="1" k="horizontal_anchor_point"/>
+                  <prop v="bevel" k="joinstyle"/>
+                  <prop v="line" k="name"/>
+                  <prop v="0,0" k="offset"/>
+                  <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+                  <prop v="MM" k="offset_unit"/>
+                  <prop v="111,155,204,255" k="outline_color"/>
+                  <prop v="solid" k="outline_style"/>
+                  <prop v="0.2" k="outline_width"/>
+                  <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+                  <prop v="MM" k="outline_width_unit"/>
+                  <prop v="diameter" k="scale_method"/>
+                  <prop v="2.4" k="size"/>
+                  <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+                  <prop v="MM" k="size_unit"/>
+                  <prop v="1" k="vertical_anchor_point"/>
                   <data_defined_properties>
                     <Option type="Map">
                       <Option type="QString" value="" name="name"/>
@@ -2937,25 +2937,25 @@ def my_form_open(dialog, layer, feature):
                     </Option>
                   </data_defined_properties>
                 </layer>
-                <layer pass="0" class="SimpleMarker" locked="0" enabled="1">
-                  <prop k="angle" v="90"/>
-                  <prop k="color" v="255,0,0,255"/>
-                  <prop k="horizontal_anchor_point" v="1"/>
-                  <prop k="joinstyle" v="bevel"/>
-                  <prop k="name" v="line"/>
-                  <prop k="offset" v="-0.50526315789473653,1.13684210526315721"/>
-                  <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-                  <prop k="offset_unit" v="MM"/>
-                  <prop k="outline_color" v="111,155,204,255"/>
-                  <prop k="outline_style" v="solid"/>
-                  <prop k="outline_width" v="0.2"/>
-                  <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-                  <prop k="outline_width_unit" v="MM"/>
-                  <prop k="scale_method" v="diameter"/>
-                  <prop k="size" v="2.4"/>
-                  <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-                  <prop k="size_unit" v="MM"/>
-                  <prop k="vertical_anchor_point" v="1"/>
+                <layer class="SimpleMarker" pass="0" enabled="1" locked="0">
+                  <prop v="90" k="angle"/>
+                  <prop v="255,0,0,255" k="color"/>
+                  <prop v="1" k="horizontal_anchor_point"/>
+                  <prop v="bevel" k="joinstyle"/>
+                  <prop v="line" k="name"/>
+                  <prop v="-0.50526315789473653,1.13684210526315721" k="offset"/>
+                  <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+                  <prop v="MM" k="offset_unit"/>
+                  <prop v="111,155,204,255" k="outline_color"/>
+                  <prop v="solid" k="outline_style"/>
+                  <prop v="0.2" k="outline_width"/>
+                  <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
+                  <prop v="MM" k="outline_width_unit"/>
+                  <prop v="diameter" k="scale_method"/>
+                  <prop v="2.4" k="size"/>
+                  <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
+                  <prop v="MM" k="size_unit"/>
+                  <prop v="1" k="vertical_anchor_point"/>
                   <data_defined_properties>
                     <Option type="Map">
                       <Option type="QString" value="" name="name"/>
@@ -3190,60 +3190,60 @@ def my_form_open(dialog, layer, feature):
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <defaults>
-        <default expression="" applyOnUpdate="0" field="fid"/>
-        <default expression="" applyOnUpdate="0" field="osm_id"/>
-        <default expression="" applyOnUpdate="0" field="osm_way_id"/>
-        <default expression="" applyOnUpdate="0" field="name"/>
-        <default expression="" applyOnUpdate="0" field="type"/>
-        <default expression="" applyOnUpdate="0" field="aeroway"/>
-        <default expression="" applyOnUpdate="0" field="amenity"/>
-        <default expression="" applyOnUpdate="0" field="admin_level"/>
-        <default expression="" applyOnUpdate="0" field="barrier"/>
-        <default expression="" applyOnUpdate="0" field="boundary"/>
-        <default expression="" applyOnUpdate="0" field="building"/>
-        <default expression="" applyOnUpdate="0" field="craft"/>
-        <default expression="" applyOnUpdate="0" field="geological"/>
-        <default expression="" applyOnUpdate="0" field="historic"/>
-        <default expression="" applyOnUpdate="0" field="land_area"/>
-        <default expression="" applyOnUpdate="0" field="landuse"/>
-        <default expression="" applyOnUpdate="0" field="leisure"/>
-        <default expression="" applyOnUpdate="0" field="man_made"/>
-        <default expression="" applyOnUpdate="0" field="military"/>
-        <default expression="" applyOnUpdate="0" field="natural"/>
-        <default expression="" applyOnUpdate="0" field="office"/>
-        <default expression="" applyOnUpdate="0" field="place"/>
-        <default expression="" applyOnUpdate="0" field="shop"/>
-        <default expression="" applyOnUpdate="0" field="sport"/>
-        <default expression="" applyOnUpdate="0" field="tourism"/>
-        <default expression="" applyOnUpdate="0" field="other_tags"/>
+        <default field="fid" expression="" applyOnUpdate="0"/>
+        <default field="osm_id" expression="" applyOnUpdate="0"/>
+        <default field="osm_way_id" expression="" applyOnUpdate="0"/>
+        <default field="name" expression="" applyOnUpdate="0"/>
+        <default field="type" expression="" applyOnUpdate="0"/>
+        <default field="aeroway" expression="" applyOnUpdate="0"/>
+        <default field="amenity" expression="" applyOnUpdate="0"/>
+        <default field="admin_level" expression="" applyOnUpdate="0"/>
+        <default field="barrier" expression="" applyOnUpdate="0"/>
+        <default field="boundary" expression="" applyOnUpdate="0"/>
+        <default field="building" expression="" applyOnUpdate="0"/>
+        <default field="craft" expression="" applyOnUpdate="0"/>
+        <default field="geological" expression="" applyOnUpdate="0"/>
+        <default field="historic" expression="" applyOnUpdate="0"/>
+        <default field="land_area" expression="" applyOnUpdate="0"/>
+        <default field="landuse" expression="" applyOnUpdate="0"/>
+        <default field="leisure" expression="" applyOnUpdate="0"/>
+        <default field="man_made" expression="" applyOnUpdate="0"/>
+        <default field="military" expression="" applyOnUpdate="0"/>
+        <default field="natural" expression="" applyOnUpdate="0"/>
+        <default field="office" expression="" applyOnUpdate="0"/>
+        <default field="place" expression="" applyOnUpdate="0"/>
+        <default field="shop" expression="" applyOnUpdate="0"/>
+        <default field="sport" expression="" applyOnUpdate="0"/>
+        <default field="tourism" expression="" applyOnUpdate="0"/>
+        <default field="other_tags" expression="" applyOnUpdate="0"/>
       </defaults>
       <constraints>
-        <constraint unique_strength="1" exp_strength="0" constraints="3" notnull_strength="1" field="fid"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="osm_id"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="osm_way_id"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="name"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="type"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="aeroway"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="amenity"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="admin_level"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="barrier"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="boundary"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="building"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="craft"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="geological"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="historic"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="land_area"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="landuse"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="leisure"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="man_made"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="military"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="natural"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="office"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="place"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="shop"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="sport"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="tourism"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="other_tags"/>
+        <constraint constraints="3" notnull_strength="1" exp_strength="0" unique_strength="1" field="fid"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="osm_id"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="osm_way_id"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="name"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="type"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="aeroway"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="amenity"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="admin_level"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="barrier"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="boundary"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="building"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="craft"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="geological"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="historic"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="land_area"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="landuse"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="leisure"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="man_made"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="military"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="natural"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="office"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="place"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="shop"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="sport"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="tourism"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="other_tags"/>
       </constraints>
       <constraintExpressions>
         <constraint exp="" desc="" field="fid"/>
@@ -3276,7 +3276,7 @@ def my_form_open(dialog, layer, feature):
       <attributeactions>
         <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
       </attributeactions>
-      <attributetableconfig sortOrder="0" sortExpression="" actionWidgetStyle="dropDown">
+      <attributetableconfig sortOrder="0" actionWidgetStyle="dropDown" sortExpression="">
         <columns/>
       </attributetableconfig>
       <editform>.</editform>
@@ -3297,7 +3297,7 @@ def my_form_open(dialog, layer, feature):
       <previewExpression></previewExpression>
       <mapTip></mapTip>
     </maplayer>
-    <maplayer autoRefreshEnabled="0" geometry="Polygon" refreshOnNotifyEnabled="0" type="vector" simplifyDrawingHints="1" simplifyAlgorithm="0" simplifyDrawingTol="1" hasScaleBasedVisibilityFlag="0" minScale="1e+8" refreshOnNotifyMessage="" labelsEnabled="0" simplifyLocal="1" autoRefreshTime="0" simplifyMaxScale="1" maxScale="0" readOnly="0">
+    <maplayer type="vector" simplifyDrawingTol="1" simplifyMaxScale="1" minScale="1e+8" autoRefreshTime="0" simplifyLocal="1" geometry="Polygon" maxScale="0" autoRefreshEnabled="0" refreshOnNotifyMessage="" labelsEnabled="0" simplifyAlgorithm="0" simplifyDrawingHints="1" hasScaleBasedVisibilityFlag="0" readOnly="0" refreshOnNotifyEnabled="0">
       <extent>
         <xmin>6.11777257919311612</xmin>
         <ymin>53.33849334716796875</ymin>
@@ -3356,21 +3356,21 @@ def my_form_open(dialog, layer, feature):
         <map-layer-style name="default"/>
       </map-layer-style-manager>
       <auxiliaryLayer/>
-      <renderer-v2 type="singleSymbol" enableorderby="0" forceraster="0" symbollevels="0">
+      <renderer-v2 type="singleSymbol" enableorderby="0" symbollevels="0" forceraster="0">
         <symbols>
-          <symbol clip_to_extent="1" type="fill" alpha="1" name="0">
-            <layer pass="0" class="SimpleFill" locked="0" enabled="1">
-              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="color" v="170,211,223,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="35,35,35,255"/>
-              <prop k="outline_style" v="no"/>
-              <prop k="outline_width" v="0.26"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
+          <symbol type="fill" alpha="1" name="0" clip_to_extent="1">
+            <layer class="SimpleFill" pass="0" enabled="1" locked="0">
+              <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+              <prop v="170,211,223,255" k="color"/>
+              <prop v="bevel" k="joinstyle"/>
+              <prop v="0,0" k="offset"/>
+              <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+              <prop v="MM" k="offset_unit"/>
+              <prop v="35,35,35,255" k="outline_color"/>
+              <prop v="no" k="outline_style"/>
+              <prop v="0.26" k="outline_width"/>
+              <prop v="MM" k="outline_width_unit"/>
+              <prop v="solid" k="style"/>
               <data_defined_properties>
                 <Option type="Map">
                   <Option type="QString" value="" name="name"/>
@@ -3603,60 +3603,60 @@ def my_form_open(dialog, layer, feature):
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <defaults>
-        <default expression="" applyOnUpdate="0" field="fid"/>
-        <default expression="" applyOnUpdate="0" field="osm_id"/>
-        <default expression="" applyOnUpdate="0" field="osm_way_id"/>
-        <default expression="" applyOnUpdate="0" field="name"/>
-        <default expression="" applyOnUpdate="0" field="type"/>
-        <default expression="" applyOnUpdate="0" field="aeroway"/>
-        <default expression="" applyOnUpdate="0" field="amenity"/>
-        <default expression="" applyOnUpdate="0" field="admin_level"/>
-        <default expression="" applyOnUpdate="0" field="barrier"/>
-        <default expression="" applyOnUpdate="0" field="boundary"/>
-        <default expression="" applyOnUpdate="0" field="building"/>
-        <default expression="" applyOnUpdate="0" field="craft"/>
-        <default expression="" applyOnUpdate="0" field="geological"/>
-        <default expression="" applyOnUpdate="0" field="historic"/>
-        <default expression="" applyOnUpdate="0" field="land_area"/>
-        <default expression="" applyOnUpdate="0" field="landuse"/>
-        <default expression="" applyOnUpdate="0" field="leisure"/>
-        <default expression="" applyOnUpdate="0" field="man_made"/>
-        <default expression="" applyOnUpdate="0" field="military"/>
-        <default expression="" applyOnUpdate="0" field="natural"/>
-        <default expression="" applyOnUpdate="0" field="office"/>
-        <default expression="" applyOnUpdate="0" field="place"/>
-        <default expression="" applyOnUpdate="0" field="shop"/>
-        <default expression="" applyOnUpdate="0" field="sport"/>
-        <default expression="" applyOnUpdate="0" field="tourism"/>
-        <default expression="" applyOnUpdate="0" field="other_tags"/>
+        <default field="fid" expression="" applyOnUpdate="0"/>
+        <default field="osm_id" expression="" applyOnUpdate="0"/>
+        <default field="osm_way_id" expression="" applyOnUpdate="0"/>
+        <default field="name" expression="" applyOnUpdate="0"/>
+        <default field="type" expression="" applyOnUpdate="0"/>
+        <default field="aeroway" expression="" applyOnUpdate="0"/>
+        <default field="amenity" expression="" applyOnUpdate="0"/>
+        <default field="admin_level" expression="" applyOnUpdate="0"/>
+        <default field="barrier" expression="" applyOnUpdate="0"/>
+        <default field="boundary" expression="" applyOnUpdate="0"/>
+        <default field="building" expression="" applyOnUpdate="0"/>
+        <default field="craft" expression="" applyOnUpdate="0"/>
+        <default field="geological" expression="" applyOnUpdate="0"/>
+        <default field="historic" expression="" applyOnUpdate="0"/>
+        <default field="land_area" expression="" applyOnUpdate="0"/>
+        <default field="landuse" expression="" applyOnUpdate="0"/>
+        <default field="leisure" expression="" applyOnUpdate="0"/>
+        <default field="man_made" expression="" applyOnUpdate="0"/>
+        <default field="military" expression="" applyOnUpdate="0"/>
+        <default field="natural" expression="" applyOnUpdate="0"/>
+        <default field="office" expression="" applyOnUpdate="0"/>
+        <default field="place" expression="" applyOnUpdate="0"/>
+        <default field="shop" expression="" applyOnUpdate="0"/>
+        <default field="sport" expression="" applyOnUpdate="0"/>
+        <default field="tourism" expression="" applyOnUpdate="0"/>
+        <default field="other_tags" expression="" applyOnUpdate="0"/>
       </defaults>
       <constraints>
-        <constraint unique_strength="1" exp_strength="0" constraints="3" notnull_strength="1" field="fid"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="osm_id"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="osm_way_id"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="name"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="type"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="aeroway"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="amenity"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="admin_level"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="barrier"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="boundary"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="building"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="craft"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="geological"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="historic"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="land_area"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="landuse"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="leisure"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="man_made"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="military"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="natural"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="office"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="place"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="shop"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="sport"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="tourism"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="other_tags"/>
+        <constraint constraints="3" notnull_strength="1" exp_strength="0" unique_strength="1" field="fid"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="osm_id"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="osm_way_id"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="name"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="type"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="aeroway"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="amenity"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="admin_level"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="barrier"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="boundary"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="building"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="craft"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="geological"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="historic"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="land_area"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="landuse"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="leisure"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="man_made"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="military"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="natural"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="office"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="place"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="shop"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="sport"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="tourism"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="other_tags"/>
       </constraints>
       <constraintExpressions>
         <constraint exp="" desc="" field="fid"/>
@@ -3689,7 +3689,7 @@ def my_form_open(dialog, layer, feature):
       <attributeactions>
         <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
       </attributeactions>
-      <attributetableconfig sortOrder="0" sortExpression="" actionWidgetStyle="dropDown">
+      <attributetableconfig sortOrder="0" actionWidgetStyle="dropDown" sortExpression="">
         <columns/>
       </attributetableconfig>
       <editform>.</editform>
@@ -3710,7 +3710,7 @@ def my_form_open(dialog, layer, feature):
       <previewExpression></previewExpression>
       <mapTip></mapTip>
     </maplayer>
-    <maplayer autoRefreshEnabled="0" geometry="Polygon" refreshOnNotifyEnabled="0" type="vector" simplifyDrawingHints="1" simplifyAlgorithm="0" simplifyDrawingTol="1" hasScaleBasedVisibilityFlag="0" minScale="1e+8" refreshOnNotifyMessage="" labelsEnabled="0" simplifyLocal="1" autoRefreshTime="0" simplifyMaxScale="1" maxScale="0" readOnly="0">
+    <maplayer type="vector" simplifyDrawingTol="1" simplifyMaxScale="1" minScale="1e+8" autoRefreshTime="0" simplifyLocal="1" geometry="Polygon" maxScale="0" autoRefreshEnabled="0" refreshOnNotifyMessage="" labelsEnabled="0" simplifyAlgorithm="0" simplifyDrawingHints="1" hasScaleBasedVisibilityFlag="0" readOnly="0" refreshOnNotifyEnabled="0">
       <extent>
         <xmin>6.21086883544921964</xmin>
         <ymin>53.43711090087890625</ymin>
@@ -3769,21 +3769,21 @@ def my_form_open(dialog, layer, feature):
         <map-layer-style name="default"/>
       </map-layer-style-manager>
       <auxiliaryLayer/>
-      <renderer-v2 type="singleSymbol" enableorderby="0" forceraster="0" symbollevels="0">
+      <renderer-v2 type="singleSymbol" enableorderby="0" symbollevels="0" forceraster="0">
         <symbols>
-          <symbol clip_to_extent="1" type="fill" alpha="1" name="0">
-            <layer pass="0" class="SimpleFill" locked="0" enabled="1">
-              <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="color" v="194,224,182,255"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="35,35,35,255"/>
-              <prop k="outline_style" v="no"/>
-              <prop k="outline_width" v="0.5"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="solid"/>
+          <symbol type="fill" alpha="1" name="0" clip_to_extent="1">
+            <layer class="SimpleFill" pass="0" enabled="1" locked="0">
+              <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+              <prop v="194,224,182,255" k="color"/>
+              <prop v="bevel" k="joinstyle"/>
+              <prop v="0,0" k="offset"/>
+              <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+              <prop v="MM" k="offset_unit"/>
+              <prop v="35,35,35,255" k="outline_color"/>
+              <prop v="no" k="outline_style"/>
+              <prop v="0.5" k="outline_width"/>
+              <prop v="MM" k="outline_width_unit"/>
+              <prop v="solid" k="style"/>
               <data_defined_properties>
                 <Option type="Map">
                   <Option type="QString" value="" name="name"/>
@@ -4016,60 +4016,60 @@ def my_form_open(dialog, layer, feature):
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
       <defaults>
-        <default expression="" applyOnUpdate="0" field="fid"/>
-        <default expression="" applyOnUpdate="0" field="osm_id"/>
-        <default expression="" applyOnUpdate="0" field="osm_way_id"/>
-        <default expression="" applyOnUpdate="0" field="name"/>
-        <default expression="" applyOnUpdate="0" field="type"/>
-        <default expression="" applyOnUpdate="0" field="aeroway"/>
-        <default expression="" applyOnUpdate="0" field="amenity"/>
-        <default expression="" applyOnUpdate="0" field="admin_level"/>
-        <default expression="" applyOnUpdate="0" field="barrier"/>
-        <default expression="" applyOnUpdate="0" field="boundary"/>
-        <default expression="" applyOnUpdate="0" field="building"/>
-        <default expression="" applyOnUpdate="0" field="craft"/>
-        <default expression="" applyOnUpdate="0" field="geological"/>
-        <default expression="" applyOnUpdate="0" field="historic"/>
-        <default expression="" applyOnUpdate="0" field="land_area"/>
-        <default expression="" applyOnUpdate="0" field="landuse"/>
-        <default expression="" applyOnUpdate="0" field="leisure"/>
-        <default expression="" applyOnUpdate="0" field="man_made"/>
-        <default expression="" applyOnUpdate="0" field="military"/>
-        <default expression="" applyOnUpdate="0" field="natural"/>
-        <default expression="" applyOnUpdate="0" field="office"/>
-        <default expression="" applyOnUpdate="0" field="place"/>
-        <default expression="" applyOnUpdate="0" field="shop"/>
-        <default expression="" applyOnUpdate="0" field="sport"/>
-        <default expression="" applyOnUpdate="0" field="tourism"/>
-        <default expression="" applyOnUpdate="0" field="other_tags"/>
+        <default field="fid" expression="" applyOnUpdate="0"/>
+        <default field="osm_id" expression="" applyOnUpdate="0"/>
+        <default field="osm_way_id" expression="" applyOnUpdate="0"/>
+        <default field="name" expression="" applyOnUpdate="0"/>
+        <default field="type" expression="" applyOnUpdate="0"/>
+        <default field="aeroway" expression="" applyOnUpdate="0"/>
+        <default field="amenity" expression="" applyOnUpdate="0"/>
+        <default field="admin_level" expression="" applyOnUpdate="0"/>
+        <default field="barrier" expression="" applyOnUpdate="0"/>
+        <default field="boundary" expression="" applyOnUpdate="0"/>
+        <default field="building" expression="" applyOnUpdate="0"/>
+        <default field="craft" expression="" applyOnUpdate="0"/>
+        <default field="geological" expression="" applyOnUpdate="0"/>
+        <default field="historic" expression="" applyOnUpdate="0"/>
+        <default field="land_area" expression="" applyOnUpdate="0"/>
+        <default field="landuse" expression="" applyOnUpdate="0"/>
+        <default field="leisure" expression="" applyOnUpdate="0"/>
+        <default field="man_made" expression="" applyOnUpdate="0"/>
+        <default field="military" expression="" applyOnUpdate="0"/>
+        <default field="natural" expression="" applyOnUpdate="0"/>
+        <default field="office" expression="" applyOnUpdate="0"/>
+        <default field="place" expression="" applyOnUpdate="0"/>
+        <default field="shop" expression="" applyOnUpdate="0"/>
+        <default field="sport" expression="" applyOnUpdate="0"/>
+        <default field="tourism" expression="" applyOnUpdate="0"/>
+        <default field="other_tags" expression="" applyOnUpdate="0"/>
       </defaults>
       <constraints>
-        <constraint unique_strength="1" exp_strength="0" constraints="3" notnull_strength="1" field="fid"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="osm_id"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="osm_way_id"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="name"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="type"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="aeroway"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="amenity"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="admin_level"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="barrier"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="boundary"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="building"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="craft"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="geological"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="historic"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="land_area"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="landuse"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="leisure"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="man_made"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="military"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="natural"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="office"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="place"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="shop"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="sport"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="tourism"/>
-        <constraint unique_strength="0" exp_strength="0" constraints="0" notnull_strength="0" field="other_tags"/>
+        <constraint constraints="3" notnull_strength="1" exp_strength="0" unique_strength="1" field="fid"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="osm_id"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="osm_way_id"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="name"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="type"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="aeroway"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="amenity"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="admin_level"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="barrier"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="boundary"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="building"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="craft"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="geological"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="historic"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="land_area"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="landuse"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="leisure"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="man_made"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="military"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="natural"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="office"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="place"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="shop"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="sport"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="tourism"/>
+        <constraint constraints="0" notnull_strength="0" exp_strength="0" unique_strength="0" field="other_tags"/>
       </constraints>
       <constraintExpressions>
         <constraint exp="" desc="" field="fid"/>
@@ -4102,7 +4102,7 @@ def my_form_open(dialog, layer, feature):
       <attributeactions>
         <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
       </attributeactions>
-      <attributetableconfig sortOrder="0" sortExpression="" actionWidgetStyle="dropDown">
+      <attributetableconfig sortOrder="0" actionWidgetStyle="dropDown" sortExpression="">
         <columns/>
       </attributetableconfig>
       <editform>.</editform>
@@ -4136,94 +4136,94 @@ def my_form_open(dialog, layer, feature):
     <layer id="OSM2_wetland_c171f38d_f0ac_4015_a7ce_9839291cde08"/>
   </layerorder>
   <properties>
-    <WMSImageQuality type="int">90</WMSImageQuality>
-    <WMSContactOrganization type="QString"></WMSContactOrganization>
-    <WMSContactPhone type="QString"></WMSContactPhone>
-    <SpatialRefSys>
-      <ProjectionsEnabled type="int">1</ProjectionsEnabled>
-    </SpatialRefSys>
-    <WFSUrl type="QString"></WFSUrl>
-    <WMSUrl type="QString"></WMSUrl>
+    <WMSServiceAbstract type="QString"></WMSServiceAbstract>
     <WCSLayers type="QStringList"/>
+    <Measure>
+      <Ellipsoid type="QString">WGS84</Ellipsoid>
+    </Measure>
+    <DefaultStyles>
+      <Opacity type="double">1</Opacity>
+      <ColorRamp type="QString"></ColorRamp>
+      <RandomColors type="bool">true</RandomColors>
+      <Fill type="QString"></Fill>
+      <Marker type="QString"></Marker>
+      <Line type="QString"></Line>
+    </DefaultStyles>
+    <WMSContactPerson type="QString"></WMSContactPerson>
+    <WFSTLayers>
+      <Update type="QStringList"/>
+      <Insert type="QStringList"/>
+      <Delete type="QStringList"/>
+    </WFSTLayers>
+    <WMSImageQuality type="int">90</WMSImageQuality>
+    <WMSUseLayerIDs type="bool">false</WMSUseLayerIDs>
     <Measurement>
       <DistanceUnits type="QString">meters</DistanceUnits>
       <AreaUnits type="QString">m2</AreaUnits>
     </Measurement>
     <WMSOnlineResource type="QString"></WMSOnlineResource>
-    <WMSPrecision type="QString">8</WMSPrecision>
+    <WFSLayers type="QStringList"/>
+    <WMSContactOrganization type="QString"></WMSContactOrganization>
     <Gui>
-      <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
-      <CanvasColorBluePart type="int">223</CanvasColorBluePart>
       <CanvasColorGreenPart type="int">211</CanvasColorGreenPart>
       <SelectionColorRedPart type="int">255</SelectionColorRedPart>
+      <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
       <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
       <SelectionColorBluePart type="int">0</SelectionColorBluePart>
       <CanvasColorRedPart type="int">170</CanvasColorRedPart>
+      <CanvasColorBluePart type="int">223</CanvasColorBluePart>
     </Gui>
-    <WFSTLayers>
-      <Delete type="QStringList"/>
-      <Insert type="QStringList"/>
-      <Update type="QStringList"/>
-    </WFSTLayers>
-    <WMSServiceAbstract type="QString"></WMSServiceAbstract>
-    <WMSContactPosition type="QString"></WMSContactPosition>
-    <WMSUseLayerIDs type="bool">false</WMSUseLayerIDs>
-    <PositionPrecision>
-      <DecimalPlaces type="int">2</DecimalPlaces>
-      <DegreeFormat type="QString">MU</DegreeFormat>
-      <Automatic type="bool">true</Automatic>
-    </PositionPrecision>
-    <PAL>
-      <ShowingAllLabels type="bool">false</ShowingAllLabels>
-      <ShowingPartialsLabels type="bool">true</ShowingPartialsLabels>
-      <DrawOutlineLabels type="bool">true</DrawOutlineLabels>
-      <SearchMethod type="int">0</SearchMethod>
-      <CandidatesLine type="int">50</CandidatesLine>
-      <CandidatesPolygon type="int">30</CandidatesPolygon>
-      <ShowingCandidates type="bool">false</ShowingCandidates>
-      <DrawRectOnly type="bool">false</DrawRectOnly>
-      <CandidatesPoint type="int">16</CandidatesPoint>
-    </PAL>
-    <WMSAccessConstraints type="QString">None</WMSAccessConstraints>
-    <RequiredLayers>
-      <Layers type="QStringList"/>
-    </RequiredLayers>
-    <Legend>
-      <filterByMap type="bool">false</filterByMap>
-    </Legend>
-    <WMSContactMail type="QString"></WMSContactMail>
-    <WMSKeywordList type="QStringList">
-      <value></value>
-    </WMSKeywordList>
-    <Measure>
-      <Ellipsoid type="QString">WGS84</Ellipsoid>
-    </Measure>
-    <Macros>
-      <pythonCode type="QString"></pythonCode>
-    </Macros>
-    <WMSContactPerson type="QString"></WMSContactPerson>
-    <WMSSegmentizeFeatureInfoGeometry type="bool">false</WMSSegmentizeFeatureInfoGeometry>
-    <WFSLayers type="QStringList"/>
-    <Paths>
-      <Absolute type="bool">false</Absolute>
-    </Paths>
-    <WCSUrl type="QString"></WCSUrl>
+    <WMSServiceTitle type="QString"></WMSServiceTitle>
+    <WMSContactPhone type="QString"></WMSContactPhone>
+    <WMSPrecision type="QString">8</WMSPrecision>
     <Identify>
       <disabledLayers type="QStringList"/>
     </Identify>
     <WMSServiceCapabilities type="bool">false</WMSServiceCapabilities>
+    <WMSContactMail type="QString"></WMSContactMail>
+    <PositionPrecision>
+      <DegreeFormat type="QString">MU</DegreeFormat>
+      <Automatic type="bool">true</Automatic>
+      <DecimalPlaces type="int">2</DecimalPlaces>
+    </PositionPrecision>
+    <SpatialRefSys>
+      <ProjectionsEnabled type="int">1</ProjectionsEnabled>
+    </SpatialRefSys>
     <WMSRequestDefinedDataSources type="bool">false</WMSRequestDefinedDataSources>
-    <DefaultStyles>
-      <ColorRamp type="QString"></ColorRamp>
-      <Fill type="QString"></Fill>
-      <Opacity type="double">1</Opacity>
-      <Marker type="QString"></Marker>
-      <RandomColors type="bool">true</RandomColors>
-      <Line type="QString"></Line>
-    </DefaultStyles>
-    <WMSServiceTitle type="QString"></WMSServiceTitle>
+    <WMSContactPosition type="QString"></WMSContactPosition>
+    <WCSUrl type="QString"></WCSUrl>
     <WMSAddWktGeometry type="bool">false</WMSAddWktGeometry>
     <WMSFees type="QString">conditions unknown</WMSFees>
+    <Legend>
+      <filterByMap type="bool">false</filterByMap>
+    </Legend>
+    <RequiredLayers>
+      <Layers type="QStringList"/>
+    </RequiredLayers>
+    <WMSUrl type="QString"></WMSUrl>
+    <Macros>
+      <pythonCode type="QString"></pythonCode>
+    </Macros>
+    <Paths>
+      <Absolute type="bool">false</Absolute>
+    </Paths>
+    <WFSUrl type="QString"></WFSUrl>
+    <WMSSegmentizeFeatureInfoGeometry type="bool">false</WMSSegmentizeFeatureInfoGeometry>
+    <PAL>
+      <CandidatesLine type="int">50</CandidatesLine>
+      <DrawOutlineLabels type="bool">true</DrawOutlineLabels>
+      <SearchMethod type="int">0</SearchMethod>
+      <ShowingCandidates type="bool">false</ShowingCandidates>
+      <DrawRectOnly type="bool">false</DrawRectOnly>
+      <ShowingPartialsLabels type="bool">true</ShowingPartialsLabels>
+      <ShowingAllLabels type="bool">false</ShowingAllLabels>
+      <CandidatesPolygon type="int">30</CandidatesPolygon>
+      <CandidatesPoint type="int">16</CandidatesPoint>
+    </PAL>
+    <WMSKeywordList type="QStringList">
+      <value></value>
+    </WMSKeywordList>
+    <WMSAccessConstraints type="QString">None</WMSAccessConstraints>
   </properties>
   <visibility-presets/>
   <transformContext/>
@@ -4249,23 +4249,23 @@ def my_form_open(dialog, layer, feature):
   </projectMetadata>
   <Annotations/>
   <Layouts>
-    <Layout units="mm" worldFileMap="{ddbea5d4-510b-48e6-96ec-08d927834527}" name="Layout 1" printResolution="300">
-      <Snapper tolerance="5" snapToGrid="0" snapToGuides="1" snapToItems="1"/>
-      <Grid resolution="10" offsetY="0" offsetUnits="mm" offsetX="0" resUnits="mm"/>
+    <Layout worldFileMap="{ddbea5d4-510b-48e6-96ec-08d927834527}" units="mm" name="Layout 1" printResolution="300">
+      <Snapper snapToItems="1" snapToGuides="1" tolerance="5" snapToGrid="0"/>
+      <Grid offsetX="0" offsetUnits="mm" offsetY="0" resolution="10" resUnits="mm"/>
       <PageCollection>
-        <symbol clip_to_extent="1" type="fill" alpha="1" name="">
-          <layer pass="0" class="SimpleFill" locked="0" enabled="1">
-            <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-            <prop k="color" v="255,255,255,255"/>
-            <prop k="joinstyle" v="miter"/>
-            <prop k="offset" v="0,0"/>
-            <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
-            <prop k="offset_unit" v="MM"/>
-            <prop k="outline_color" v="35,35,35,255"/>
-            <prop k="outline_style" v="no"/>
-            <prop k="outline_width" v="0.26"/>
-            <prop k="outline_width_unit" v="MM"/>
-            <prop k="style" v="solid"/>
+        <symbol type="fill" alpha="1" name="" clip_to_extent="1">
+          <layer class="SimpleFill" pass="0" enabled="1" locked="0">
+            <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+            <prop v="255,255,255,255" k="color"/>
+            <prop v="miter" k="joinstyle"/>
+            <prop v="0,0" k="offset"/>
+            <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+            <prop v="MM" k="offset_unit"/>
+            <prop v="35,35,35,255" k="outline_color"/>
+            <prop v="no" k="outline_style"/>
+            <prop v="0.26" k="outline_width"/>
+            <prop v="MM" k="outline_width_unit"/>
+            <prop v="solid" k="style"/>
             <data_defined_properties>
               <Option type="Map">
                 <Option type="QString" value="" name="name"/>
@@ -4275,9 +4275,9 @@ def my_form_open(dialog, layer, feature):
             </data_defined_properties>
           </layer>
         </symbol>
-        <LayoutItem positionOnPage="0,0,mm" positionLock="false" id="" referencePoint="0" frameJoinStyle="miter" opacity="1" size="297,210,mm" uuid="{3049b3c8-3955-49a4-81a3-b3f6a22bb868}" position="0,0,mm" templateUuid="{3049b3c8-3955-49a4-81a3-b3f6a22bb868}" blendMode="0" background="true" outlineWidthM="0.3,mm" excludeFromExports="0" frame="false" itemRotation="0" type="65638" groupUuid="" visibility="1" zValue="0">
-          <FrameColor blue="0" alpha="255" green="0" red="0"/>
-          <BackgroundColor blue="255" alpha="255" green="255" red="255"/>
+        <LayoutItem groupUuid="" visibility="1" outlineWidthM="0.3,mm" uuid="{3049b3c8-3955-49a4-81a3-b3f6a22bb868}" position="0,0,mm" frameJoinStyle="miter" blendMode="0" size="297,210,mm" templateUuid="{3049b3c8-3955-49a4-81a3-b3f6a22bb868}" background="true" excludeFromExports="0" positionLock="false" opacity="1" positionOnPage="0,0,mm" referencePoint="0" type="65638" frame="false" id="" itemRotation="0" zValue="0">
+          <FrameColor blue="0" red="0" green="0" alpha="255"/>
+          <BackgroundColor blue="255" red="255" green="255" alpha="255"/>
           <LayoutObject>
             <dataDefinedProperties>
               <Option type="Map">
@@ -4291,9 +4291,9 @@ def my_form_open(dialog, layer, feature):
         </LayoutItem>
         <GuideCollection visible="1"/>
       </PageCollection>
-      <LayoutItem height="2.5" size="36.8221,208.8,mm" background="false" positionLock="false" numUnitsPerSegment="250" segmentMillimeters="12.4111" outlineWidth="0.3" style="Line Ticks Up" unitLabel="m" uuid="{b8cfe008-a549-44f3-80f3-1a1a91d2d86a}" groupUuid="" maxBarWidth="150" numMapUnitsPerScaleBarUnit="1" frameJoinStyle="miter" opacity="0.877" lineCapStyle="square" templateUuid="{b8cfe008-a549-44f3-80f3-1a1a91d2d86a}" visibility="1" zValue="4" referencePoint="0" segmentSizeMode="0" frame="false" lineJoinStyle="miter" blendMode="6" alignment="0" itemRotation="0" type="65646" boxContentSpace="1" position="3.02992,3.7132,mm" unitType="meters" minBarWidth="50" numSegmentsLeft="0" mapUuid="{ddbea5d4-510b-48e6-96ec-08d927834527}" outlineWidthM="0.3,mm" excludeFromExports="0" labelBarSpace="2" numSegments="2" positionOnPage="3.02992,3.7132,mm" id="">
-        <FrameColor blue="0" alpha="255" green="0" red="0"/>
-        <BackgroundColor blue="255" alpha="255" green="255" red="255"/>
+      <LayoutItem groupUuid="" halign="8" visibility="1" outlineWidthM="0.3,mm" valign="32" uuid="{ca2528a9-1ba6-4cc1-90a1-66013fd1727e}" marginX="0" position="103.69,149.476,mm" frameJoinStyle="miter" labelText="Brakzand" blendMode="0" size="125.237,19.1895,mm" templateUuid="{ca2528a9-1ba6-4cc1-90a1-66013fd1727e}" background="false" excludeFromExports="0" marginY="0" htmlState="0" positionLock="false" opacity="0.075" positionOnPage="103.69,149.476,mm" referencePoint="0" type="65641" frame="false" id="" itemRotation="0" zValue="4">
+        <FrameColor blue="0" red="0" green="0" alpha="255"/>
+        <BackgroundColor blue="255" red="255" green="255" alpha="255"/>
         <LayoutObject>
           <dataDefinedProperties>
             <Option type="Map">
@@ -4304,18 +4304,34 @@ def my_form_open(dialog, layer, feature):
           </dataDefinedProperties>
           <customproperties/>
         </LayoutObject>
-        <text-style fontSize="9" fontItalic="0" fontSizeUnit="Point" fontLetterSpacing="0" blendMode="0" textOpacity="1" fontStrikeout="0" fontFamily="Arial" fontCapitals="0" namedStyle="Regular" fontWeight="50" fontWordSpacing="0" fontUnderline="0" multilineHeight="1" fontSizeMapUnitScale="3x:0,0,0,0,0,0" textColor="0,0,0,255">
-          <text-buffer bufferSize="1" bufferOpacity="1" bufferJoinStyle="128" bufferColor="255,255,255,255" bufferSizeUnits="MM" bufferDraw="0" bufferNoFill="1" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferBlendMode="0"/>
-          <background shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeSizeY="0" shapeFillColor="255,255,255,255" shapeOffsetY="0" shapeRotationType="0" shapeOpacity="1" shapeBlendMode="0" shapeType="0" shapeRadiiX="0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeSizeX="0" shapeSizeType="0" shapeBorderWidth="0" shapeSVGFile="" shapeDraw="0" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeRadiiY="0" shapeBorderColor="128,128,128,255" shapeOffsetX="0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeJoinStyle="64" shapeRadiiUnit="MM" shapeSizeUnit="MM" shapeOffsetUnit="MM" shapeRotation="0" shapeBorderWidthUnit="MM"/>
-          <shadow shadowOffsetUnit="MM" shadowRadiusUnit="MM" shadowColor="0,0,0,255" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowOpacity="0.7" shadowScale="100" shadowOffsetDist="1" shadowDraw="0" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowRadius="1.5" shadowBlendMode="6" shadowOffsetAngle="135" shadowOffsetGlobal="1" shadowUnder="0" shadowRadiusAlphaOnly="0"/>
+        <LabelFont style="Bold" description="Arial,36,-1,5,75,0,0,0,0,0,Bold"/>
+        <FontColor blue="0" red="0" green="0"/>
+      </LayoutItem>
+      <LayoutItem id="" zValue="4" lineCapStyle="square" outlineWidth="0.3" alignment="0" unitLabel="m" background="false" height="2.5" position="3.02992,3.7132,mm" frameJoinStyle="miter" templateUuid="{b8cfe008-a549-44f3-80f3-1a1a91d2d86a}" type="65646" frame="false" labelBarSpace="2" minBarWidth="50" numSegmentsLeft="0" style="Line Ticks Up" positionOnPage="3.02992,3.7132,mm" excludeFromExports="0" size="34.6221,208.8,mm" referencePoint="0" outlineWidthM="0.3,mm" segmentSizeMode="0" numMapUnitsPerScaleBarUnit="1" unitType="meters" numUnitsPerSegment="250" boxContentSpace="1" uuid="{b8cfe008-a549-44f3-80f3-1a1a91d2d86a}" maxBarWidth="150" blendMode="0" itemRotation="0" visibility="1" numSegments="2" positionLock="false" groupUuid="" lineJoinStyle="miter" segmentMillimeters="12.4111" opacity="0.877">
+        <FrameColor blue="0" red="0" green="0" alpha="255"/>
+        <BackgroundColor blue="255" red="255" green="255" alpha="255"/>
+        <LayoutObject>
+          <dataDefinedProperties>
+            <Option type="Map">
+              <Option type="QString" value="" name="name"/>
+              <Option name="properties"/>
+              <Option type="QString" value="collection" name="type"/>
+            </Option>
+          </dataDefinedProperties>
+          <customproperties/>
+        </LayoutObject>
+        <text-style fontSize="9" fontItalic="0" fontWeight="50" textColor="0,0,0,255" fontStrikeout="0" fontSizeMapUnitScale="3x:0,0,0,0,0,0" fontFamily="Arial" fontUnderline="0" namedStyle="Regular" multilineHeight="1" fontCapitals="0" fontWordSpacing="0" blendMode="0" textOpacity="1" fontSizeUnit="Point" fontLetterSpacing="0">
+          <text-buffer bufferDraw="0" bufferNoFill="1" bufferSize="1" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferOpacity="1" bufferJoinStyle="128" bufferSizeUnits="MM" bufferColor="255,255,255,255" bufferBlendMode="0"/>
+          <background shapeBorderWidth="0" shapeSizeY="0" shapeOpacity="1" shapeOffsetUnit="MM" shapeDraw="0" shapeRotation="0" shapeBorderWidthUnit="MM" shapeType="0" shapeRotationType="0" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeBorderColor="128,128,128,255" shapeRadiiX="0" shapeSVGFile="" shapeOffsetY="0" shapeSizeUnit="MM" shapeFillColor="255,255,255,255" shapeBlendMode="0" shapeJoinStyle="64" shapeRadiiUnit="MM" shapeRadiiY="0" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeSizeType="0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetX="0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeSizeX="0"/>
+          <shadow shadowOffsetAngle="135" shadowOffsetGlobal="1" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowBlendMode="6" shadowRadiusUnit="MM" shadowOffsetUnit="MM" shadowColor="0,0,0,255" shadowDraw="0" shadowOffsetDist="1" shadowUnder="0" shadowOpacity="0.7" shadowRadiusAlphaOnly="0" shadowScale="100" shadowRadius="1.5" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0"/>
         </text-style>
-        <fillColor blue="0" alpha="255" green="0" red="0"/>
-        <fillColor2 blue="255" alpha="255" green="255" red="255"/>
-        <strokeColor blue="0" alpha="255" green="0" red="0"/>
+        <fillColor blue="0" red="0" green="0" alpha="255"/>
+        <fillColor2 blue="255" red="255" green="255" alpha="255"/>
+        <strokeColor blue="0" red="0" green="0" alpha="255"/>
       </LayoutItem>
-      <LayoutItem positionOnPage="103.69,149.476,mm" positionLock="false" id="" referencePoint="0" valign="32" frameJoinStyle="miter" opacity="0.608" size="125.237,19.1895,mm" marginY="0" uuid="{ca2528a9-1ba6-4cc1-90a1-66013fd1727e}" position="103.69,149.476,mm" templateUuid="{ca2528a9-1ba6-4cc1-90a1-66013fd1727e}" blendMode="9" background="false" outlineWidthM="0.3,mm" excludeFromExports="0" frame="false" itemRotation="0" htmlState="0" type="65641" groupUuid="" halign="8" visibility="1" zValue="4" marginX="0" labelText="Brakzand">
-        <FrameColor blue="0" alpha="255" green="0" red="0"/>
-        <BackgroundColor blue="255" alpha="255" green="255" red="255"/>
+      <LayoutItem groupUuid="" halign="8" visibility="1" outlineWidthM="0.3,mm" valign="32" uuid="{69cab351-8cf4-42ac-be64-7a95cbd80762}" marginX="0" position="51.8452,4.7132,mm" frameJoinStyle="miter" labelText="Schiermonnikoog" blendMode="0" size="125.237,19.1895,mm" templateUuid="{69cab351-8cf4-42ac-be64-7a95cbd80762}" background="false" excludeFromExports="0" marginY="0" htmlState="0" positionLock="false" opacity="0.075" positionOnPage="51.8452,4.7132,mm" referencePoint="0" type="65641" frame="false" id="" itemRotation="0" zValue="2">
+        <FrameColor blue="0" red="0" green="0" alpha="255"/>
+        <BackgroundColor blue="255" red="255" green="255" alpha="255"/>
         <LayoutObject>
           <dataDefinedProperties>
             <Option type="Map">
@@ -4327,11 +4343,11 @@ def my_form_open(dialog, layer, feature):
           <customproperties/>
         </LayoutObject>
         <LabelFont style="Bold" description="Arial,36,-1,5,75,0,0,0,0,0,Bold"/>
-        <FontColor blue="0" green="0" red="0"/>
+        <FontColor blue="0" red="0" green="0"/>
       </LayoutItem>
-      <LayoutItem positionOnPage="51.8452,4.7132,mm" positionLock="false" id="" referencePoint="0" valign="32" frameJoinStyle="miter" opacity="0.62" size="125.237,19.1895,mm" marginY="0" uuid="{69cab351-8cf4-42ac-be64-7a95cbd80762}" position="51.8452,4.7132,mm" templateUuid="{69cab351-8cf4-42ac-be64-7a95cbd80762}" blendMode="9" background="false" outlineWidthM="0.3,mm" excludeFromExports="0" frame="false" itemRotation="0" htmlState="0" type="65641" groupUuid="" halign="8" visibility="1" zValue="2" marginX="0" labelText="Schiermonnikoog">
-        <FrameColor blue="0" alpha="255" green="0" red="0"/>
-        <BackgroundColor blue="255" alpha="255" green="255" red="255"/>
+      <LayoutItem groupUuid="" visibility="1" outlineWidthM="0.3,mm" uuid="{ddbea5d4-510b-48e6-96ec-08d927834527}" keepLayerSet="false" position="0,0,mm" frameJoinStyle="miter" mapRotation="0" followPresetName="" blendMode="0" size="297,207.9,mm" templateUuid="{ddbea5d4-510b-48e6-96ec-08d927834527}" background="true" excludeFromExports="0" positionLock="false" opacity="1" positionOnPage="0,0,mm" followPreset="false" referencePoint="0" type="65639" frame="false" id="" itemRotation="0" zValue="1" drawCanvasItems="true">
+        <FrameColor blue="0" red="0" green="0" alpha="255"/>
+        <BackgroundColor blue="223" red="170" green="211" alpha="255"/>
         <LayoutObject>
           <dataDefinedProperties>
             <Option type="Map">
@@ -4342,28 +4358,13 @@ def my_form_open(dialog, layer, feature):
           </dataDefinedProperties>
           <customproperties/>
         </LayoutObject>
-        <LabelFont style="Bold" description="Arial,36,-1,5,75,0,0,0,0,0,Bold"/>
-        <FontColor blue="0" green="0" red="0"/>
-      </LayoutItem>
-      <LayoutItem positionOnPage="0,0,mm" positionLock="false" id="" referencePoint="0" frameJoinStyle="miter" opacity="1" size="297,207.9,mm" followPresetName="" uuid="{ddbea5d4-510b-48e6-96ec-08d927834527}" position="0,0,mm" mapRotation="0" templateUuid="{ddbea5d4-510b-48e6-96ec-08d927834527}" drawCanvasItems="true" blendMode="0" background="true" outlineWidthM="0.3,mm" excludeFromExports="0" frame="false" itemRotation="0" followPreset="false" type="65639" groupUuid="" visibility="1" zValue="1" keepLayerSet="false">
-        <FrameColor blue="0" alpha="255" green="0" red="0"/>
-        <BackgroundColor blue="223" alpha="255" green="211" red="170"/>
-        <LayoutObject>
-          <dataDefinedProperties>
-            <Option type="Map">
-              <Option type="QString" value="" name="name"/>
-              <Option name="properties"/>
-              <Option type="QString" value="collection" name="type"/>
-            </Option>
-          </dataDefinedProperties>
-          <customproperties/>
-        </LayoutObject>
-        <Extent ymin="53.4269999999999996" ymax="53.49000000000000199" xmax="6.28000000000000025" xmin="6.19000000000000039"/>
+        <Extent xmax="6.28000000000000025" xmin="6.19000000000000039" ymin="53.4269999999999996" ymax="53.49000000000000199"/>
         <LayerSet/>
-        <AtlasMap scalingMode="2" atlasDriven="0" margin="0.10000000000000001"/>
+        <AtlasMap atlasDriven="0" scalingMode="2" margin="0.10000000000000001"/>
       </LayoutItem>
       <customproperties>
         <property value="png" key="atlasRasterFormat"/>
+        <property value="true" key="rasterize"/>
         <property value="0" key="svgCropMarginBottom"/>
         <property value="0" key="svgCropMarginLeft"/>
         <property value="0" key="svgCropMarginRight"/>
@@ -4372,7 +4373,7 @@ def my_form_open(dialog, layer, feature):
         <property value="false" key="svgGroupLayers"/>
         <property value="1" key="svgIncludeMetadata"/>
       </customproperties>
-      <Atlas filenamePattern="'output_'||@atlas_featurenumber" pageNameExpression="" filterFeatures="0" enabled="0" hideCoverage="0" coverageLayer="" sortFeatures="0"/>
+      <Atlas sortFeatures="0" filterFeatures="0" filenamePattern="'output_'||@atlas_featurenumber" coverageLayer="" hideCoverage="0" pageNameExpression="" enabled="0"/>
     </Layout>
   </Layouts>
 </qgis>

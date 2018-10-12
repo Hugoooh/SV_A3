@@ -147,8 +147,16 @@ void settings() {
 }
 
 void draw() {
-  // Draw the basemap to fill the entire window (for now)
+  // Draw the basemap to fill the entire window
   shape(basemap, 0, 0, width, height);
+
+  // Label the scale bar
+  fill(0);
+  textAlign(CENTER, BOTTOM);
+  text("0", 22, 26);
+  text("250", 69, 26);
+  text("500", 114, 26);
+  text("m", 134, 26);
 
   // Draw a magnification of the nesting area
   drawInsetMap();
