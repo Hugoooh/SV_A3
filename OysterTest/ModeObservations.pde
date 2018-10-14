@@ -163,7 +163,7 @@ void drawObservations() {
   // Put a label at the bottom explaining that dragging is possible
   fill(0);
   textAlign(LEFT, BOTTOM);
-  text("Draw a box to show statistics for an area", insetWidth + 40, height - 68);
+  text("Draw a box to show statistics for an area", insetWidth + 40, height - 93);
 }
 
 void textSideways(String text, float x, float y) {
@@ -181,11 +181,11 @@ boolean obsVisible(Observation obs) {
     return false;
   }
   
-  switch(obs.month){
-    case "JUNE":return chkJune.checked;
-    case "JULY":return chkJuly.checked;
-    case "AUGUST":return chkAugust.checked;
-    case "SEPTEMBER":return chkSeptember.checked;
+  switch (obs.month){
+    case "JUNE": if (!chkJune.checked) return false; break;
+    case "JULY": if (!chkJuly.checked) return false; break;
+    case "AUGUST": if (!chkAugust.checked) return false; break;
+    case "SEPTEMBER": if (!chkSeptember.checked) return false; break;
   }
   
   if (obs.SA8 == null) {
