@@ -1,7 +1,13 @@
+import controlP5.*;
+
 import java.time.*;
 import java.time.format.*;
 import de.bezier.guido.*;
 
+ControlP5 cp5;
+CColor controlsColours;
+
+int speed = 5;
 class Observation {
   int birdID;
   LocalDateTime date_time;
@@ -139,6 +145,17 @@ void setup() {
     (latToWindowY(basemapExtents[3]) - latToWindowY(insetExtents[3])) * insetMagnification;
 
   setupObservationsMode();
+  
+  //add speed control slider
+  controlsColours = new CColor(0x99ffffff, 0x55ffffff, 0xffffffff, 0xffffffff, 0xffffffff);
+  cp5 = new ControlP5(this);
+    cp5.addSlider("speed")
+   .setPosition(20,250)
+   .setSize(20,100)
+   .setRange(1,30)
+   .setNumberOfTickMarks(30)
+   .setColor(controlsColours)
+   ;
 }
 
 void settings() {
@@ -164,12 +181,15 @@ void draw() {
   switch (currentMode) {
   case OBSERVATIONS: 
     drawObservations(); 
+    cp5.getController("speed").setVisible(false);
     break;
   case PATHS: 
     drawPaths(); 
+    cp5.getController("speed").setVisible(true);
     break;
   case TRAILS:
     drawTrails();
+    cp5.getController("speed").setVisible(true);
     break;
   }
 }
@@ -228,6 +248,7 @@ void mouseReleased() {
 
 int pathspeed = 30;
 int trailspeed = 2;
+
 // Called when a UI button is clicked.
 void buttonClicked(Button b) { 
   if (b == button1) {
@@ -244,7 +265,7 @@ void buttonClicked(Button b) {
     }
     currentMode = Mode.PATHS;
   } else if (b == button3) {
-    if (currentMode == Mode.PATHS)
+    if (currentMode == Mode.TRAILS)
     {
      if (trailspeed == 2){
        trailspeed = 0;} else {
@@ -310,6 +331,12 @@ void mapline(double lon1, double lat1, double lon2, double lat2) {
   clip(insetLeft, insetTop, insetWidth, insetHeight);
   line(insetX1, insetY1, insetX2, insetY2);
   noClip();
+}
+
+// Is the given location inside the inset?
+boolean isInsideInset(float mx, float my) {
+  return mx >= insetLeft && mx <= insetLeft + width &&
+    my >= insetTop && my <= insetTop + height;
 }
 
 LocalDateTime now = LocalDateTime.of(2009, Month.JUNE, 29, 12, 00);

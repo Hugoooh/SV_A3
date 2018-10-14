@@ -88,5 +88,5 @@ void drawTrails() {
 
   // Make sure the drawing loop is running, with a high frame rate
   loop();
-  frameRate(20);
+  frameRate(speed*4);
 }
