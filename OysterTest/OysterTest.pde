@@ -88,6 +88,8 @@ double insetYToLat(float y) {
 }
 
 void setup() {
+  frame.setTitle("Schiermonnikoog Oyster Catchers Visualisation");
+  
   // Load the basemap
   basemap = loadShape("basemap.svg");
 

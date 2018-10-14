@@ -6,8 +6,6 @@ float[] focusExtents = null;
 // Is the focus area inside the inset map?
 boolean isFocusInInset = false;
 
-
-
 float graphX, graphY, graphWidth, graphHeight;
 
 PShape sun, moon;
@@ -85,19 +83,29 @@ void drawObservations() {
     }
     
     ArrayList<Observation> theseObs = new ArrayList<Observation>();
+    int[] obsPerBird = new int[birdIDs.length];
     for (Observation obs : observations) { 
       if (obs.longitude >= focusMinLon && obs.longitude <= focusMaxLon &&
         obs.latitude >= focusMinLat && obs.latitude <= focusMaxLat &&
         obsVisible(obs)
       ) {
         theseObs.add(obs);
+        
+        if (obs.birdID == 166) {
+          obsPerBird[0]++;
+        } else if (obs.birdID == 167) {
+          obsPerBird[1]++;
+        } else {
+          obsPerBird[2]++;
+        }
       }
     }
     
     // Print number of observations
     fill(0);
     textAlign(LEFT, TOP);
-    text(String.format("n = %d", theseObs.size()), graphX + 10, graphY + 10);
+    text(String.format("n = %d    (bird 166 = %d,  bird 167 = %d,  bird 169 = %d)",
+      theseObs.size(), obsPerBird[0], obsPerBird[1], obsPerBird[2]), graphX + 10, graphY + 10);
     
     // Print x-axis
     line(graphX + 50, graphY + graphHeight - 40,
@@ -117,8 +125,12 @@ void drawObservations() {
         graphX + 50 + (graphWidth - 70) * i / 6, graphY + 40);
     }
     textSideways("Time of day", graphX + 10, graphY + graphHeight / 2);
+    
+    textAlign(LEFT, CENTER);
     shape(moon, graphX + 29, graphY + 40 + 10, 16, 16);
+    text("am", graphX + 29, graphY + 40 + (graphHeight - 80) / 4);
     shape(sun, graphX + 29, graphY + 40 + (graphHeight - 80) / 2 - 8, 16, 16);
+    text("pm", graphX + 29, graphY + 40 + 3 * (graphHeight - 80) / 4 - 10);
     shape(moon, graphX + 29, graphY + 40 + (graphHeight - 80) - 26, 16, 16);
     
     // Plot points on graph
