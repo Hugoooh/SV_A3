@@ -25,6 +25,9 @@ PShape basemap;
 // The geographic extents of the SVG basemap
 float[] basemapExtents = { 6.190, 53.427, 6.280, 53.490 };
 
+// Window title graphic
+PImage titleGraphic;
+
 // UI elements
 Button button1, button2, button3, button4;
 CheckBox[] chkBirds,chkMonth;
@@ -90,8 +93,9 @@ double insetYToLat(float y) {
 void setup() {
   frame.setTitle("Schiermonnikoog Oyster Catchers Visualisation");
   
-  // Load the basemap
+  // Load the basemap and title graphic
   basemap = loadShape("basemap.svg");
+  titleGraphic = loadImage("title.png");
 
   // Load the point data
   observations = loadObservationData("All data.txt");
@@ -190,6 +194,9 @@ void settings() {
 void draw() {
   // Draw the basemap to fill the entire window
   shape(basemap, 0, 0, width, height);
+  
+  // Draw the visualisation title
+  image(titleGraphic, width - titleGraphic.width - 10, 10);
 
   // Label the scale bar
   fill(0);
