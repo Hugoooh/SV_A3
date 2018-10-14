@@ -6,6 +6,8 @@ float[] focusExtents = null;
 // Is the focus area inside the inset map?
 boolean isFocusInInset = false;
 
+
+
 float graphX, graphY, graphWidth, graphHeight;
 
 PShape sun, moon;

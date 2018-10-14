@@ -26,7 +26,7 @@ PShape basemap;
 float[] basemapExtents = { 6.190, 53.427, 6.280, 53.490 };
 
 // UI elements
-Button button1, button2, button3;
+Button button1, button2, button3, button4;
 CheckBox[] chkBirds,chkMonth;
 CheckBox chkStateBodyCare, chkStateFly, chkStateForage,
   chkStateSit, chkStateStand, chkStateUnknown,
@@ -111,6 +111,10 @@ void setup() {
 
   button3 = new Button("Trails", width - 90, height - 36, 80, 26);
   Interactive.on(button3, "click", this, "buttonClicked");
+  
+  button4 = new Button("Reset Time", width - 360, height - 36, 80, 26);
+  Interactive.on(button4, "click", this, "buttonClicked");
+  button4.visible = false;
 
   chkBirds = new CheckBox[3];
   chkBirds[0] = new CheckBox("Bird 166", insetWidth + 40, height - 20 - CheckBox.size);
@@ -125,26 +129,26 @@ void setup() {
   chkBirds[2].highlightColor = birdColor(169);
   chkBirds[2].checked = true;
   
-  chkStateBodyCare = new CheckBox("Body care", insetWidth + 40, height - 45 - CheckBox.size);
+  chkStateBodyCare = new CheckBox("Body care", insetWidth + 40, height - 70 - CheckBox.size);
   chkStateBodyCare.checked = true;
-  chkStateFly = new CheckBox("Fly", insetWidth + 135, height - 45 - CheckBox.size);
+  chkStateFly = new CheckBox("Fly", insetWidth + 135, height - 70 - CheckBox.size);
   chkStateFly.checked = true;
-  chkStateForage = new CheckBox("Forage", insetWidth + 190, height - 45 - CheckBox.size);
+  chkStateForage = new CheckBox("Forage", insetWidth + 190, height - 70 - CheckBox.size);
   chkStateForage.checked = true;
-  chkStateSit = new CheckBox("Sit", insetWidth + 265, height - 45 - CheckBox.size);
+  chkStateSit = new CheckBox("Sit", insetWidth + 265, height - 70 - CheckBox.size);
   chkStateSit.checked = true;
-  chkStateStand = new CheckBox("Stand", insetWidth + 320, height - 45 - CheckBox.size);
+  chkStateStand = new CheckBox("Stand", insetWidth + 320, height - 70 - CheckBox.size);
   chkStateStand.checked = true;
-  chkStateUnknown = new CheckBox("Unknown", insetWidth + 395, height - 45 - CheckBox.size);
+  chkStateUnknown = new CheckBox("Unknown", insetWidth + 395, height - 70 - CheckBox.size);
   chkStateUnknown.checked = true;
   
-  chkJune = new CheckBox("June", insetWidth + 40, height - 70 - CheckBox.size);
+  chkJune = new CheckBox("June", insetWidth + 40, height - 45 - CheckBox.size);
   chkJune.checked = true;
-  chkJuly = new CheckBox("July", insetWidth + 135, height - 70 - CheckBox.size);
+  chkJuly = new CheckBox("July", insetWidth + 135, height - 45 - CheckBox.size);
   chkJuly.checked = true;
-  chkAugust = new CheckBox("August", insetWidth + 210, height - 70 - CheckBox.size);
+  chkAugust = new CheckBox("August", insetWidth + 210, height - 45 - CheckBox.size);
   chkAugust.checked = true;
-  chkSeptember = new CheckBox("September", insetWidth + 300, height - 70 - CheckBox.size);
+  chkSeptember = new CheckBox("September", insetWidth + 300, height - 45 - CheckBox.size);
   chkSeptember.checked = true;
   
   // Calculate the magnification level and basemap extents of the inset
@@ -169,7 +173,7 @@ void setup() {
   cp5.addSlider("speed")
    .setCaptionLabel("")
    .setVisible(false)
-   .setPosition(insetWidth + 40,height - 150)
+   .setPosition(insetWidth + 40,height - 200)
    .setSize(20,100)
    .setRange(1,30)
    .setNumberOfTickMarks(30)
@@ -264,13 +268,15 @@ void mouseReleased() {
 int pathspeed = 30;
 int trailspeed = 2;
 
+LocalDateTime now = LocalDateTime.of(2009, Month.JUNE, 29, 12, 00);
+
 // Called when a UI button is clicked.
 void buttonClicked(Button b) {  
   if (b == button1) {
     // Reset all button labels
     button2.text = "Paths";
     button3.text = "Trails";
-    
+    button4.visible = false;
     currentMode = Mode.OBSERVATIONS;
     enterObservationsMode();
   } else if (b == button2) {
@@ -288,6 +294,7 @@ void buttonClicked(Button b) {
       button2.text = "PAUSE";
       pathspeed = 30;
     }
+    button4.visible = true;
     currentMode = Mode.PATHS;
   } else if (b == button3) {
     button2.text = "Paths";
@@ -304,7 +311,10 @@ void buttonClicked(Button b) {
       button3.text = "PAUSE";
       trailspeed = 2;
     }
+    button4.visible = true;
     currentMode = Mode.TRAILS;
+  } else if (b == button4) {
+    now = LocalDateTime.of(2009, Month.JUNE, 29, 12, 00);
   }
   
   // Show/hide observation mode checkboxes
@@ -373,7 +383,7 @@ boolean isInsideInset(float mx, float my) {
     my >= insetTop && my <= insetTop + insetHeight;
 }
 
-LocalDateTime now = LocalDateTime.of(2009, Month.JUNE, 29, 12, 00);
+
 
 // Reads data from the given tab-separated text file and stores it in an attribute map.
 Observation[] loadObservationData(String fileName) {
