@@ -1,7 +1,13 @@
+import controlP5.*;
+
 import java.time.*;
 import java.time.format.*;
 import de.bezier.guido.*;
 
+ControlP5 cp5;
+CColor controlsColours;
+
+int speed = 5;
 class Observation {
   int birdID;
   LocalDateTime date_time;
@@ -139,6 +145,17 @@ void setup() {
     (latToWindowY(basemapExtents[3]) - latToWindowY(insetExtents[3])) * insetMagnification;
 
   setupObservationsMode();
+  
+  //add speed control slider
+  controlsColours = new CColor(0x99ffffff, 0x55ffffff, 0xffffffff, 0xffffffff, 0xffffffff);
+  cp5 = new ControlP5(this);
+    cp5.addSlider("speed")
+   .setPosition(20,250)
+   .setSize(20,100)
+   .setRange(1,30)
+   .setNumberOfTickMarks(30)
+   .setColor(controlsColours)
+   ;
 }
 
 void settings() {
@@ -164,9 +181,11 @@ void draw() {
   switch (currentMode) {
   case OBSERVATIONS: 
     drawObservations(); 
+    cp5.getController("speed").setVisible(false);
     break;
   case PATHS: 
     drawPaths(); 
+    cp5.getController("speed").setVisible(true);
     break;
   case TRAILS:
     drawTrails();

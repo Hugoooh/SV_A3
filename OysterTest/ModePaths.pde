@@ -60,5 +60,5 @@ void drawPaths() {
 
   // Make sure the drawing loop is running, at a slow frame rate
   loop();
-  frameRate(5);
+  frameRate(speed);
 }
