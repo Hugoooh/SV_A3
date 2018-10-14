@@ -333,6 +333,12 @@ void mapline(double lon1, double lat1, double lon2, double lat2) {
   noClip();
 }
 
+// Is the given location inside the inset?
+boolean isInsideInset(float mx, float my) {
+  return mx >= insetLeft && mx <= insetLeft + width &&
+    my >= insetTop && my <= insetTop + height;
+}
+
 LocalDateTime now = LocalDateTime.of(2009, Month.JUNE, 29, 12, 00);
 
 // Reads data from the given tab-separated text file and stores it in an attribute map.

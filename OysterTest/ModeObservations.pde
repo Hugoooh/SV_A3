@@ -37,7 +37,16 @@ void drawObservations() {
     fill(0, 30);
     stroke(0, 200);
     strokeWeight(1);
+    
+    // If the drag began inside the inset, we need to clip the
+    // drag rectangle to the inset
+    if (isInsideInset(initialDragX, initialDragY)) {
+      clip(insetLeft, insetTop, insetWidth, insetHeight);
+    }
+    
     rect(initialDragX, initialDragY, mouseX - initialDragX, mouseY - initialDragY);
+    
+    noClip();
   }
   // Otherwise, if a focus area has been chosen, draw the
   // rectangle over this area as well as a statistical box (graph)
@@ -154,6 +163,7 @@ void textSideways(String text, float x, float y) {
   popMatrix();
 }
 
+// Should this observation be shown to the user?
 boolean obsVisible(Observation obs) {
   if (!chkBirds[obs.birdID == 166 ? 0 : (obs.birdID == 167 ? 1 : 2)].checked) {
     return false;
