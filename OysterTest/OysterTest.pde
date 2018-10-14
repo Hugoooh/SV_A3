@@ -10,7 +10,9 @@ class Observation {
   double latitude;
   double longitude;
   // lots of other fields go here...
+  String month;
   String SA8;
+  
 }
 
 // Bird observations
@@ -25,9 +27,10 @@ float[] basemapExtents = { 6.190, 53.427, 6.280, 53.490 };
 
 // UI elements
 Button button1, button2, button3;
-CheckBox[] chkBirds;
+CheckBox[] chkBirds,chkMonth;
 CheckBox chkStateBodyCare, chkStateFly, chkStateForage,
-  chkStateSit, chkStateStand, chkStateUnknown;
+  chkStateSit, chkStateStand, chkStateUnknown,
+  chkJune, chkJuly, chkAugust, chkSeptember;
 ControlP5 cp5;
 
 // Inset map dimensions
@@ -134,6 +137,15 @@ void setup() {
   chkStateStand.checked = true;
   chkStateUnknown = new CheckBox("Unknown", insetWidth + 395, height - 45 - CheckBox.size);
   chkStateUnknown.checked = true;
+  
+  chkJune = new CheckBox("June", insetWidth + 40, height - 70 - CheckBox.size);
+  chkJune.checked = true;
+  chkJuly = new CheckBox("July", insetWidth + 135, height - 70 - CheckBox.size);
+  chkJuly.checked = true;
+  chkAugust = new CheckBox("August", insetWidth + 210, height - 70 - CheckBox.size);
+  chkAugust.checked = true;
+  chkSeptember = new CheckBox("September", insetWidth + 300, height - 70 - CheckBox.size);
+  chkSeptember.checked = true;
   
   // Calculate the magnification level and basemap extents of the inset
   insetMagnification = min(insetWidth / (lonToWindowX(insetExtents[2]) - lonToWindowX(insetExtents[0])), 
@@ -391,6 +403,7 @@ Observation[] loadObservationData(String fileName) {
           break;
         case "date_time": 
           obs.date_time = LocalDateTime.parse(columns[i], formatter); 
+          obs.month = obs.date_time.getMonth().name();
           break;
         case "latitude": 
           obs.latitude = Double.parseDouble(columns[i]); 

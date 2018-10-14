@@ -181,6 +181,13 @@ boolean obsVisible(Observation obs) {
     return false;
   }
   
+  switch(obs.month){
+    case "JUNE":return chkJune.checked;
+    case "JULY":return chkJuly.checked;
+    case "AUGUST":return chkAugust.checked;
+    case "SEPTEMBER":return chkSeptember.checked;
+  }
+  
   if (obs.SA8 == null) {
     return chkStateUnknown.checked;
   }
