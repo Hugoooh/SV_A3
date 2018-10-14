@@ -11,6 +11,10 @@ void drawTrails() {
   // Print the current time in the corner of the window
   textAlign(RIGHT, TOP);
   text(now.format(DateTimeFormatter.ISO_LOCAL_DATE_TIME), width - 280, height - 30);
+  
+  // Label the "speed" slider
+  textAlign(LEFT, BOTTOM);
+  text("Speed (fps)", insetWidth + 31, height - 155);
 
   // Move forward in time
   now = now.plusMinutes(trailspeed);
@@ -72,18 +76,19 @@ void drawTrails() {
     // Next point becomes current point
     System.arraycopy(birdNextIndexForTrails, 0, birdCurrentIndexForTrails, 0, birdIDs.length);
 
-    // Look for the next observation for this bird
+    // Look for the next observation for this bird, and continue 
+    // looking for an observation in the future that is after "now"
     do {
-      birdNextIndexForTrails[i]++;
-    } while (observations[birdNextIndexForTrails[i]].birdID != birdIDs[i]);
-
-    // Look for an observation in the future that is after "now"
-    // TODO this throws an exception when the end of array is reached
-    while (!observations[birdNextIndexForTrails[i]].date_time.isAfter(now)) {
       do {
         birdNextIndexForTrails[i]++;
+        
+        // Reached the end of the array?
+        if (birdNextIndexForTrails[i] >= observations.length) {
+          birdNextIndexForTrails[i] = birdCurrentIndexForTrails[i];
+          break;
+        }
       } while (observations[birdNextIndexForTrails[i]].birdID != birdIDs[i]);
-    }
+    } while (!observations[birdNextIndexForTrails[i]].date_time.isAfter(now));
   }
 
   // Make sure the drawing loop is running, with a high frame rate
