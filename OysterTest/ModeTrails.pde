@@ -14,7 +14,7 @@ void drawTrails() {
   
   // Label the "speed" slider
   textAlign(LEFT, BOTTOM);
-  text("Speed (fps)", insetWidth + 31, height - 210);
+  text("Speed (fps)", insetWidth + 31, height - 160);
 
   // Move forward in time
   now = now.plusMinutes(trailspeed);

@@ -173,7 +173,7 @@ void setup() {
   cp5.addSlider("speed")
    .setCaptionLabel("")
    .setVisible(false)
-   .setPosition(insetWidth + 40,height - 200)
+   .setPosition(insetWidth + 40,height - 150)
    .setSize(20,100)
    .setRange(1,30)
    .setNumberOfTickMarks(30)
@@ -320,6 +320,7 @@ void buttonClicked(Button b) {
   // Show/hide observation mode checkboxes
   chkStateBodyCare.visible = chkStateFly.visible = chkStateForage.visible =
     chkStateSit.visible = chkStateStand.visible = chkStateUnknown.visible =
+    chkJune.visible = chkJuly.visible = chkAugust.visible = chkSeptember.visible =
     currentMode == Mode.OBSERVATIONS;
 
   // Show/hide animation controls
