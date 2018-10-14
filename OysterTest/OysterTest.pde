@@ -91,7 +91,7 @@ double insetYToLat(float y) {
 }
 
 void setup() {
-  frame.setTitle("Schiermonnikoog Oyster Catchers Visualisation");
+  surface.setTitle("Schiermonnikoog Oyster Catchers Visualisation");
   
   // Load the basemap and title graphic
   basemap = loadShape("basemap.svg");

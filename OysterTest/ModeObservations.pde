@@ -1,23 +1,33 @@
+// The window coordinates where the drag began
 float initialDragX, initialDragY;
 
-// The extents of the focus area in window coordinates
-float[] focusExtents = null;
+// The bounds of the focus area in window coordinates
+float[] focusBounds = null;
 
 // Is the focus area inside the inset map?
 boolean isFocusInInset = false;
 
+// Dimensions of the graph box
 float graphX, graphY, graphWidth, graphHeight;
 
+// Shapes drawn as part of the graph's y-axis
 PShape sun, moon;
 
+// Called as part of the global setup() function.
 void setupObservationsMode() {
   sun = loadShape("glyph-sun.svg");
   moon = loadShape("glyph-moon.svg");
+      
+  graphX = width - 420;
+  graphY = height - 350;
+  graphWidth = 400;
+  graphHeight = 250;
 }
 
+// Called when the user enters observation mode.
 void enterObservationsMode() {
   initialDragX = initialDragY = -1;
-  focusExtents = null;
+  focusBounds = null;
 }
 
 void drawObservations() {
@@ -53,33 +63,28 @@ void drawObservations() {
   }
   // Otherwise, if a focus area has been chosen, draw the
   // rectangle over this area as well as a statistical box (graph)
-  else if (focusExtents != null) {
+  else if (focusBounds != null) {
     fill(0, 120, 20, 30);
     stroke(0, 120, 20, 200);
     strokeWeight(1);
-    rect(focusExtents[0], focusExtents[1], focusExtents[2], focusExtents[3]);
-    
-    graphX = width - 420;
-    graphY = height - 350;
-    graphWidth = 400;
-    graphHeight = 250;
+    rect(focusBounds[0], focusBounds[1], focusBounds[2], focusBounds[3]);
     
     fill(255);
     stroke(0);
     rect(graphX, graphY, graphWidth, graphHeight);
     
-    // Get the visible observations that relate to this area
+    // Get the visible observations that relate to the selected area
     double focusMinLon, focusMaxLon, focusMinLat, focusMaxLat;
     if (isFocusInInset) {
-      focusMinLon = insetXToLon(focusExtents[0]);
-      focusMaxLon = insetXToLon(focusExtents[0] + focusExtents[2]);
-      focusMinLat = insetYToLat(focusExtents[1] + focusExtents[3]);
-      focusMaxLat = insetYToLat(focusExtents[1]);
+      focusMinLon = insetXToLon(focusBounds[0]);
+      focusMaxLon = insetXToLon(focusBounds[0] + focusBounds[2]);
+      focusMinLat = insetYToLat(focusBounds[1] + focusBounds[3]);
+      focusMaxLat = insetYToLat(focusBounds[1]);
     } else {
-      focusMinLon = windowXToLon(focusExtents[0]);
-      focusMaxLon = windowXToLon(focusExtents[0] + focusExtents[2]);
-      focusMinLat = windowYToLat(focusExtents[1] + focusExtents[3]);
-      focusMaxLat = windowYToLat(focusExtents[1]);
+      focusMinLon = windowXToLon(focusBounds[0]);
+      focusMaxLon = windowXToLon(focusBounds[0] + focusBounds[2]);
+      focusMinLat = windowYToLat(focusBounds[1] + focusBounds[3]);
+      focusMaxLat = windowYToLat(focusBounds[1]);
     }
     
     ArrayList<Observation> theseObs = new ArrayList<Observation>();
@@ -101,73 +106,7 @@ void drawObservations() {
       }
     }
     
-    // Print number of observations
-    fill(0);
-    textAlign(LEFT, TOP);
-    text(String.format("n = %d    (bird 166 = %d,  bird 167 = %d,  bird 169 = %d)",
-      theseObs.size(), obsPerBird[0], obsPerBird[1], obsPerBird[2]), graphX + 10, graphY + 10);
-    
-    // Print x-axis
-    line(graphX + 50, graphY + graphHeight - 40,
-      graphX + graphWidth - 20, graphY + graphHeight - 40);
-    textAlign(CENTER, TOP);
-    text("stand",     graphX + 50 + (graphWidth - 70) / 12,      graphY + graphHeight - 30);
-    text("sit",       graphX + 50 + (graphWidth - 70) * 3 / 12,  graphY + graphHeight - 30);
-    text("forage",    graphX + 50 + (graphWidth - 70) * 5 / 12,  graphY + graphHeight - 30);
-    text("body care", graphX + 50 + (graphWidth - 70) * 7 / 12,  graphY + graphHeight - 30);
-    text("fly",       graphX + 50 + (graphWidth - 70) * 9 / 12,  graphY + graphHeight - 30);
-    text("unknown",   graphX + 50 + (graphWidth - 70) * 11 / 12, graphY + graphHeight - 30);
-    
-    // Print y-axis, vertical gridlines, and y-axis labels
-    line(graphX + 50, graphY + graphHeight - 40, graphX + 50, graphY + 40);
-    for (int i = 1; i <= 6; i++) {
-      line(graphX + 50 + (graphWidth - 70) * i / 6, graphY + graphHeight - 40,
-        graphX + 50 + (graphWidth - 70) * i / 6, graphY + 40);
-    }
-    textSideways("Time of day", graphX + 10, graphY + graphHeight / 2);
-    
-    textAlign(LEFT, CENTER);
-    shape(moon, graphX + 29, graphY + 40 + 10, 16, 16);
-    text("am", graphX + 29, graphY + 40 + (graphHeight - 80) / 4);
-    shape(sun, graphX + 29, graphY + 40 + (graphHeight - 80) / 2 - 8, 16, 16);
-    text("pm", graphX + 29, graphY + 40 + 3 * (graphHeight - 80) / 4 - 10);
-    shape(moon, graphX + 29, graphY + 40 + (graphHeight - 80) - 26, 16, 16);
-    
-    // Plot points on graph
-    for (Observation obs : theseObs) {
-      strokeWeight(3);
-      stroke(birdColor(obs.birdID));
-      
-      // X-axis is behaviours
-      float plotX = graphX + 50;
-      if (obs.SA8 != null) {
-        switch (obs.SA8) {
-          case "stand":     plotX += (graphWidth - 70) / 12;     break;
-          case "sit":       plotX += (graphWidth - 70) * 3 / 12; break;
-          case "forage":    plotX += (graphWidth - 70) * 5 / 12; break;
-          case "body care": plotX += (graphWidth - 70) * 7 / 12; break;
-          case "fly":       plotX += (graphWidth - 70) * 9 / 12; break;
-        }
-      } else {
-        plotX += (graphWidth - 70) * 11 / 12;
-      }
-      // Add in "randomness" (actually deterministic)
-      plotX += 1234577 * obs.date_time.toEpochSecond(ZoneOffset.UTC) % 50 - 25;
-      
-      // Y-axis is times of day
-      float plotY = graphY + 40;
-      long minutes = obs.date_time.getHour() * 60 + obs.date_time.getMinute();
-      // add 25 minutes for solar time (observations are in UTC, Schiermonnikoog
-      // is a bit east of the meridian)
-      // TODO this conversion needs to apply to all modes
-      minutes += 25; 
-      if (minutes >= 24 * 60) {
-        minutes -= 24 * 60; 
-      }
-      plotY += ((float)minutes / 60) * (graphHeight - 80) / 24;
-       
-      point(plotX, plotY);
-    }
+    drawGraph(theseObs, obsPerBird);
     
     noLoop();
   } else {
@@ -178,6 +117,81 @@ void drawObservations() {
   fill(0);
   textAlign(LEFT, BOTTOM);
   text("Draw a box to show statistics for an area", insetWidth + 40, height - 93);
+}
+
+void drawGraph(ArrayList<Observation> theseObs, int[] obsPerBird) {
+  // Print number of observations
+  fill(0);
+  textAlign(LEFT, TOP);
+  text(String.format("n = %d    (bird 166 = %d,  bird 167 = %d,  bird 169 = %d)",
+    theseObs.size(), obsPerBird[0], obsPerBird[1], obsPerBird[2]), graphX + 10, graphY + 10);
+  
+  // Figure out the bounds of the actual plot area
+  float plotAreaLeft = graphX + 50;
+  float plotAreaWidth = graphWidth - 70; // 50 on left, 20 on right
+  float plotAreaTop = graphY + 40;
+  float plotAreaBottom = graphY + graphHeight - 40;
+  
+  // Print x-axis
+  line(plotAreaLeft, plotAreaBottom, plotAreaLeft + plotAreaWidth, plotAreaBottom);
+  textAlign(CENTER, TOP);
+  text("stand",     plotAreaLeft + plotAreaWidth / 12,      plotAreaBottom + 10);
+  text("sit",       plotAreaLeft + plotAreaWidth * 3 / 12,  plotAreaBottom + 10);
+  text("forage",    plotAreaLeft + plotAreaWidth * 5 / 12,  plotAreaBottom + 10);
+  text("body care", plotAreaLeft + plotAreaWidth * 7 / 12,  plotAreaBottom + 10);
+  text("fly",       plotAreaLeft + plotAreaWidth * 9 / 12,  plotAreaBottom + 10);
+  text("unknown",   plotAreaLeft + plotAreaWidth * 11 / 12, plotAreaBottom + 10);
+  
+  // Print y-axis, vertical gridlines, and y-axis labels
+  line(plotAreaLeft, plotAreaTop, plotAreaLeft, plotAreaBottom);
+  for (int i = 1; i <= 6; i++) {
+    line(plotAreaLeft + plotAreaWidth * i / 6, plotAreaBottom,
+      plotAreaLeft + plotAreaWidth * i / 6, plotAreaTop);
+  }
+  textSideways("Time of day", plotAreaLeft - 40, graphY + graphHeight / 2);
+  
+  textAlign(LEFT, CENTER);
+  shape(moon, plotAreaLeft - 21, plotAreaTop + 10, 16, 16);
+  text("am",  plotAreaLeft - 21, plotAreaTop + (graphHeight - 80) / 4);
+  shape(sun,  plotAreaLeft - 21, plotAreaTop + (graphHeight - 80) / 2 - 8, 16, 16);
+  text("pm",  plotAreaLeft - 21, plotAreaTop + (graphHeight - 80) * 3 / 4 - 10);
+  shape(moon, plotAreaLeft - 21, plotAreaTop + (graphHeight - 80) - 26, 16, 16);
+  
+  // Plot points on graph
+  for (Observation obs : theseObs) {
+    strokeWeight(3);
+    stroke(birdColor(obs.birdID));
+    
+    // X-axis is behaviours
+    float plotX = plotAreaLeft;
+    if (obs.SA8 != null) {
+      switch (obs.SA8) {
+        case "stand":     plotX += plotAreaWidth / 12;     break;
+        case "sit":       plotX += plotAreaWidth * 3 / 12; break;
+        case "forage":    plotX += plotAreaWidth * 5 / 12; break;
+        case "body care": plotX += plotAreaWidth * 7 / 12; break;
+        case "fly":       plotX += plotAreaWidth * 9 / 12; break;
+      }
+    } else {
+      plotX += plotAreaWidth * 11 / 12;
+    }
+    // Add in "randomness" to the X-coordinate (actually deterministic)
+    plotX += 1234577 * obs.date_time.toEpochSecond(ZoneOffset.UTC) % 50 - 25;
+    
+    // Y-axis is times of day
+    float plotY = plotAreaTop;
+    long minutes = obs.date_time.getHour() * 60 + obs.date_time.getMinute();
+    // add 25 minutes for solar time (observations are in UTC, Schiermonnikoog
+    // is a bit east of the meridian)
+    // TODO this conversion needs to apply to all modes
+    minutes += 25; 
+    if (minutes >= 24 * 60) {
+      minutes -= 24 * 60; 
+    }
+    plotY += ((float)minutes / 60) * (plotAreaBottom - plotAreaTop) / 24;
+     
+    point(plotX, plotY);
+  }
 }
 
 void textSideways(String text, float x, float y) {
@@ -231,16 +245,16 @@ void observationsMousePressed() {
   loop();
 }
 
-// Called when the mouse is released; calculates statistical information
-// for the selected observations.
+// Called when the mouse is released; sets down the area over which statistical
+// calculations should be performed.
 void observationsMouseReleased() {
   // Have we just entered this mode?
   if (initialDragX < 0) {
     return;
   }
   
-  // Set the window extents of the focus rectangle
-  focusExtents = new float[] {
+  // Set the window bounds of the focus rectangle
+  focusBounds = new float[] {
     min(initialDragX, mouseX),
     min(initialDragY, mouseY),
     abs(mouseX - initialDragX),
@@ -248,22 +262,22 @@ void observationsMouseReleased() {
   };
   
   // If the drag began inside the inset, clamp the rectangle to
-  // the inset extents.
+  // the inset bounds.
   if (isFocusInInset) {
-    if (insetLeft > focusExtents[0]) {
-      focusExtents[2] -= insetLeft - focusExtents[0];
-      focusExtents[0] = insetLeft;
+    if (insetLeft > focusBounds[0]) {
+      focusBounds[2] -= insetLeft - focusBounds[0];
+      focusBounds[0] = insetLeft;
     }
-    if (insetTop > focusExtents[1]) {
-      focusExtents[3] -= insetTop - focusExtents[1];
-      focusExtents[1] = insetTop;
+    if (insetTop > focusBounds[1]) {
+      focusBounds[3] -= insetTop - focusBounds[1];
+      focusBounds[1] = insetTop;
     }
-    focusExtents[2] = min(insetLeft + insetWidth - focusExtents[0] - 1, focusExtents[2]);
-    focusExtents[3] = min(insetTop + insetHeight - focusExtents[1] - 1, focusExtents[3]);
+    focusBounds[2] = min(insetLeft + insetWidth - focusBounds[0] - 1, focusBounds[2]);
+    focusBounds[3] = min(insetTop + insetHeight - focusBounds[1] - 1, focusBounds[3]);
   }
   
   // If the focus area is too small, clear it.
-  if (focusExtents[2] < 2 && focusExtents[3] < 2) {
-    focusExtents = null;
+  if (focusBounds[2] < 2 && focusBounds[3] < 2) {
+    focusBounds = null;
   }
 }
