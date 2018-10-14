@@ -3,6 +3,9 @@ float initialDragX, initialDragY;
 // The extents of the focus area in window coordinates
 float[] focusExtents = null;
 
+// Is the focus area inside the inset map?
+boolean isFocusInInset = false;
+
 float graphX, graphY, graphWidth, graphHeight;
 
 PShape sun, moon;
@@ -40,7 +43,7 @@ void drawObservations() {
     
     // If the drag began inside the inset, we need to clip the
     // drag rectangle to the inset
-    if (isInsideInset(initialDragX, initialDragY)) {
+    if (isFocusInInset) {
       clip(insetLeft, insetTop, insetWidth, insetHeight);
     }
     
@@ -66,10 +69,19 @@ void drawObservations() {
     rect(graphX, graphY, graphWidth, graphHeight);
     
     // Get the visible observations that relate to this area
-    double focusMinLon = windowXToLon(focusExtents[0]);
-    double focusMaxLon = windowXToLon(focusExtents[0] + focusExtents[2]);
-    double focusMinLat = windowYToLat(focusExtents[1] + focusExtents[3]);
-    double focusMaxLat = windowYToLat(focusExtents[1]);
+    double focusMinLon, focusMaxLon, focusMinLat, focusMaxLat;
+    if (isFocusInInset) {
+      focusMinLon = insetXToLon(focusExtents[0]);
+      focusMaxLon = insetXToLon(focusExtents[0] + focusExtents[2]);
+      focusMinLat = insetYToLat(focusExtents[1] + focusExtents[3]);
+      focusMaxLat = insetYToLat(focusExtents[1]);
+    } else {
+      focusMinLon = windowXToLon(focusExtents[0]);
+      focusMaxLon = windowXToLon(focusExtents[0] + focusExtents[2]);
+      focusMinLat = windowYToLat(focusExtents[1] + focusExtents[3]);
+      focusMaxLat = windowYToLat(focusExtents[1]);
+    }
+    
     ArrayList<Observation> theseObs = new ArrayList<Observation>();
     for (Observation obs : observations) { 
       if (obs.longitude >= focusMinLon && obs.longitude <= focusMaxLon &&
@@ -189,6 +201,9 @@ void observationsMousePressed() {
   initialDragX = mouseX;
   initialDragY = mouseY;
   
+  // Is the dragging taking place in the inset?
+  isFocusInInset = isInsideInset(initialDragX, initialDragY);
+  
   // Start the drawing loop
   frameRate(60);
   loop();
@@ -202,12 +217,28 @@ void observationsMouseReleased() {
     return;
   }
   
+  // Set the window extents of the focus rectangle
   focusExtents = new float[] {
     min(initialDragX, mouseX),
     min(initialDragY, mouseY),
     abs(mouseX - initialDragX),
     abs(mouseY - initialDragY)
   };
+  
+  // If the drag began inside the inset, clamp the rectangle to
+  // the inset extents.
+  if (isFocusInInset) {
+    if (insetLeft > focusExtents[0]) {
+      focusExtents[2] -= insetLeft - focusExtents[0];
+      focusExtents[0] = insetLeft;
+    }
+    if (insetTop > focusExtents[1]) {
+      focusExtents[3] -= insetTop - focusExtents[1];
+      focusExtents[1] = insetTop;
+    }
+    focusExtents[2] = min(insetLeft + insetWidth - focusExtents[0] - 1, focusExtents[2]);
+    focusExtents[3] = min(insetTop + insetHeight - focusExtents[1] - 1, focusExtents[3]);
+  }
   
   // If the focus area is too small, clear it.
   if (focusExtents[2] < 2 && focusExtents[3] < 2) {

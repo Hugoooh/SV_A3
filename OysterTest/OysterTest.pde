@@ -77,6 +77,12 @@ double windowYToLat(float y) {
   return (basemapExtents[3] - basemapExtents[1]) * ((double)(height - 1) - (double)y) /
     height + basemapExtents[1];
 }
+double insetXToLon(float x) {
+  return windowXToLon((x - insetBasemapExtents[0]) / insetMagnification);
+}
+double insetYToLat(float y) {
+  return windowYToLat((y - insetBasemapExtents[1]) / insetMagnification);
+}
 
 void setup() {
   // Load the basemap
@@ -335,8 +341,8 @@ void mapline(double lon1, double lat1, double lon2, double lat2) {
 
 // Is the given location inside the inset?
 boolean isInsideInset(float mx, float my) {
-  return mx >= insetLeft && mx <= insetLeft + width &&
-    my >= insetTop && my <= insetTop + height;
+  return mx >= insetLeft && mx <= insetLeft + insetWidth &&
+    my >= insetTop && my <= insetTop + insetHeight;
 }
 
 LocalDateTime now = LocalDateTime.of(2009, Month.JUNE, 29, 12, 00);
