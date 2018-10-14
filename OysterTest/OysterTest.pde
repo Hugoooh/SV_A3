@@ -33,7 +33,7 @@ Button button1, button2, button3, button4;
 CheckBox[] chkBirds,chkMonth;
 CheckBox chkStateBodyCare, chkStateFly, chkStateForage,
   chkStateSit, chkStateStand, chkStateUnknown,
-  chkJune, chkJuly, chkAugust, chkSeptember;
+  chkJune, chkJuly, chkAugust, chkSeptember, chkLater;
 ControlP5 cp5;
 
 // Inset map dimensions
@@ -156,6 +156,8 @@ void setup() {
   chkAugust.checked = true;
   chkSeptember = new CheckBox("September", insetWidth + 300, height - 45 - CheckBox.size);
   chkSeptember.checked = true;
+  chkLater = new CheckBox("Later", insetWidth + 400, height - 45 - CheckBox.size);
+  chkLater.checked = true;
   
   // Calculate the magnification level and basemap extents of the inset
   insetMagnification = min(insetWidth / (lonToWindowX(insetExtents[2]) - lonToWindowX(insetExtents[0])), 
@@ -330,7 +332,7 @@ void buttonClicked(Button b) {
   chkStateBodyCare.visible = chkStateFly.visible = chkStateForage.visible =
     chkStateSit.visible = chkStateStand.visible = chkStateUnknown.visible =
     chkJune.visible = chkJuly.visible = chkAugust.visible = chkSeptember.visible =
-    currentMode == Mode.OBSERVATIONS;
+    chkLater.visible = currentMode == Mode.OBSERVATIONS;
 
   // Show/hide animation controls
   cp5.getController("speed").setVisible(currentMode != Mode.OBSERVATIONS);

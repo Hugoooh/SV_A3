@@ -200,6 +200,7 @@ boolean obsVisible(Observation obs) {
     case "JULY": if (!chkJuly.checked) return false; break;
     case "AUGUST": if (!chkAugust.checked) return false; break;
     case "SEPTEMBER": if (!chkSeptember.checked) return false; break;
+    default: if (!chkLater.checked) return false; break;
   }
   
   if (obs.SA8 == null) {
