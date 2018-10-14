@@ -7,6 +7,10 @@ void drawPaths() {
   // Print the current time in the corner of the window
   textAlign(RIGHT, TOP);
   text(now.format(DateTimeFormatter.ISO_LOCAL_DATE_TIME), width - 280, height - 30);
+  
+  // Label the "speed" slider
+  textAlign(LEFT, BOTTOM);
+  text("Speed (fps)", insetWidth + 31, height - 155);
 
   // Move forward in time
   now = now.plusMinutes(pathspeed);

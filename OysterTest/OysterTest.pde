@@ -4,10 +4,6 @@ import java.time.*;
 import java.time.format.*;
 import de.bezier.guido.*;
 
-ControlP5 cp5;
-CColor controlsColours;
-
-int speed = 5;
 class Observation {
   int birdID;
   LocalDateTime date_time;
@@ -32,6 +28,7 @@ Button button1, button2, button3;
 CheckBox[] chkBirds;
 CheckBox chkStateBodyCare, chkStateFly, chkStateForage,
   chkStateSit, chkStateStand, chkStateUnknown;
+ControlP5 cp5;
 
 // Inset map dimensions
 double[] insetExtents = { 6.2213, 53.475, 6.2263, 53.478 };
@@ -48,6 +45,9 @@ enum Mode {
 
 // Current mode
 Mode currentMode = Mode.OBSERVATIONS;
+
+// Running speed for the animation modes
+int speed = 5;
 
 // Converts geographic coordinates to a window position in pixels.
 // It is converting a double to a float, so the transformation may
@@ -153,15 +153,15 @@ void setup() {
   setupObservationsMode();
   
   //add speed control slider
-  controlsColours = new CColor(0x99ffffff, 0x55ffffff, 0xffffffff, 0xffffffff, 0xffffffff);
   cp5 = new ControlP5(this);
-    cp5.addSlider("speed")
-   .setPosition(20,250)
+  cp5.addSlider("speed")
+   .setCaptionLabel("")
+   .setVisible(false)
+   .setPosition(insetWidth + 40,height - 150)
    .setSize(20,100)
    .setRange(1,30)
    .setNumberOfTickMarks(30)
-   .setColor(controlsColours)
-   ;
+   .setColor(new CColor(0x99ffffff, 0x55ffffff, 0xffffffff, 0xffffffff, 0xff000000));
 }
 
 void settings() {
@@ -186,16 +186,13 @@ void draw() {
 
   switch (currentMode) {
   case OBSERVATIONS: 
-    drawObservations(); 
-    cp5.getController("speed").setVisible(false);
+    drawObservations();
     break;
   case PATHS: 
-    drawPaths(); 
-    cp5.getController("speed").setVisible(true);
+    drawPaths();
     break;
   case TRAILS:
     drawTrails();
-    cp5.getController("speed").setVisible(true);
     break;
   }
 }
@@ -256,27 +253,43 @@ int pathspeed = 30;
 int trailspeed = 2;
 
 // Called when a UI button is clicked.
-void buttonClicked(Button b) { 
+void buttonClicked(Button b) {  
   if (b == button1) {
+    // Reset all button labels
+    button2.text = "Paths";
+    button3.text = "Trails";
+    
     currentMode = Mode.OBSERVATIONS;
     enterObservationsMode();
   } else if (b == button2) {
-    if (currentMode == Mode.PATHS)
-    {
-     if (pathspeed == 30){
-       pathspeed = 0;} else {
-         pathspeed = 30;}
+    button3.text = "Trails";
+    
+    if (currentMode == Mode.PATHS) {
+      if (pathspeed == 30) {
+        button2.text = "PLAY";
+        pathspeed = 0;
+      } else {
+        button2.text = "PAUSE";
+        pathspeed = 30;
+      }
     } else {
+      button2.text = "PAUSE";
       pathspeed = 30;
     }
     currentMode = Mode.PATHS;
   } else if (b == button3) {
-    if (currentMode == Mode.TRAILS)
-    {
-     if (trailspeed == 2){
-       trailspeed = 0;} else {
-         trailspeed = 2;}
+    button2.text = "Paths";
+    
+    if (currentMode == Mode.TRAILS) {
+      if (trailspeed == 2) {
+        button3.text = "PLAY";
+        trailspeed = 0;
+      } else {
+        button3.text = "PAUSE";
+        trailspeed = 2;
+      }
     } else {
+      button3.text = "PAUSE";
       trailspeed = 2;
     }
     currentMode = Mode.TRAILS;
@@ -286,6 +299,9 @@ void buttonClicked(Button b) {
   chkStateBodyCare.visible = chkStateFly.visible = chkStateForage.visible =
     chkStateSit.visible = chkStateStand.visible = chkStateUnknown.visible =
     currentMode == Mode.OBSERVATIONS;
+
+  // Show/hide animation controls
+  cp5.getController("speed").setVisible(currentMode != Mode.OBSERVATIONS);
 
   draw();
 }
