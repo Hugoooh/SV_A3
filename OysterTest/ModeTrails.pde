@@ -13,7 +13,7 @@ void drawTrails() {
   text(now.format(DateTimeFormatter.ISO_LOCAL_DATE_TIME), width - 280, height - 30);
 
   // Move forward in time
-  now = now.plusMinutes(2);
+  now = now.plusMinutes(trailspeed);
   for (int i = 0; i < birdIDs.length; i++) {
     color thisColor = birdColor(birdIDs[i]);
     

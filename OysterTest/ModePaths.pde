@@ -9,7 +9,7 @@ void drawPaths() {
   text(now.format(DateTimeFormatter.ISO_LOCAL_DATE_TIME), width - 280, height - 30);
 
   // Move forward in time
-  now = now.plusMinutes(30);
+  now = now.plusMinutes(pathspeed);
   for (int i = 0; i < birdIDs.length; i++) {    
     // Set the stroke to this bird's colour
     fill(birdColor(birdIDs[i]));

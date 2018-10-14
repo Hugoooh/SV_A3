@@ -226,14 +226,32 @@ void mouseReleased() {
   }
 }
 
+int pathspeed = 30;
+int trailspeed = 2;
 // Called when a UI button is clicked.
 void buttonClicked(Button b) { 
   if (b == button1) {
     currentMode = Mode.OBSERVATIONS;
     enterObservationsMode();
   } else if (b == button2) {
+    if (currentMode == Mode.PATHS)
+    {
+     if (pathspeed == 30){
+       pathspeed = 0;} else {
+         pathspeed = 30;}
+    } else {
+      pathspeed = 30;
+    }
     currentMode = Mode.PATHS;
   } else if (b == button3) {
+    if (currentMode == Mode.PATHS)
+    {
+     if (trailspeed == 2){
+       trailspeed = 0;} else {
+         trailspeed = 2;}
+    } else {
+      trailspeed = 2;
+    }
     currentMode = Mode.TRAILS;
   }
   
