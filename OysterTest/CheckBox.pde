@@ -1,3 +1,4 @@
+//The checkbox
 public class CheckBox {
   String text;
   float x, y;

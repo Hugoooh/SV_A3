@@ -1,19 +1,8 @@
 import controlP5.*;
-
 import java.time.*;
 import java.time.format.*;
 import de.bezier.guido.*;
 
-class Observation {
-  int birdID;
-  LocalDateTime date_time;
-  double latitude;
-  double longitude;
-  // lots of other fields go here...
-  String month;
-  String SA8;
-  
-}
 
 // Bird observations
 Observation[] observations;
@@ -29,6 +18,8 @@ float[] basemapExtents = { 6.190, 53.427, 6.280, 53.490 };
 PImage titleGraphic;
 
 // UI elements
+//Including checkbox for states , birds, month
+// Button for switching model
 Button button1, button2, button3, button4;
 CheckBox[] chkBirds,chkMonth;
 CheckBox chkStateBodyCare, chkStateFly, chkStateForage,
@@ -108,7 +99,7 @@ void setup() {
 
   // Set up the UI
   Interactive.make(this);
-
+  //Set up Buttons
   button1 = new Button("Observations", width - 270, height - 36, 80, 26);
   Interactive.on(button1, "click", this, "buttonClicked");
 
@@ -122,6 +113,8 @@ void setup() {
   Interactive.on(button4, "click", this, "buttonClicked");
   button4.visible = false;
 
+  // Set up checkboxs
+  // Birds
   chkBirds = new CheckBox[3];
   chkBirds[0] = new CheckBox("Bird 166", insetWidth + 40, height - 20 - CheckBox.size);
   chkBirds[0].highlightColor = birdColor(166);
@@ -135,27 +128,38 @@ void setup() {
   chkBirds[2].highlightColor = birdColor(169);
   chkBirds[2].checked = true;
   
+  // States
   chkStateBodyCare = new CheckBox("Body care", insetWidth + 40, height - 70 - CheckBox.size);
   chkStateBodyCare.checked = true;
+  
   chkStateFly = new CheckBox("Fly", insetWidth + 135, height - 70 - CheckBox.size);
   chkStateFly.checked = true;
+  
   chkStateForage = new CheckBox("Forage", insetWidth + 190, height - 70 - CheckBox.size);
   chkStateForage.checked = true;
+  
   chkStateSit = new CheckBox("Sit", insetWidth + 265, height - 70 - CheckBox.size);
   chkStateSit.checked = true;
+  
   chkStateStand = new CheckBox("Stand", insetWidth + 320, height - 70 - CheckBox.size);
   chkStateStand.checked = true;
+  
   chkStateUnknown = new CheckBox("Unknown", insetWidth + 395, height - 70 - CheckBox.size);
   chkStateUnknown.checked = true;
   
+  //Month
   chkJune = new CheckBox("June", insetWidth + 40, height - 45 - CheckBox.size);
   chkJune.checked = true;
+  
   chkJuly = new CheckBox("July", insetWidth + 135, height - 45 - CheckBox.size);
   chkJuly.checked = true;
+  
   chkAugust = new CheckBox("August", insetWidth + 210, height - 45 - CheckBox.size);
   chkAugust.checked = true;
+  
   chkSeptember = new CheckBox("September", insetWidth + 300, height - 45 - CheckBox.size);
   chkSeptember.checked = true;
+  
   chkLater = new CheckBox("Later", insetWidth + 400, height - 45 - CheckBox.size);
   chkLater.checked = true;
   

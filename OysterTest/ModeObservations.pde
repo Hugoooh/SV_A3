@@ -119,6 +119,7 @@ void drawObservations() {
   text("Draw a box to show statistics for an area", insetWidth + 40, height - 93);
 }
 
+//Draw the graph based on selected area on button-right
 void drawGraph(ArrayList<Observation> theseObs, int[] obsPerBird) {
   // Print number of observations
   fill(0);
@@ -132,7 +133,7 @@ void drawGraph(ArrayList<Observation> theseObs, int[] obsPerBird) {
   float plotAreaTop = graphY + 40;
   float plotAreaBottom = graphY + graphHeight - 40;
   
-  // Print x-axis
+  // Print x-axis and the label of x-axis
   line(plotAreaLeft, plotAreaBottom, plotAreaLeft + plotAreaWidth, plotAreaBottom);
   textAlign(CENTER, TOP);
   text("stand",     plotAreaLeft + plotAreaWidth / 12,      plotAreaBottom + 10);
@@ -157,12 +158,13 @@ void drawGraph(ArrayList<Observation> theseObs, int[] obsPerBird) {
   text("pm",  plotAreaLeft - 21, plotAreaTop + (graphHeight - 80) * 3 / 4 - 10);
   shape(moon, plotAreaLeft - 21, plotAreaTop + (graphHeight - 80) - 26, 16, 16);
   
-  // Plot points on graph
+  // Plot points on graph according to its' state and time record
   for (Observation obs : theseObs) {
     strokeWeight(3);
     stroke(birdColor(obs.birdID));
     
     // X-axis is behaviours
+    // plot points to each area according to obs.SA8
     float plotX = plotAreaLeft;
     if (obs.SA8 != null) {
       switch (obs.SA8) {
@@ -194,6 +196,7 @@ void drawGraph(ArrayList<Observation> theseObs, int[] obsPerBird) {
   }
 }
 
+// function to manage the text
 void textSideways(String text, float x, float y) {
   pushMatrix();
   translate(x, y);
@@ -204,6 +207,7 @@ void textSideways(String text, float x, float y) {
 }
 
 // Should this observation be shown to the user?
+// check the birdid, month and state
 boolean obsVisible(Observation obs) {
   if (!chkBirds[obs.birdID == 166 ? 0 : (obs.birdID == 167 ? 1 : 2)].checked) {
     return false;

@@ -15,12 +15,12 @@ public class Button {
 
     Interactive.add(this);
   }
-
+  
+  //Monitor mouse position and action
   void mousePressed() {
     if (!visible) {
       return;
     }
-    
     Interactive.send(this, "click", this);
   }
 
